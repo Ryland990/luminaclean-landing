@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - LuminaClean</title>
+    <meta name="description" content="LuminaClean Privacy Policy. Learn how we protect your data with on-device processing and zero data collection.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://luminaclean.app/privacy.html">
+
+    <meta name="apple-itunes-app" content="app-id=6757949814">
+    <meta name="theme-color" content="#1a0a2e">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-purple-400: #a78bfa;
+            --color-purple-500: #8b5cf6;
+            --color-purple-600: #7c3aed;
+            --color-gold-500: #d4a853;
+            --color-bg-dark: #080510;
+            --color-bg-purple: #120a20;
+            --color-purple-900: #1a0a2e;
+            --color-purple-800: #2d1b4e;
+            --color-purple-700: #4c1d95;
+            --bg-primary: #080510;
+            --bg-card: rgba(139, 92, 246, 0.06);
+            --border-card: rgba(139, 92, 246, 0.15);
+            --text-primary: #f1f0f3;
+            --text-secondary: rgba(241, 240, 243, 0.65);
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--color-bg-dark);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .page-background {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background:
+                radial-gradient(ellipse 80% 50% at 50% -20%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse 60% 40% at 100% 100%, rgba(109, 40, 217, 0.1) 0%, transparent 50%),
+                linear-gradient(160deg,
+                    var(--color-bg-dark) 0%,
+                    var(--color-bg-purple) 25%,
+                    var(--color-purple-900) 50%,
+                    var(--color-purple-800) 75%,
+                    var(--color-purple-700) 100%
+                );
+        }
+
+        .page-background::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(
+                -55deg,
+                transparent,
+                transparent 1px,
+                rgba(139, 92, 246, 0.015) 1px,
+                rgba(139, 92, 246, 0.015) 2px
+            );
+            pointer-events: none;
+        }
+
+        .page-background::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: 0.4;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Nav */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 16px 0;
+            background: rgba(8, 5, 16, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-card);
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+
+        .nav-logo-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--color-purple-500), var(--color-purple-600));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-logo-icon svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .nav-logo-text {
+            font-size: 1.15rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-back {
+            font-size: 0.9rem;
+            color: var(--color-purple-400);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-back:hover {
+            color: var(--color-purple-500);
+        }
+
+        /* Hero */
+        .policy-hero {
+            padding: 140px 0 40px;
+            text-align: center;
+        }
+
+        .policy-hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--color-purple-400) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+
+        .policy-hero p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        /* Content */
+        .policy-content {
+            padding: 24px 0 80px;
+        }
+
+        .policy-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .policy-section h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+
+        .policy-section p,
+        .policy-section li {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.75;
+        }
+
+        .policy-section p + p {
+            margin-top: 12px;
+        }
+
+        .policy-section ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 12px;
+        }
+
+        .policy-section ul li {
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 8px;
+        }
+
+        .policy-section ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--color-purple-500);
+        }
+
+        .policy-section a {
+            color: var(--color-purple-400);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .policy-section a:hover {
+            color: var(--color-purple-500);
+        }
+
+        .highlight-box {
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.25);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-top: 16px;
+        }
+
+        .highlight-box p {
+            color: var(--text-primary) !important;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .footer {
+            border-top: 1px solid var(--border-card);
+            padding: 32px 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .footer-copyright {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--text-primary);
+        }
+
+        @media (max-width: 640px) {
+            .policy-hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .policy-section {
+                padding: 24px 20px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+
+            .footer-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-background"></div>
+
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo" aria-label="LuminaClean Home">
+                <div class="nav-logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <span class="nav-logo-text">LuminaClean</span>
+            </a>
+            <a href="/" class="nav-back">Back to Home</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="policy-hero">
+            <div class="container">
+                <h1>Privacy Policy</h1>
+                <p>Last updated: January 30, 2025</p>
+            </div>
+        </section>
+
+        <section class="policy-content">
+            <div class="container">
+
+                <div class="policy-section">
+                    <h2>Our Commitment to Privacy</h2>
+                    <p>LuminaClean ("we", "our", or "the app") is built with a privacy-first philosophy. We believe your photos are deeply personal, and you should never have to send them to a server for processing. That is why LuminaClean performs all analysis entirely on your device.</p>
+                    <div class="highlight-box">
+                        <p>LuminaClean does not collect, store, transmit, or share any personal data or photos. Period.</p>
+                    </div>
+                </div>
+
+                <div class="policy-section">
+                    <h2>Data Collection</h2>
+                    <p>LuminaClean does not collect any personal information from its users. We do not require account creation, login credentials, email addresses, or any other form of personal identification to use the app.</p>
+                    <p>Specifically, we do not collect:</p>
+                    <ul>
+                        <li>Names, email addresses, or contact information</li>
+                        <li>Photos, videos, or any media files</li>
+                        <li>Location data or GPS coordinates</li>
+                        <li>Device identifiers for tracking purposes</li>
+                        <li>Browsing history or usage profiles</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h2>On-Device Processing</h2>
+                    <p>All photo analysis in LuminaClean, including duplicate detection, similarity comparison, blurriness detection, and screenshot identification, is performed locally on your device using on-device machine learning.</p>
+                    <p>Your photos never leave your device. No images are uploaded to any server, cloud service, or external system. The AI models run entirely within the app on your iPhone or iPad.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h2>Photo Library Access</h2>
+                    <p>LuminaClean requests access to your photo library solely to analyze and help you organize your photos. This access is governed by Apple's Photos framework and requires your explicit permission.</p>
+                    <p>You can revoke photo library access at any time through your device's Settings app under Privacy &amp; Security &gt; Photos.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h2>Analytics &amp; Diagnostics</h2>
+                    <p>LuminaClean may use Apple's built-in analytics framework to collect anonymized, aggregated usage statistics such as app launch counts and crash reports. This data is handled entirely by Apple in accordance with their privacy policy and cannot be used to identify individual users.</p>
+                    <p>We do not use any third-party analytics SDKs or tracking tools.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h2>Third-Party Services</h2>
+                    <p>LuminaClean does not integrate any third-party advertising networks, social media SDKs, or external tracking services. The app does not contain ads.</p>
+                    <p>The only external services involved are:</p>
+                    <ul>
+                        <li>Apple App Store for distribution and in-app purchases</li>
+                        <li>Apple's StoreKit framework for managing subscriptions</li>
+                    </ul>
+                    <p>These services are governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h2>Children's Privacy</h2>
+                    <p>LuminaClean does not knowingly collect any personal information from children under the age of 13 (or the applicable age in your jurisdiction). Since the app collects no personal data from any user, it is safe for use by individuals of all ages.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h2>Changes to This Policy</h2>
+                    <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated "Last updated" date. We encourage you to review this page periodically. Continued use of the app after changes are posted constitutes acceptance of the revised policy.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions or concerns about this Privacy Policy or the app's privacy practices, please contact us at:</p>
+                    <p><a href="mailto:nextstep.appstudio@gmail.com">nextstep.appstudio@gmail.com</a></p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-copyright">&copy; 2025 LuminaClean. All rights reserved.</p>
+            <nav class="footer-links">
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="https://apps.apple.com/us/app/luminaclean-photo-cleaner/id6757949814" target="_blank" rel="noopener">App Store</a>
+                <a href="mailto:nextstep.appstudio@gmail.com">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>

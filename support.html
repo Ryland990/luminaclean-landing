@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - LuminaClean</title>
+    <meta name="description" content="Get help with LuminaClean. Find troubleshooting tips, FAQs, and contact support for the LuminaClean photo cleaner app.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg-dark: #080510;
+            --color-bg-purple: #120a20;
+            --color-purple-900: #1a0a2e;
+            --color-purple-800: #2d1b4e;
+            --color-purple-700: #4c1d95;
+            --color-purple-600: #6d28d9;
+            --color-purple-500: #8b5cf6;
+            --color-purple-400: #a78bfa;
+            --color-purple-300: #c4b5fd;
+            --color-white: #ffffff;
+            --color-gray-100: #f3f4f6;
+            --color-gray-300: #d1d5db;
+            --color-gray-400: #9ca3af;
+            --color-gray-500: #6b7280;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-bg-hover: rgba(255, 255, 255, 0.06);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glass-border-hover: rgba(139, 92, 246, 0.3);
+            --transition-fast: 0.2s ease;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--color-bg-dark);
+            color: var(--color-gray-300);
+            line-height: 1.6;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .page-background {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background:
+                radial-gradient(ellipse 80% 50% at 50% -20%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse 60% 40% at 100% 100%, rgba(109, 40, 217, 0.1) 0%, transparent 50%),
+                linear-gradient(160deg,
+                    var(--color-bg-dark) 0%,
+                    var(--color-bg-purple) 25%,
+                    var(--color-purple-900) 50%,
+                    var(--color-purple-800) 75%,
+                    var(--color-purple-700) 100%
+                );
+        }
+
+        .page-background::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(
+                -55deg,
+                transparent,
+                transparent 1px,
+                rgba(139, 92, 246, 0.015) 1px,
+                rgba(139, 92, 246, 0.015) 2px
+            );
+            pointer-events: none;
+        }
+
+        .page-background::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: 0.4;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+
+        a {
+            color: var(--color-purple-400);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+
+        a:hover {
+            color: var(--color-purple-300);
+        }
+
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Nav */
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 0;
+            background: rgba(8, 5, 16, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+            color: var(--color-white);
+            font-weight: 700;
+            font-size: 1.125rem;
+        }
+
+        .nav-logo:hover {
+            color: var(--color-white);
+        }
+
+        .nav-logo-icon {
+            width: 2rem;
+            height: 2rem;
+            background: linear-gradient(135deg, var(--color-purple-500), var(--color-purple-700));
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-logo-icon svg {
+            width: 1.125rem;
+            height: 1.125rem;
+            color: var(--color-white);
+        }
+
+        .nav-back {
+            font-size: 0.875rem;
+            color: var(--color-gray-400);
+            display: flex;
+            align-items: center;
+            gap: 0.375rem;
+        }
+
+        .nav-back:hover {
+            color: var(--color-white);
+        }
+
+        /* Hero */
+        .support-hero {
+            padding: 5rem 0 3rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .support-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 400px;
+            background: radial-gradient(ellipse, rgba(139, 92, 246, 0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .support-hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--color-white);
+            margin-bottom: 1rem;
+        }
+
+        .support-hero p {
+            font-size: 1.125rem;
+            color: var(--color-gray-400);
+            max-width: 540px;
+            margin: 0 auto;
+        }
+
+        /* Section */
+        .section {
+            padding: 3rem 0;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-white);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Glass card */
+        .card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 1rem;
+            padding: 2rem;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            transition: border-color var(--transition-fast), background var(--transition-fast);
+        }
+
+        .card:hover {
+            background: var(--glass-bg-hover);
+            border-color: var(--glass-border-hover);
+        }
+
+        /* Contact card */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (min-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .contact-card-icon {
+            width: 3rem;
+            height: 3rem;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(109, 40, 217, 0.2));
+            border: 1px solid rgba(139, 92, 246, 0.25);
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .contact-card-icon svg {
+            width: 1.25rem;
+            height: 1.25rem;
+            color: var(--color-purple-400);
+        }
+
+        .contact-card h3 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--color-white);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card p {
+            font-size: 0.9375rem;
+            color: var(--color-gray-400);
+            margin-bottom: 1rem;
+        }
+
+        .contact-card a.email-link {
+            font-weight: 600;
+            color: var(--color-purple-400);
+            word-break: break-all;
+        }
+
+        /* Troubleshooting */
+        .troubleshoot-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .troubleshoot-item {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 1rem;
+            padding: 1.75rem 2rem;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            transition: border-color var(--transition-fast), background var(--transition-fast);
+        }
+
+        .troubleshoot-item:hover {
+            background: var(--glass-bg-hover);
+            border-color: var(--glass-border-hover);
+        }
+
+        .troubleshoot-item h3 {
+            font-size: 1.0625rem;
+            font-weight: 700;
+            color: var(--color-white);
+            margin-bottom: 0.625rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .troubleshoot-item h3 .icon {
+            color: var(--color-purple-400);
+            flex-shrink: 0;
+        }
+
+        .troubleshoot-item p {
+            font-size: 0.9375rem;
+            color: var(--color-gray-400);
+            line-height: 1.7;
+        }
+
+        /* CTA */
+        .faq-cta {
+            text-align: center;
+            padding: 3rem 0 4rem;
+        }
+
+        .faq-cta p {
+            font-size: 1.0625rem;
+            color: var(--color-gray-400);
+            margin-bottom: 1.25rem;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.75rem;
+            background: linear-gradient(135deg, var(--color-purple-600), var(--color-purple-500));
+            color: var(--color-white);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+        }
+
+        .btn-primary:hover {
+            color: var(--color-white);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(139, 92, 246, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            padding: 2.5rem 0;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        .footer-inner {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .footer-inner {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
+        }
+
+        .footer-copyright {
+            font-size: 0.875rem;
+            color: var(--color-gray-500);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .footer-links {
+                gap: 2rem;
+            }
+        }
+
+        .footer-links a {
+            font-size: 0.875rem;
+            color: var(--color-gray-500);
+            transition: color var(--transition-fast);
+        }
+
+        .footer-links a:hover {
+            color: var(--color-white);
+        }
+    </style>
+</head>
+<body>
+    <div class="page-background"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a href="index.html" class="nav-logo" aria-label="LuminaClean Home">
+                <div class="nav-logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                    </svg>
+                </div>
+                <span>LuminaClean</span>
+            </a>
+            <a href="index.html" class="nav-back">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="support-hero">
+            <div class="container">
+                <h1>Support</h1>
+                <p>Need help with LuminaClean? Find answers below or reach out to our team directly.</p>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-grid">
+                    <div class="card contact-card">
+                        <div class="contact-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <h3>Email Support</h3>
+                        <p>Have a question, bug report, or feature request? Send us an email and we will get back to you as soon as possible.</p>
+                        <a href="mailto:nextstep.appstudio@gmail.com" class="email-link">nextstep.appstudio@gmail.com</a>
+                    </div>
+                    <div class="card contact-card">
+                        <div class="contact-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/>
+                                <line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                        </div>
+                        <h3>FAQ</h3>
+                        <p>Check our frequently asked questions for quick answers about privacy, features, iCloud, and more.</p>
+                        <a href="index.html#faq">View FAQ on main page &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Troubleshooting -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Troubleshooting</h2>
+                <div class="troubleshoot-list">
+                    <div class="troubleshoot-item">
+                        <h3>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                            App Not Scanning Photos
+                        </h3>
+                        <p>Make sure LuminaClean has permission to access your photo library. Go to <strong>Settings &gt; Privacy &amp; Security &gt; Photos</strong> on your iPhone and set LuminaClean to <strong>Full Access</strong>. If the scan seems stuck, try closing and reopening the app. For very large libraries (10,000+ photos), the initial scan may take a few minutes.</p>
+                    </div>
+                    <div class="troubleshoot-item">
+                        <h3>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>
+                            Storage Not Updating After Deleting Photos
+                        </h3>
+                        <p>After deleting photos through LuminaClean, they are moved to the <strong>Recently Deleted</strong> album in the Photos app. Storage is not fully reclaimed until those photos are permanently deleted. Open <strong>Photos &gt; Albums &gt; Recently Deleted</strong> and tap <strong>Delete All</strong> to free up space immediately. It may also take a few minutes for iOS to recalculate storage usage.</p>
+                    </div>
+                    <div class="troubleshoot-item">
+                        <h3>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg>
+                            iCloud Sync Issues
+                        </h3>
+                        <p>If iCloud Photos is enabled, LuminaClean works with both local and iCloud-synced images. Make sure your device is connected to Wi-Fi so iCloud can download full-resolution photos for scanning. If some photos appear missing, go to <strong>Settings &gt; [Your Name] &gt; iCloud &gt; Photos</strong> and ensure <strong>Download and Keep Originals</strong> is selected, or allow time for thumbnails to sync. Deleting photos in LuminaClean will also remove them from iCloud after the next sync.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ CTA -->
+        <section class="faq-cta">
+            <div class="container">
+                <p>Did not find what you were looking for?</p>
+                <a href="index.html#faq" class="btn-primary">View Full FAQ &rarr;</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p class="footer-copyright">&copy; 2025 LuminaClean</p>
+            <nav class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="mailto:nextstep.appstudio@gmail.com">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
