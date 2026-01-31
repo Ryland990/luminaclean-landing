@@ -109,19 +109,9 @@
         .page-background {
             position: fixed; inset: 0; z-index: -1;
             background:
-                radial-gradient(ellipse 80% 50% at 50% -20%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
-                radial-gradient(ellipse 60% 40% at 100% 100%, rgba(109, 40, 217, 0.1) 0%, transparent 50%),
-                linear-gradient(160deg, #080510 0%, #120a20 25%, #1a0a2e 50%, #2d1b4e 75%, #4c1d95 100%);
-        }
-        .page-background::before {
-            content: ''; position: absolute; inset: 0;
-            background: repeating-linear-gradient(-55deg, transparent, transparent 1px, rgba(139, 92, 246, 0.015) 1px, rgba(139, 92, 246, 0.015) 2px);
-            pointer-events: none;
-        }
-        .page-background::after {
-            content: ''; position: absolute; inset: 0; opacity: 0.4;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-            pointer-events: none;
+                radial-gradient(ellipse 80% 50% at 50% -10%, rgba(139, 92, 246, 0.18) 0%, transparent 60%),
+                radial-gradient(ellipse 60% 40% at 100% 100%, rgba(109, 40, 217, 0.08) 0%, transparent 50%),
+                linear-gradient(160deg, #080510 0%, #120a20 40%, #1a0a2e 100%);
         }
 
         .nav {
