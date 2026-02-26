@@ -29,7 +29,7 @@
     <meta name="twitter:image" content="https://luminaclean.app/assets/images/og-image.png">
 
     <meta name="apple-itunes-app" content="app-id=6757949814">
-    <meta name="theme-color" content="#1a0a2e">
+    <meta name="theme-color" content="#06080f">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -105,30 +105,47 @@
 
     <style>
         :root {
-            --color-bg-dark: #080510;
+            --color-bg-dark: #06080f;
+            --color-purple-500: #7c6ef0;
             --color-purple-400: #a78bfa;
             --color-purple-300: #c4b5fd;
-            --color-gold-500: #d4a853;
-            --color-gold-400: #e4be6a;
-            --color-white: #ffffff;
+            --color-teal-300: #5eead4;
             --color-gray-300: #d1d5db;
             --color-gray-400: #9ca3af;
             --color-gray-500: #6b7280;
+            --color-white: #fff;
             --glass-bg: rgba(255, 255, 255, 0.03);
             --glass-border: rgba(255, 255, 255, 0.08);
+            --aurora-1: rgba(100, 80, 220, 0.20);
+            --aurora-2: rgba(60, 50, 180, 0.14);
+            --aurora-3: rgba(94, 234, 212, 0.04);
+            --transition-fast: 0.15s ease;
+            --transition-base: 0.3s ease;
         }
 
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
         body { font-family: 'Plus Jakarta Sans', sans-serif; color: var(--color-white); background: var(--color-bg-dark); min-height: 100vh; }
 
-        .page-background { position: fixed; inset: 0; z-index: -1; background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(139, 92, 246, 0.18) 0%, transparent 60%), radial-gradient(ellipse 60% 40% at 100% 100%, rgba(109, 40, 217, 0.08) 0%, transparent 50%), linear-gradient(160deg, #080510 0%, #120a20 40%, #1a0a2e 100%); }
+        /* Aurora Background */
+        .page-background { position: fixed; inset: 0; z-index: -2; background: var(--color-bg-dark); }
+        .aurora { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+        .aurora-blob { position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.6; }
+        .aurora-blob:nth-child(1) { width: 600px; height: 600px; background: var(--aurora-1); top: -15%; left: 30%; animation: auroraMove1 20s ease-in-out infinite; }
+        .aurora-blob:nth-child(2) { width: 500px; height: 500px; background: var(--aurora-2); bottom: 10%; right: -10%; animation: auroraMove2 25s ease-in-out infinite; }
+        .aurora-blob:nth-child(3) { width: 400px; height: 400px; background: var(--aurora-3); top: 40%; left: -5%; animation: auroraMove3 22s ease-in-out infinite; }
+        @keyframes auroraMove1 { 0%, 100% { transform: translate(0, 0) scale(1); } 33% { transform: translate(80px, 40px) scale(1.1); } 66% { transform: translate(-40px, -30px) scale(0.95); } }
+        @keyframes auroraMove2 { 0%, 100% { transform: translate(0, 0) scale(1); } 33% { transform: translate(-60px, -50px) scale(1.05); } 66% { transform: translate(50px, 30px) scale(0.9); } }
+        @keyframes auroraMove3 { 0%, 100% { transform: translate(0, 0) scale(1); } 33% { transform: translate(40px, -40px) scale(1.08); } 66% { transform: translate(-30px, 50px) scale(0.92); } }
+        .noise-overlay { position: fixed; inset: 0; z-index: -1; opacity: 0.035; pointer-events: none; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-repeat: repeat; background-size: 256px 256px; }
 
-        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; background: rgba(8, 5, 16, 0.85); backdrop-filter: blur(20px); border-bottom: 1px solid var(--glass-border); display: flex; align-items: center; justify-content: space-between; }
-        .nav-logo { font-size: 1.25rem; font-weight: 800; color: var(--color-white); text-decoration: none; }
-        .nav-logo span { color: var(--color-purple-400); }
-        .nav-cta { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1.4rem; border-radius: 100px; background: linear-gradient(135deg, var(--color-gold-500), var(--color-gold-400)); color: #1a0a2e; font-weight: 700; font-size: 0.9rem; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; }
-        .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 20px rgba(212, 168, 83, 0.3); }
+        /* Nav */
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; background: rgba(6, 8, 15, 0.8); backdrop-filter: blur(20px); border-bottom: 1px solid var(--glass-border); display: flex; align-items: center; justify-content: space-between; }
+        .nav-logo { font-size: 1.25rem; font-weight: 800; text-decoration: none; background: linear-gradient(135deg, var(--color-teal-300), var(--color-purple-400)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: -0.02em; }
+        .nav-cta { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1.4rem; border-radius: 100px; background: var(--color-white); color: var(--color-bg-dark); font-weight: 600; font-size: 0.875rem; text-decoration: none; transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1); box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1); overflow: hidden; position: relative; }
+        .nav-cta::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent); opacity: 0; transform: translateX(-100%); transition: opacity 0.3s ease, transform 0.6s ease; pointer-events: none; }
+        .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 25px rgba(255, 255, 255, 0.2); }
+        .nav-cta:hover::before { opacity: 1; transform: translateX(100%); }
 
         .article-container { max-width: 760px; margin: 0 auto; padding: 7rem 1.5rem 3rem; }
         .back-link { display: inline-block; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--color-purple-400); text-decoration: none; transition: color 0.2s; }
@@ -150,13 +167,15 @@
         .article-content li { margin-bottom: 0.5rem; line-height: 1.7; }
         .article-content strong { color: var(--color-white); }
         .article-content a { color: var(--color-purple-400); text-decoration: underline; }
-        .article-content .cta-button { color: #1a0a2e; text-decoration: none; }
+        .article-content .cta-button { color: var(--color-white); text-decoration: none; }
 
         .cta-box { background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.25); border-radius: 16px; padding: 2rem; text-align: center; margin: 2.5rem 0; }
         .cta-box h3 { color: var(--color-white); margin-bottom: 0.75rem; font-size: 1.25rem; }
         .cta-box p { color: var(--color-gray-300); margin-bottom: 1.25rem; }
-        .cta-button { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.75rem; border-radius: 100px; background: linear-gradient(135deg, var(--color-gold-500), var(--color-gold-400)); color: #1a0a2e; font-weight: 700; font-size: 0.95rem; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; }
-        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(212, 168, 83, 0.3); }
+        .cta-button { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.75rem; border-radius: 100px; background: linear-gradient(135deg, #5b50d6, #7c6ef0); color: var(--color-white); font-weight: 700; font-size: 0.95rem; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; overflow: hidden; position: relative; }
+        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(124, 110, 240, 0.4); }
+        .cta-button::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent); opacity: 0; transform: translateX(-100%); transition: opacity 0.3s ease, transform 0.6s ease; pointer-events: none; }
+        .cta-button:hover::before { opacity: 1; transform: translateX(100%); }
 
         .pro-tip { margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: rgba(212, 160, 23, 0.08); border: 1px solid rgba(212, 160, 23, 0.25); border-left: 3px solid rgba(212, 160, 23, 0.6); border-radius: 0 10px 10px 0; font-size: 0.95rem; color: var(--color-gray-300); }
         .pro-tip strong { color: #f0d060; }
@@ -167,10 +186,10 @@
         .comparison-table tr:hover td { background: rgba(255,255,255,0.02); }
         @media (max-width: 640px) { .comparison-table { font-size: 0.82rem; } .comparison-table th, .comparison-table td { padding: 0.5rem 0.6rem; } }
 
-        .site-footer { border-top: 1px solid var(--glass-border); padding: 2.5rem 2rem; text-align: center; color: var(--color-gray-400); font-size: 0.875rem; }
+        .site-footer { border-top: 1px solid var(--glass-border); padding: 2.5rem 2rem; text-align: center; color: var(--color-gray-500); font-size: 0.875rem; }
         .footer-links { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1rem; }
-        .footer-links a { color: var(--color-white); text-decoration: none; transition: color 0.2s; }
-        .footer-links a:hover { color: var(--color-purple-400); }
+        .footer-links a { color: var(--color-gray-400); text-decoration: none; transition: color var(--transition-fast); }
+        .footer-links a:hover { color: var(--color-white); }
 
     <!-- Vercel Web Analytics -->
     <script>
@@ -180,11 +199,20 @@
     </style>
 </head>
 <body>
-    <div class="page-background"></div>
+    <div class="page-background" aria-hidden="true"></div>
+    <div class="aurora" aria-hidden="true">
+        <div class="aurora-blob"></div>
+        <div class="aurora-blob"></div>
+        <div class="aurora-blob"></div>
+    </div>
+    <div class="noise-overlay" aria-hidden="true"></div>
 
     <nav class="nav">
-        <a href="../../" class="nav-logo">Lumina<span>Clean</span></a>
-        <a href="https://apps.apple.com/us/app/luminaclean-photo-cleaner/id6757949814" class="nav-cta">Download</a>
+        <a href="../../" class="nav-logo">LuminaClean</a>
+        <a href="https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8" class="nav-cta">
+            <svg width="16" height="16" viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+            Download Free
+        </a>
     </nav>
 
     <main class="article-container">
@@ -414,7 +442,7 @@
                 <div class="cta-box">
                     <h3>Stop Wasting Storage on Blurry Photos</h3>
                     <p>LuminaClean&rsquo;s on-device AI finds blurry images, duplicates, screenshots, and clutter &mdash; all without uploading your photos. Free video compression included for all users.</p>
-                    <a href="https://apps.apple.com/us/app/luminaclean-photo-cleaner/id6757949814" class="cta-button">Download LuminaClean Free</a>
+                    <a href="https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8" class="cta-button">Download LuminaClean Free</a>
                 </div>
             </div>
         </article>
