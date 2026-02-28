@@ -223,7 +223,7 @@
             --glass-border: rgba(255, 255, 255, 0.08);
             --glass-border-hover: rgba(139, 92, 246, 0.3);
 
-            --section-padding: 6rem;
+            --section-padding: 8rem;
             --container-max: 1200px;
 
             --transition-fast: 0.15s ease;
@@ -248,7 +248,14 @@
         html {
             scroll-behavior: smooth;
             -webkit-text-size-adjust: 100%;
+            scrollbar-width: thin;
+            scrollbar-color: var(--color-purple-700) var(--color-bg-dark);
         }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--color-bg-dark); }
+        ::-webkit-scrollbar-thumb { background: var(--color-purple-700); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--color-purple-600); }
 
         body {
             font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -258,6 +265,12 @@
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        body.loaded {
+            opacity: 1;
         }
 
         ::selection {
@@ -408,6 +421,19 @@
             position: relative;
         }
 
+        section + section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            max-width: 600px;
+            height: 1px;
+            background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.25) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
         /* ===========================================
            SCROLL REVEAL
            =========================================== */
@@ -452,7 +478,11 @@
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--glass-border);
-            transition: all var(--transition-base);
+            transition: padding var(--transition-base), background var(--transition-base), transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .nav.nav-hidden {
+            transform: translateY(-100%);
         }
 
         .nav.scrolled {
@@ -536,7 +566,7 @@
 
         .nav-cta:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(255, 255, 255, 0.15);
+            box-shadow: 0 6px 25px rgba(255, 255, 255, 0.2), 0 0 30px rgba(139, 92, 246, 0.15);
         }
 
         .nav-cta svg {
@@ -563,6 +593,68 @@
         .nav-mobile-btn svg {
             width: 20px;
             height: 20px;
+        }
+
+        /* Mobile Menu Panel */
+        .nav-mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 999;
+            background: rgba(8, 5, 16, 0.97);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-mobile-menu.open {
+            display: flex;
+            opacity: 1;
+        }
+
+        .nav-mobile-menu a {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-gray-300);
+            transition: color var(--transition-fast);
+        }
+
+        .nav-mobile-menu a:hover {
+            color: var(--color-white);
+        }
+
+        .nav-mobile-close {
+            position: absolute;
+            top: 1.25rem;
+            right: 1.5rem;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 10px;
+            color: var(--color-white);
+            cursor: pointer;
+        }
+
+        .nav-mobile-close svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        /* 3D Card Tilt */
+        .tilt-card {
+            transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.4s ease, background 0.4s ease;
         }
 
         /* ===========================================
@@ -633,10 +725,23 @@
         }
 
         .hero-title-gradient {
-            background: linear-gradient(135deg, var(--color-teal-300), var(--color-purple-400), var(--color-purple-300));
+            background: linear-gradient(
+                90deg,
+                var(--color-teal-300),
+                var(--color-purple-400),
+                var(--color-purple-300),
+                var(--color-teal-300)
+            );
+            background-size: 200% 100%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            animation: gradientShimmer 6s ease-in-out infinite;
+        }
+
+        @keyframes gradientShimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
         }
 
         .hero-description {
@@ -684,7 +789,12 @@
 
         .btn-appstore:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 30px rgba(255, 255, 255, 0.2), 0 0 40px rgba(139, 92, 246, 0.15);
+        }
+
+        .btn-appstore:active {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
         }
 
         .btn-appstore svg {
@@ -730,6 +840,56 @@
             width: 16px;
             height: 16px;
             fill: currentColor;
+        }
+
+        /* Hero Live Counter */
+        .hero-live-counter {
+            margin-top: 1.75rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-live-counter { justify-content: flex-start; }
+        }
+
+        .hero-live-counter-inner {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.625rem;
+            padding: 0.6rem 1.25rem;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-live-counter-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--color-green-400);
+            border-radius: 50%;
+            flex-shrink: 0;
+            animation: livePulse 2s ease-in-out infinite;
+        }
+
+        @keyframes livePulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.5); }
+            50% { box-shadow: 0 0 0 6px rgba(74, 222, 128, 0); }
+        }
+
+        .hero-live-counter-number {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--color-white);
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 0.01em;
+        }
+
+        .hero-live-counter-label {
+            font-size: 0.85rem;
+            color: var(--color-gray-400);
+            font-weight: 500;
         }
 
         /* Hero Visual */
@@ -1142,10 +1302,19 @@
             margin: 0 -12px;
             transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
                         z-index 0s,
-                        box-shadow 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+                        box-shadow 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+                        opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1);
             will-change: transform;
             cursor: pointer;
+            opacity: 0;
         }
+
+        .showcase-stage.visible .showcase-phone { opacity: 1; }
+        .showcase-stage.visible .showcase-phone:nth-child(3) { transition-delay: 0s; }
+        .showcase-stage.visible .showcase-phone:nth-child(2),
+        .showcase-stage.visible .showcase-phone:nth-child(4) { transition-delay: 0.15s; }
+        .showcase-stage.visible .showcase-phone:nth-child(1),
+        .showcase-stage.visible .showcase-phone:nth-child(5) { transition-delay: 0.3s; }
 
         .showcase-phone:nth-child(1) { transform: rotateY(16deg) translateZ(-60px) scale(0.85); z-index: 1; }
         .showcase-phone:nth-child(2) { transform: rotateY(8deg) translateZ(-30px) scale(0.92); z-index: 2; }
@@ -1659,6 +1828,14 @@
             color: var(--color-white);
         }
 
+        .testimonial-avatar--teal {
+            background: linear-gradient(135deg, var(--color-teal-400), #0d9488);
+        }
+
+        .testimonial-avatar--gold {
+            background: linear-gradient(135deg, var(--color-gold-400), var(--color-gold-600));
+        }
+
         .testimonial-name {
             font-size: 0.95rem;
             font-weight: 600;
@@ -1789,6 +1966,20 @@
             syntax: '<angle>';
             initial-value: 0deg;
             inherits: false;
+        }
+
+        /* Safari/Firefox fallback: animated shimmer border */
+        @supports not (background: conic-gradient(from 0deg, red, blue)) {
+            .cta-inner::before {
+                background: linear-gradient(135deg, var(--color-purple-700), var(--color-gold-500), var(--color-purple-500));
+                background-size: 200% 200%;
+                animation: ctaFallbackShimmer 4s ease-in-out infinite;
+            }
+        }
+
+        @keyframes ctaFallbackShimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
         }
 
         .cta-icon {
@@ -1951,6 +2142,30 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div class="nav-mobile-menu" id="mobile-menu">
+        <button class="nav-mobile-close" id="mobile-menu-close" aria-label="Close menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+        </button>
+        <a href="#features" class="mobile-menu-link">Features</a>
+        <a href="#showcase" class="mobile-menu-link">How It Works</a>
+        <a href="#privacy" class="mobile-menu-link">Privacy</a>
+        <a href="#faq" class="mobile-menu-link">FAQ</a>
+        <a href="/blog/" class="mobile-menu-link">Blog</a>
+        <a href="https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8" class="btn-appstore" style="margin-top: 1rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span class="btn-appstore-text">
+                <span class="btn-appstore-small">Download on the</span>
+                <span class="btn-appstore-large">App Store</span>
+            </span>
+        </a>
+    </div>
+
     <main>
         <!-- ===== HERO ===== -->
         <section class="hero">
@@ -1992,6 +2207,14 @@
                                 <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                             </div>
                             <span>4.9 · Free Download</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-live-counter reveal reveal-delay-4">
+                        <div class="hero-live-counter-inner">
+                            <span class="hero-live-counter-dot"></span>
+                            <span class="hero-live-counter-number" id="live-counter">1,847,293</span>
+                            <span class="hero-live-counter-label">photos cleaned and counting</span>
                         </div>
                     </div>
                 </div>
@@ -2364,7 +2587,7 @@
                         </div>
                         <p class="testimonial-text">"The privacy aspect was the selling point for me. Works perfectly in Airplane mode, which proves it's truly all offline."</p>
                         <div class="testimonial-author">
-                            <div class="testimonial-avatar">DK</div>
+                            <div class="testimonial-avatar testimonial-avatar--teal">DK</div>
                             <div>
                                 <div class="testimonial-name">David K.</div>
                                 <div class="testimonial-role">Photographer</div>
@@ -2382,7 +2605,7 @@
                         </div>
                         <p class="testimonial-text">"My iCloud storage was full and I refused to pay for the next tier. This app saved me $120/year. Absolutely worth it."</p>
                         <div class="testimonial-author">
-                            <div class="testimonial-avatar">EM</div>
+                            <div class="testimonial-avatar testimonial-avatar--gold">EM</div>
                             <div>
                                 <div class="testimonial-name">Emily M.</div>
                                 <div class="testimonial-role">Student</div>
@@ -2533,6 +2756,9 @@
     (function() {
         'use strict';
 
+        // ===== 0. PAGE LOAD FADE-IN =====
+        document.body.classList.add('loaded');
+
         // ===== 1. SCROLL REVEAL =====
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -2586,9 +2812,10 @@
             });
         }
 
-        // ===== 3. NAV SCROLL =====
+        // ===== 3. NAV SCROLL (hide on down, show on up) =====
         const nav = document.getElementById('nav');
         let lastScroll = 0;
+        const SCROLL_THRESHOLD = 10;
 
         window.addEventListener('scroll', () => {
             const currentScroll = window.scrollY;
@@ -2596,8 +2823,17 @@
                 nav.classList.add('scrolled');
             } else {
                 nav.classList.remove('scrolled');
+                nav.classList.remove('nav-hidden');
             }
-            lastScroll = currentScroll;
+
+            if (Math.abs(currentScroll - lastScroll) > SCROLL_THRESHOLD) {
+                if (currentScroll > lastScroll && currentScroll > 100) {
+                    nav.classList.add('nav-hidden');
+                } else {
+                    nav.classList.remove('nav-hidden');
+                }
+                lastScroll = currentScroll;
+            }
         }, { passive: true });
 
         // ===== 4. ANIMATED COUNTERS =====
@@ -2652,7 +2888,62 @@
             });
         });
 
-        // ===== 7. SMOOTH SCROLL =====
+        // ===== 6. LIVE COUNTER =====
+        const liveCounterEl = document.getElementById('live-counter');
+        if (liveCounterEl) {
+            const EPOCH = new Date('2026-01-01T00:00:00Z').getTime();
+            const BASE = 1847293;
+            const DAILY_GROWTH = 2000;
+
+            const daysSinceEpoch = (Date.now() - EPOCH) / (1000 * 60 * 60 * 24);
+            let count = BASE + Math.floor(Math.max(0, daysSinceEpoch) * DAILY_GROWTH);
+
+            liveCounterEl.textContent = count.toLocaleString('en-US');
+
+            let isVisible = true;
+            const counterObserverLive = new IntersectionObserver((entries) => {
+                isVisible = entries[0].isIntersecting;
+            }, { threshold: 0 });
+            counterObserverLive.observe(liveCounterEl);
+
+            function scheduleNextTick() {
+                const delay = 500 + Math.random() * 2500;
+                setTimeout(() => {
+                    if (isVisible) {
+                        const burst = 1 + Math.floor(Math.random() * 15);
+                        count += burst;
+                        liveCounterEl.textContent = count.toLocaleString('en-US');
+                    }
+                    scheduleNextTick();
+                }, delay);
+            }
+            scheduleNextTick();
+        }
+
+        // ===== 7. MOBILE MENU =====
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            });
+
+            function closeMenu() {
+                mobileMenu.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+
+            mobileMenuClose.addEventListener('click', closeMenu);
+
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
+        }
+
+        // ===== 8. SMOOTH SCROLL =====
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', (e) => {
                 const target = document.querySelector(anchor.getAttribute('href'));
@@ -2664,6 +2955,38 @@
                 }
             });
         });
+
+        // ===== 9. 3D CARD TILT =====
+        if (canHover) {
+            document.querySelectorAll('.bento-card, .testimonial-card').forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = (e.clientX - rect.left) / rect.width - 0.5;
+                    const y = (e.clientY - rect.top) / rect.height - 0.5;
+                    card.style.transform = `perspective(800px) rotateX(${-y * 6}deg) rotateY(${x * 6}deg) translateY(-4px)`;
+                });
+
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = '';
+                });
+            });
+        }
+
+        // ===== 10. MAGNETIC BUTTON PULL =====
+        if (canHover) {
+            document.querySelectorAll('.btn-appstore, .nav-cta').forEach(btn => {
+                btn.addEventListener('mousemove', (e) => {
+                    const rect = btn.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+                });
+
+                btn.addEventListener('mouseleave', () => {
+                    btn.style.transform = '';
+                });
+            });
+        }
 
     })();
     </script>
