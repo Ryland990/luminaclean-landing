@@ -2048,6 +2048,77 @@
         }
 
         /* ===========================================
+           BLOG SECTION
+           =========================================== */
+        .blog-section {
+            padding: 5rem 0 3rem;
+        }
+
+        .blog-section .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 768px) {
+            .blog-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        .blog-link {
+            display: block;
+            padding: 1.25rem 1.5rem;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            color: var(--color-gray-300);
+            text-decoration: none;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            transition: all var(--transition-fast);
+        }
+
+        .blog-link:hover {
+            border-color: var(--color-purple-500);
+            color: var(--color-white);
+            background: rgba(139, 92, 246, 0.08);
+        }
+
+        .blog-link-title {
+            font-weight: 600;
+            color: var(--color-white);
+            margin-bottom: 0.25rem;
+        }
+
+        .blog-link-desc {
+            font-size: 0.85rem;
+            color: var(--color-gray-500);
+        }
+
+        .blog-view-all {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .blog-view-all a {
+            color: var(--color-purple-400);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color var(--transition-fast);
+        }
+
+        .blog-view-all a:hover {
+            color: var(--color-purple-300);
+        }
+
+        /* ===========================================
            FOOTER
            =========================================== */
         .footer {
@@ -2727,6 +2798,36 @@
                             <span class="btn-appstore-large">App Store</span>
                         </span>
                     </a>
+                </div>
+            </div>
+        </section>
+        <!-- ===== BLOG SECTION ===== -->
+        <section class="blog-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Photo tips & guides</h2>
+                    <p class="section-description">Learn how to keep your iPhone photo library clean and organized.</p>
+                </div>
+                <div class="blog-grid reveal">
+                    <a href="/blog/delete-duplicate-photos-iphone.html" class="blog-link">
+                        <div class="blog-link-title">How to Delete Duplicate Photos on iPhone</div>
+                        <div class="blog-link-desc">Step-by-step guide to finding and removing duplicate photos.</div>
+                    </a>
+                    <a href="/blog/iphone-storage-full-free-space.html" class="blog-link">
+                        <div class="blog-link-title">iPhone Storage Full? 10 Ways to Free Up Space</div>
+                        <div class="blog-link-desc">Practical tips to reclaim storage on your iPhone fast.</div>
+                    </a>
+                    <a href="/blog/find-remove-blurry-photos-iphone.html" class="blog-link">
+                        <div class="blog-link-title">How to Find and Remove Blurry Photos</div>
+                        <div class="blog-link-desc">Identify and clean up low-quality shots cluttering your library.</div>
+                    </a>
+                    <a href="/blog/best-duplicate-photo-cleaner-iphone.html" class="blog-link">
+                        <div class="blog-link-title">Best Duplicate Photo Cleaner Apps for iPhone in 2026</div>
+                        <div class="blog-link-desc">Compare the top apps for finding and removing duplicate photos.</div>
+                    </a>
+                </div>
+                <div class="blog-view-all reveal">
+                    <a href="/blog/">View all articles &rarr;</a>
                 </div>
             </div>
         </section>
