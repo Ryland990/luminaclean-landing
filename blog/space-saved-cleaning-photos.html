@@ -187,7 +187,8 @@
         .pro-tip { margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: rgba(212, 160, 23, 0.08); border: 1px solid rgba(212, 160, 23, 0.25); border-left: 3px solid rgba(212, 160, 23, 0.6); border-radius: 0 10px 10px 0; font-size: 0.95rem; }
         .pro-tip strong { color: #f0d060; }
 
-        .comparison-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.92rem; }
+        .table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.5rem 0; }
+        .comparison-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
         .comparison-table th { background: rgba(139, 92, 246, 0.15); color: #c4b5fd; padding: 0.75rem 1rem; text-align: left; font-weight: 600; border-bottom: 1px solid rgba(139, 92, 246, 0.25); }
         .comparison-table td { padding: 0.75rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.06); color: #ccc8d8; }
         .comparison-table tr:hover td { background: rgba(255,255,255,0.02); }
@@ -404,7 +405,7 @@
 
             <p>Modern video compression can reduce these files by 50 to 80 percent with virtually no visible quality difference on a phone screen. The math is compelling:</p>
 
-            <table class="comparison-table">
+            <div class="table-wrapper"><table class="comparison-table">
                 <tr>
                     <th>Video Count</th>
                     <th>Avg. Size Before</th>
@@ -440,7 +441,7 @@
                     <td>20 GB</td>
                     <td><strong>30 GB</strong></td>
                 </tr>
-            </table>
+            </table></div>
 
             <p>Several cleanup apps offer video compression, including <strong>LuminaClean</strong> (free for all users, no paywall), <strong>Clever Cleaner</strong> (also free), and <strong>CleanMyPhone</strong> (subscription required). If video compression is important to you, check whether the app you choose includes it in the free tier or requires payment.</p>
 
@@ -464,7 +465,7 @@
 
             <p>Apple&rsquo;s iCloud storage plans are priced as follows (as of early 2026):</p>
 
-            <table class="comparison-table">
+            <div class="table-wrapper"><table class="comparison-table">
                 <tr>
                     <th>iCloud Plan</th>
                     <th>Monthly Cost</th>
@@ -490,7 +491,7 @@
                     <td>$9.99</td>
                     <td>$119.88</td>
                 </tr>
-            </table>
+            </table></div>
 
             <p>If you are on the 200 GB plan and a cleanup recovers enough space to drop to the 50 GB plan, you save <strong>$24 per year</strong>. If you are on the 2 TB plan and can drop to 200 GB, that is <strong>$84 per year</strong>. Even staying on the same plan but delaying the next upgrade saves money over time.</p>
 
@@ -504,7 +505,7 @@
 
             <p>Different cleanup approaches yield different results. Here is a realistic comparison of what each method typically recovers, plus the key features that affect long-term storage health:</p>
 
-            <table class="comparison-table">
+            <div class="table-wrapper"><table class="comparison-table">
                 <tr>
                     <th>Method</th>
                     <th>Typical Recovery</th>
@@ -548,7 +549,7 @@
                     <td style="color:#2dd4bf;font-weight:600">Free (no paywall)</td>
                     <td>Yes (Flashback)</td>
                     <td>Daily Bites + Daily Tracker</td>
-                    <td>Free / $14.99 lifetime</td>
+                    <td>Free (65 + 10/day) / $14.99 lifetime</td>
                 </tr>
                 <tr>
                     <td>CleanMyPhone</td>
@@ -559,18 +560,18 @@
                     <td>No</td>
                     <td>Subscription ($3.75+/mo)</td>
                 </tr>
-            </table>
+            </table></div>
 
             <p>The built-in iOS Duplicates tool is a good starting point but catches only exact byte-for-byte matches. Dedicated apps with AI detection find significantly more because they identify visually similar images, not just identical files. The difference is typically 3 to 5 times more duplicates detected.</p>
 
-            <p>LuminaClean recovers the most storage because it combines AI photo cleanup with free video compression &mdash; and its Daily Bites and Daily Tracker features help users maintain those gains by turning cleanup into a daily habit rather than a one-off event. Flashback (scan by year) is especially useful for users with large libraries spanning several years, allowing them to tackle cleanup one year at a time.</p>
+            <p>LuminaClean recovers the most storage because it combines AI photo cleanup with free video compression &mdash; and its Daily Bites and Daily Tracker features help users maintain those gains by turning cleanup into a daily habit rather than a one-off event. The free tier reinforces this: you start with 65 deletions, and each day you come back after using them up, you get 10 more. Flashback (scan by year) is especially useful for users with large libraries spanning several years, allowing them to tackle cleanup one year at a time.</p>
 
             <h2>The ROI of Regular Photo Cleaning</h2>
 
             <p>One big cleanup is great, but the real value comes from making photo maintenance a regular habit. Here is why consistency matters.</p>
 
             <h3>Preventing Accumulation</h3>
-            <p>Clutter grows exponentially when left unchecked. A monthly cleanup session takes just a few minutes with any decent cleanup app and prevents the kind of massive buildup that requires a dedicated hour to sort through. Think of it like cleaning your house: a quick weekly tidy is far easier than a deep clean every six months. Some apps take this further &mdash; <a href="https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8">LuminaClean&rsquo;s</a> <strong>Daily Tracker</strong> uses streak-based tracking to turn cleanup into a daily two-minute habit, while its <strong>Daily Bites</strong> feature surfaces photos from the same day in past years to keep the experience nostalgic rather than tedious.</p>
+            <p>Clutter grows exponentially when left unchecked. A monthly cleanup session takes just a few minutes with any decent cleanup app and prevents the kind of massive buildup that requires a dedicated hour to sort through. Think of it like cleaning your house: a quick weekly tidy is far easier than a deep clean every six months. Some apps take this further &mdash; <a href="https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8">LuminaClean&rsquo;s</a> <strong>Daily Tracker</strong> uses streak-based tracking to turn cleanup into a daily two-minute habit &mdash; and the free tier rewards this by giving you 10 fresh deletions each day you return after using your initial 65, while its <strong>Daily Bites</strong> feature surfaces photos from the same day in past years to keep the experience nostalgic rather than tedious.</p>
 
             <h3>Maintaining iCloud Efficiency</h3>
             <p>If you use iCloud Photos, every duplicate and blurry shot counts against your storage quota. Cleaning your library regularly means you get more value from the iCloud storage plan you are already paying for. For users on the 50 GB plan, recovering 3 to 5 GB through cleanup could be the difference between needing to upgrade and staying comfortably within your current tier.</p>
@@ -618,7 +619,7 @@
             </ul>
 
             <div class="cta-box">
-                <p><strong>Find out how much space you can save.</strong><br>LuminaClean scans your entire photo library in seconds and shows you exactly what can be cleaned up &mdash; duplicates, blurry shots, screenshots, and more. Free video compression included for all users, no paywall. See your before and after today.</p>
+                <p><strong>Find out how much space you can save.</strong><br>LuminaClean scans your entire photo library in seconds and shows you exactly what can be cleaned up &mdash; duplicates, blurry shots, screenshots, and more. Start with 65 free deletions, then come back each day for 10 more. Free video compression included for all users, no paywall. See your before and after today.</p>
                 <a href="https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8" class="cta-button">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 21.99 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 21.99C7.79 22.03 6.8 20.68 5.96 19.47C4.25 16.56 2.93 11.3 4.7 7.72C5.57 5.94 7.36 4.86 9.28 4.84C10.56 4.82 11.78 5.72 12.57 5.72C13.36 5.72 14.85 4.62 16.4 4.8C17.04 4.83 18.84 5.06 19.97 6.7C19.87 6.76 17.64 8.07 17.67 10.82C17.7 14.1 20.49 15.15 20.52 15.16C20.49 15.24 20.07 16.67 19.07 18.14L18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
                     Download LuminaClean Free

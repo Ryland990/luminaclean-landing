@@ -180,7 +180,8 @@
         .pro-tip { margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: rgba(212, 160, 23, 0.08); border: 1px solid rgba(212, 160, 23, 0.25); border-left: 3px solid rgba(212, 160, 23, 0.6); border-radius: 0 10px 10px 0; font-size: 0.95rem; color: var(--color-gray-300); }
         .pro-tip strong { color: #f0d060; }
 
-        .comparison-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.92rem; }
+        .table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.5rem 0; }
+        .comparison-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
         .comparison-table th { background: rgba(139, 92, 246, 0.15); color: #c4b5fd; padding: 0.75rem 1rem; text-align: left; font-weight: 600; border-bottom: 1px solid rgba(139, 92, 246, 0.25); }
         .comparison-table td { padding: 0.75rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.06); color: var(--color-gray-300); }
         .comparison-table tr:hover td { background: rgba(255,255,255,0.02); }
@@ -259,7 +260,7 @@
                 <h3>The Accumulation Effect</h3>
                 <p>Individually, each blurry photo seems insignificant. But across years of iPhone use, the numbers add up substantially:</p>
 
-                <table class="comparison-table">
+                <div class="table-wrapper"><table class="comparison-table">
                     <tr>
                         <th>Library Size</th>
                         <th>Estimated Blurry (5&ndash;10%)</th>
@@ -285,7 +286,7 @@
                         <td>750&ndash;1,500 images</td>
                         <td>2.6&ndash;5.25 GB</td>
                     </tr>
-                </table>
+                </table></div>
 
                 <p>These figures represent blurry photos alone. Combined with duplicates (10&ndash;20% of libraries) and screenshots (5&ndash;15%), total clutter typically reaches 25&ndash;40% of any uncleaned library.</p>
 
@@ -318,7 +319,7 @@
 
                 <p>Not all cleanup apps include blur detection. Here is how the main options compare:</p>
 
-                <table class="comparison-table">
+                <div class="table-wrapper"><table class="comparison-table">
                     <tr>
                         <th>App</th>
                         <th>Blur Detection</th>
@@ -338,7 +339,7 @@
                         <td>Yes (ML-based)</td>
                         <td>Yes</td>
                         <td>Duplicates, similar, screenshots</td>
-                        <td>Free / Lifetime ~$15</td>
+                        <td>Free (65 + 10/day) / Lifetime ~$15</td>
                     </tr>
                     <tr>
                         <td><strong>CleanMyPhone</strong></td>
@@ -361,7 +362,7 @@
                         <td>Duplicates, contacts</td>
                         <td>Subscription ~$7/wk</td>
                     </tr>
-                </table>
+                </table></div>
 
                 <p>If blur detection is important to you, <strong>LuminaClean</strong> and <strong>CleanMyPhone</strong> are the strongest options. Both use on-device ML that distinguishes genuine blur from intentional artistic effects. LuminaClean offers a one-time purchase while CleanMyPhone requires a subscription.</p>
 
@@ -441,7 +442,7 @@
 
                 <div class="cta-box">
                     <h3>Stop Wasting Storage on Blurry Photos</h3>
-                    <p>LuminaClean&rsquo;s on-device AI finds blurry images, duplicates, screenshots, and clutter &mdash; all without uploading your photos. Free video compression included for all users.</p>
+                    <p>LuminaClean&rsquo;s on-device AI finds blurry images, duplicates, screenshots, and clutter &mdash; all without uploading your photos. Start with 65 free deletions, then come back each day for 10 more. Free video compression included for all users.</p>
                     <a href="https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8" class="cta-button">Download LuminaClean Free</a>
                 </div>
             </div>

@@ -186,7 +186,8 @@
         .pro-tip { margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: rgba(212, 160, 23, 0.08); border: 1px solid rgba(212, 160, 23, 0.25); border-left: 3px solid rgba(212, 160, 23, 0.6); border-radius: 0 10px 10px 0; font-size: 0.95rem; color: var(--color-gray-300); }
         .pro-tip strong { color: #f0d060; }
 
-        .comparison-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.92rem; }
+        .table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.5rem 0; }
+        .comparison-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
         .comparison-table th { background: rgba(139, 92, 246, 0.15); color: #c4b5fd; padding: 0.75rem 1rem; text-align: left; font-weight: 600; border-bottom: 1px solid rgba(139, 92, 246, 0.25); }
         .comparison-table td { padding: 0.75rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.06); color: var(--color-gray-300); }
         .comparison-table tr:hover td { background: rgba(255,255,255,0.02); }
@@ -275,7 +276,7 @@
 
                 <p>Apple provides every user with 5 GB of free iCloud storage, which fills up quickly once you enable iCloud Photos. Here are the current paid iCloud+ plans:</p>
 
-                <table class="comparison-table">
+                <div class="table-wrapper"><table class="comparison-table">
                     <tr>
                         <th>Plan</th>
                         <th>Monthly</th>
@@ -325,7 +326,7 @@
                         <td>Yes</td>
                         <td>Professional photographers, video creators</td>
                     </tr>
-                </table>
+                </table></div>
 
                 <p>All iCloud+ plans include additional features beyond storage: iCloud Private Relay (VPN-like web privacy), Hide My Email (disposable email addresses), and HomeKit Secure Video support. The 200 GB and higher plans can be shared with up to five family members through Family Sharing.</p>
 
@@ -381,7 +382,7 @@
 
                 <p>This is where the math gets interesting. Every duplicate photo, blurry shot, and old screenshot in your library is consuming paid iCloud storage. Cleaning them up directly reduces your iCloud bill.</p>
 
-                <table class="comparison-table">
+                <div class="table-wrapper"><table class="comparison-table">
                     <tr>
                         <th>Cleanup Result</th>
                         <th>iCloud Impact</th>
@@ -407,7 +408,7 @@
                         <td>Delays next tier upgrade by 1&ndash;2 years</td>
                         <td><strong>$12&ndash;36/year</strong></td>
                     </tr>
-                </table>
+                </table></div>
 
                 <p>A one-time cleanup that recovers 5 GB of iCloud space can save you $24 per year indefinitely. A cleanup app with a one-time purchase price of $10 to $20 pays for itself within the first year &mdash; and continues saving money every year after that.</p>
 
