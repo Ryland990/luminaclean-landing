@@ -29,10 +29,10 @@
     <meta name="twitter:image" content="https://luminaclean.app/assets/images/og-image.png">
 
     <meta name="apple-itunes-app" content="app-id=6757949814">
-    <meta name="theme-color" content="#06080f">
+    <meta name="theme-color" content="#08080d">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <script type="application/ld+json">
     {
@@ -105,7 +105,7 @@
 
     <style>
         :root {
-            --color-bg-dark: #06080f;
+            --color-bg-dark: #08080d;
             --color-purple-500: #7c6ef0;
             --color-purple-400: #a78bfa;
             --color-purple-300: #c4b5fd;
@@ -116,9 +116,9 @@
             --color-white: #fff;
             --glass-bg: rgba(255, 255, 255, 0.03);
             --glass-border: rgba(255, 255, 255, 0.08);
-            --aurora-1: rgba(100, 80, 220, 0.20);
-            --aurora-2: rgba(60, 50, 180, 0.14);
-            --aurora-3: rgba(94, 234, 212, 0.04);
+            --aurora-1: rgba(100, 80, 220, 0.10);
+            --aurora-2: rgba(80, 60, 160, 0.08);
+            --aurora-3: rgba(94, 234, 212, 0.03);
             --transition-fast: 0.15s ease;
             --transition-base: 0.3s ease;
         }
@@ -142,7 +142,7 @@
         .nav {
             position: fixed; top: 0; left: 0; right: 0; z-index: 100;
             padding: 1rem 2rem;
-            background: rgba(6, 8, 15, 0.8);
+            background: rgba(8, 8, 13, 0.8);
             backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--glass-border);
             display: flex; align-items: center; justify-content: space-between;
@@ -160,12 +160,13 @@
         .category-badge { display: inline-block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.25rem 0.75rem; border-radius: 100px; background: rgba(139, 92, 246, 0.15); color: var(--color-purple-400); margin-bottom: 1rem; }
         .updated-badge { display: inline-block; padding: 0.25rem 0.85rem; background: rgba(74, 222, 128, 0.15); border: 1px solid rgba(74, 222, 128, 0.35); border-radius: 50px; font-size: 0.75rem; font-weight: 700; color: #4ade80; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 1rem; margin-left: 0.5rem; }
         .article-date { font-size: 0.875rem; color: var(--color-gray-500); margin-bottom: 2rem; }
-        .article-title { font-size: 2.25rem; font-weight: 800; line-height: 1.25; background: linear-gradient(135deg, var(--color-white), var(--color-purple-300)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.75rem; }
-        @media (max-width: 640px) { .article-title { font-size: 1.65rem; } }
+        .article-title { font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(2rem, 4.5vw, 2.75rem); font-weight: 400; color: #fff; line-height: 1.05; letter-spacing: -0.015em; margin-bottom: 2rem; }
+        .serif-italic { font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; color: #f0d28a; }
+        @media (max-width: 640px) { .article-title { font-size: 1.85rem; letter-spacing: -0.01em; } }
 
         .article-wrapper { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 20px; padding: 2.5rem; }
         @media (max-width: 640px) { .article-wrapper { padding: 1.5rem; } }
-        .article-wrapper h2 { font-size: 1.5rem; font-weight: 700; color: var(--color-white); margin: 2.25rem 0 1rem; }
+        .article-wrapper h2 { font-family: 'Instrument Serif', Georgia, serif; font-size: 1.65rem; font-weight: 400; color: var(--color-white); letter-spacing: -0.005em; line-height: 1.15; margin: 2.5rem 0 1rem; }
         .article-wrapper h3 { font-size: 1.2rem; font-weight: 600; color: var(--color-purple-300); margin: 1.75rem 0 0.75rem; }
         .article-wrapper p { font-size: 1rem; line-height: 1.8; color: var(--color-gray-300); margin-bottom: 1.25rem; }
         .article-wrapper ul, .article-wrapper ol { margin: 0.75rem 0 1.25rem 1.5rem; color: var(--color-gray-300); }

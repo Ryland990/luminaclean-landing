@@ -7,11 +7,17 @@
     <meta name="description" content="Get help with LuminaClean. Find troubleshooting tips, FAQs, and contact support for the LuminaClean photo cleaner app.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --color-bg-dark: #06080f;
+            --color-bg-dark: #08080d;
             --color-bg-purple: #0a0d1a;
+            --color-panel: #111117;
+            --color-panel-2: #16161d;
+            --color-well: #0a0a10;
+            --color-well-deep: #08080d;
+            --color-edge: #07070b;
+            --color-edge-deep: #06060a;
             --color-purple-900: #0f1225;
             --color-purple-800: #1a1d3a;
             --color-purple-700: #2e2b6e;
@@ -47,9 +53,9 @@
             --container-max: 1200px;
             --transition-fast: 0.15s ease;
             --transition-base: 0.3s ease;
-            --aurora-1: rgba(100, 80, 220, 0.20);
-            --aurora-2: rgba(60, 50, 180, 0.14);
-            --aurora-3: rgba(94, 234, 212, 0.04);
+            --aurora-1: rgba(100, 80, 220, 0.10);
+            --aurora-2: rgba(80, 60, 160, 0.08);
+            --aurora-3: rgba(94, 234, 212, 0.03);
         }
 
         *, *::before, *::after {
@@ -122,7 +128,7 @@
             right: 0;
             z-index: 1000;
             padding: 1rem 0;
-            background: rgba(6, 8, 15, 0.6);
+            background: rgba(8, 8, 13, 0.6);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--glass-border);
@@ -131,7 +137,7 @@
 
         .nav.scrolled {
             padding: 0.6rem 0;
-            background: rgba(6, 8, 15, 0.92);
+            background: rgba(8, 8, 13, 0.92);
         }
 
         .nav-inner {
@@ -222,10 +228,19 @@
         }
 
         .support-hero h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: clamp(2.25rem, 4.5vw, 3.25rem);
+            font-weight: 400;
+            letter-spacing: -0.015em;
+            line-height: 1.05;
             color: var(--color-white);
             margin-bottom: 1rem;
+        }
+        .serif-italic {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-style: italic;
+            font-weight: 400;
+            color: var(--color-gold-300);
         }
 
         .support-hero p {
@@ -243,8 +258,11 @@
         }
 
         .section-title {
-            font-size: 1.5rem;
-            font-weight: 700;
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 1.85rem;
+            font-weight: 400;
+            letter-spacing: -0.005em;
+            line-height: 1.1;
             color: var(--color-white);
             margin-bottom: 1.5rem;
         }

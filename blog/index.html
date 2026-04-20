@@ -23,7 +23,7 @@
     <meta name="twitter:image" content="https://luminaclean.app/assets/images/og-image.png">
 
     <meta name="apple-itunes-app" content="app-id=6757949814">
-    <meta name="theme-color" content="#06080f">
+    <meta name="theme-color" content="#08080d">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
@@ -32,11 +32,17 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --color-bg-dark: #06080f;
+            --color-bg-dark: #08080d;
             --color-bg-purple: #0a0d1a;
+            --color-panel: #111117;
+            --color-panel-2: #16161d;
+            --color-well: #0a0a10;
+            --color-well-deep: #08080d;
+            --color-edge: #07070b;
+            --color-edge-deep: #06060a;
             --color-purple-900: #0f1225;
             --color-purple-800: #1a1d3a;
             --color-purple-700: #2e2b6e;
@@ -72,9 +78,9 @@
             --container-max: 1200px;
             --transition-fast: 0.15s ease;
             --transition-base: 0.3s ease;
-            --aurora-1: rgba(100, 80, 220, 0.20);
-            --aurora-2: rgba(60, 50, 180, 0.14);
-            --aurora-3: rgba(94, 234, 212, 0.04);
+            --aurora-1: rgba(100, 80, 220, 0.10);
+            --aurora-2: rgba(80, 60, 160, 0.08);
+            --aurora-3: rgba(94, 234, 212, 0.03);
         }
 
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -117,7 +123,7 @@
         .nav {
             position: fixed; top: 0; left: 0; right: 0; z-index: 100;
             padding: 1rem 2rem;
-            background: rgba(6, 8, 15, 0.8);
+            background: rgba(8, 8, 13, 0.8);
             backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--glass-border);
             display: flex; align-items: center; justify-content: space-between;
@@ -147,10 +153,18 @@
             max-width: 760px; margin: 0 auto;
         }
         .page-header h1 {
-            font-size: 3rem; font-weight: 800;
-            background: linear-gradient(135deg, var(--color-white), var(--color-purple-300));
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 400;
+            color: var(--color-white);
+            letter-spacing: -0.015em;
+            line-height: 1.02;
+        }
+        .serif-italic {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-style: italic;
+            font-weight: 400;
+            color: var(--color-gold-300);
         }
         .page-header p {
             margin-top: 0.75rem; font-size: 1.15rem; color: var(--color-gray-400);
@@ -163,8 +177,9 @@
             display: flex; align-items: baseline; gap: 0.75rem;
         }
         .section-label h2 {
-            font-size: 1.35rem; font-weight: 700; color: var(--color-white);
-            letter-spacing: -0.01em;
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 1.6rem; font-weight: 400; color: var(--color-white);
+            letter-spacing: -0.005em;
         }
         .section-label span {
             font-size: 0.875rem; color: var(--color-gray-500);
