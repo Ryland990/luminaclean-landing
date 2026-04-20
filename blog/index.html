@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - LuminaClean | iPhone Photo Management Tips & Guides</title>
-    <meta name="description" content="Tips and guides for managing your iPhone photos. Learn how to free up storage, remove duplicates, and organize your photo library.">
+    <title>iPhone Photo Guides & Tips | LuminaClean Blog</title>
+    <meta name="description" content="In-depth, free guides on cleaning up iPhone photos, freeing storage, removing duplicates, and protecting photo privacy. No subscriptions, no fluff.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://luminaclean.app/blog/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://luminaclean.app/blog/">
-    <meta property="og:title" content="Blog - LuminaClean | iPhone Photo Management Tips & Guides">
-    <meta property="og:description" content="Tips and guides for managing your iPhone photos. Learn how to free up storage, remove duplicates, and organize your photo library.">
+    <meta property="og:title" content="iPhone Photo Guides & Tips | LuminaClean Blog">
+    <meta property="og:description" content="In-depth, free guides on cleaning up iPhone photos, freeing storage, removing duplicates, and protecting photo privacy.">
     <meta property="og:image" content="https://luminaclean.app/assets/images/og-image.png">
     <meta property="og:site_name" content="LuminaClean">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Blog - LuminaClean | iPhone Photo Tips">
-    <meta name="twitter:description" content="Tips and guides for managing your iPhone photos. Free up storage, remove duplicates, and organize your library.">
+    <meta name="twitter:title" content="iPhone Photo Guides & Tips | LuminaClean Blog">
+    <meta name="twitter:description" content="In-depth, free guides on cleaning up iPhone photos, freeing storage, removing duplicates, and protecting photo privacy.">
     <meta name="twitter:image" content="https://luminaclean.app/assets/images/og-image.png">
 
     <meta name="apple-itunes-app" content="app-id=6757949814">
@@ -143,7 +143,8 @@
 
         /* Header */
         .page-header {
-            text-align: center; padding: 8rem 2rem 3rem;
+            text-align: center; padding: 8rem 2rem 2rem;
+            max-width: 760px; margin: 0 auto;
         }
         .page-header h1 {
             font-size: 3rem; font-weight: 800;
@@ -153,7 +154,60 @@
         }
         .page-header p {
             margin-top: 0.75rem; font-size: 1.15rem; color: var(--color-gray-400);
+            line-height: 1.6;
         }
+
+        /* Section label */
+        .section-label {
+            max-width: 1200px; margin: 2.5rem auto 0.75rem; padding: 0 2rem;
+            display: flex; align-items: baseline; gap: 0.75rem;
+        }
+        .section-label h2 {
+            font-size: 1.35rem; font-weight: 700; color: var(--color-white);
+            letter-spacing: -0.01em;
+        }
+        .section-label span {
+            font-size: 0.875rem; color: var(--color-gray-500);
+        }
+        @media (max-width: 640px) {
+            .section-label { padding: 0 1.5rem; margin-top: 2rem; }
+            .section-label h2 { font-size: 1.15rem; }
+        }
+
+        /* Pillar grid - 2 featured cards, larger */
+        .pillar-grid {
+            max-width: 1200px; margin: 0 auto; padding: 0.5rem 2rem 1rem;
+            display: grid; gap: 1.5rem;
+            grid-template-columns: 1fr;
+        }
+        @media (min-width: 768px) { .pillar-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 640px) { .pillar-grid { padding: 0.5rem 1.5rem 1rem; } }
+
+        .pillar-card {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(45, 212, 191, 0.04));
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            border-radius: 20px; padding: 2rem;
+            display: flex; flex-direction: column; gap: 0.875rem;
+            text-decoration: none; color: inherit;
+            transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+            position: relative; overflow: hidden;
+        }
+        .pillar-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(139, 92, 246, 0.4);
+            box-shadow: 0 12px 50px rgba(139, 92, 246, 0.2);
+        }
+        .pillar-card:hover .card-title { color: var(--color-purple-300); }
+        .pillar-badge {
+            display: inline-flex; align-items: center; gap: 0.375rem;
+            width: fit-content;
+            font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+            padding: 0.3rem 0.75rem; border-radius: 100px;
+            background: rgba(212, 168, 83, 0.12); color: var(--color-gold-300);
+            border: 1px solid rgba(212, 168, 83, 0.25);
+        }
+        .pillar-card .card-title { font-size: 1.4rem; line-height: 1.3; }
+        .pillar-card .card-excerpt { font-size: 0.95rem; }
 
         /* Grid */
         .blog-grid {
@@ -238,6 +292,34 @@
             .nav { padding: 1rem 1.5rem; }
         }
     </style>
+    <!-- CollectionPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "iPhone Photo Guides & Tips",
+      "description": "In-depth, free guides on cleaning up iPhone photos, freeing storage, removing duplicates, and protecting photo privacy.",
+      "url": "https://luminaclean.app/blog/",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "LuminaClean",
+        "url": "https://luminaclean.app/"
+      },
+      "about": [
+        { "@type": "Thing", "name": "iPhone photo management" },
+        { "@type": "Thing", "name": "iPhone storage" },
+        { "@type": "Thing", "name": "Photo privacy" }
+      ],
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://luminaclean.app/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://luminaclean.app/blog/" }
+        ]
+      }
+    }
+    </script>
+
     <!-- Vercel Web Analytics -->
     <script>
       window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
@@ -262,48 +344,50 @@
     </nav>
 
     <header class="page-header">
-        <h1>Blog</h1>
-        <p>Tips and guides for managing your iPhone photos</p>
+        <h1>iPhone Photo Guides</h1>
+        <p>Free, in-depth guides on cleaning up your photo library, freeing storage, and keeping your images private &mdash; written for people who hate subscription traps and fluff articles.</p>
     </header>
 
-    <main class="blog-grid">
+    <main>
+    <div class="section-label">
+        <h2>Start here</h2>
+        <span>The two guides most readers begin with</span>
+    </div>
 
-        <a href="best-photo-cleaner-no-subscription-iphone.html" class="blog-card">
-            <span class="card-category">Reviews</span>
-            <h2 class="card-title">Best iPhone Photo Cleaner Without Subscription (2026)</h2>
-            <p class="card-excerpt">Tired of photo cleaner apps that charge $5/week? We compared 7 popular iPhone photo cleaners on features, pricing, and whether they lock you into a subscription.</p>
+    <section class="pillar-grid" aria-label="Featured guides">
+        <a href="iphone-storage-full-free-space.html" class="pillar-card">
+            <span class="pillar-badge">Pillar guide</span>
+            <h2 class="card-title">iPhone Storage Full? 10 Ways to Free Up Space</h2>
+            <p class="card-excerpt">The complete playbook for reclaiming iPhone storage &mdash; duplicates, videos, iCloud, messages, and six more places space is hiding. Start here if your phone just flashed "Storage Almost Full."</p>
             <div class="card-footer">
-                <span class="card-date">Mar 30, 2026</span>
-                <span class="card-link">Read more &rarr;</span>
+                <span class="card-date">Updated 2026</span>
+                <span class="card-link">Read guide &rarr;</span>
             </div>
         </a>
 
+        <a href="best-photo-cleaner-no-subscription-iphone.html" class="pillar-card">
+            <span class="pillar-badge">Pillar guide</span>
+            <h2 class="card-title">Best iPhone Photo Cleaner Without Subscription (2026)</h2>
+            <p class="card-excerpt">Honest comparison of 7 popular iPhone photo cleaners &mdash; features, pricing, paywall timing, and whether they actually let you try before you pay. Start here if you're picking an app.</p>
+            <div class="card-footer">
+                <span class="card-date">Updated 2026</span>
+                <span class="card-link">Read guide &rarr;</span>
+            </div>
+        </a>
+    </section>
+
+    <div class="section-label">
+        <h2>How-to guides</h2>
+        <span>Step-by-step walkthroughs for specific cleanup tasks</span>
+    </div>
+
+    <section class="blog-grid" aria-label="How-to guides">
         <a href="delete-duplicate-photos-iphone.html" class="blog-card">
             <span class="card-category">How-To</span>
             <h2 class="card-title">How to Delete Duplicate Photos on iPhone</h2>
-            <p class="card-excerpt">Your iPhone quietly accumulates duplicate photos over time. Learn the fastest ways to find and remove them to reclaim valuable storage space.</p>
+            <p class="card-excerpt">Four methods compared, including Apple's built-in Duplicates album in iOS 16+. Step-by-step with trade-offs for each.</p>
             <div class="card-footer">
                 <span class="card-date">Jan 15, 2026</span>
-                <span class="card-link">Read more &rarr;</span>
-            </div>
-        </a>
-
-        <a href="iphone-storage-full-free-space.html" class="blog-card">
-            <span class="card-category">Tips</span>
-            <h2 class="card-title">iPhone Storage Full? 10 Ways to Free Up Space</h2>
-            <p class="card-excerpt">That dreaded "Storage Almost Full" alert doesn't have to ruin your day. Here are ten proven strategies to instantly free up gigabytes on your iPhone.</p>
-            <div class="card-footer">
-                <span class="card-date">Jan 12, 2026</span>
-                <span class="card-link">Read more &rarr;</span>
-            </div>
-        </a>
-
-        <a href="best-duplicate-photo-cleaner-iphone.html" class="blog-card">
-            <span class="card-category">Reviews</span>
-            <h2 class="card-title">Best Duplicate Photo Cleaner Apps for iPhone in 2026</h2>
-            <p class="card-excerpt">We compared the top duplicate photo cleaners on the App Store so you don't have to. See which apps actually deliver on their promises.</p>
-            <div class="card-footer">
-                <span class="card-date">Jan 10, 2026</span>
                 <span class="card-link">Read more &rarr;</span>
             </div>
         </a>
@@ -311,49 +395,63 @@
         <a href="find-remove-blurry-photos-iphone.html" class="blog-card">
             <span class="card-category">How-To</span>
             <h2 class="card-title">How to Find and Remove Blurry Photos on iPhone</h2>
-            <p class="card-excerpt">Blurry photos waste storage and clutter your library. Discover how to quickly identify and delete them without scrolling through thousands of images.</p>
+            <p class="card-excerpt">Blurry shots are the silent storage killer. Here's how to spot and delete them without scrolling through thousands of images.</p>
             <div class="card-footer">
                 <span class="card-date">Jan 8, 2026</span>
                 <span class="card-link">Read more &rarr;</span>
             </div>
         </a>
 
-        <a href="icloud-photos-storage-sync.html" class="blog-card">
-            <span class="card-category">Guide</span>
-            <h2 class="card-title">Understanding iCloud Photos: Storage, Sync & Management</h2>
-            <p class="card-excerpt">iCloud Photos can be confusing. This guide breaks down how syncing, storage optimization, and sharing actually work behind the scenes.</p>
-            <div class="card-footer">
-                <span class="card-date">Jan 5, 2026</span>
-                <span class="card-link">Read more &rarr;</span>
-            </div>
-        </a>
-
-        <a href="organize-photos-iphone-guide.html" class="blog-card">
-            <span class="card-category">Guide</span>
-            <h2 class="card-title">How to Organize Photos on iPhone: Complete Guide</h2>
-            <p class="card-excerpt">From albums and favorites to smart folders and tags, learn every tool Apple gives you to keep your photo library perfectly organized.</p>
-            <div class="card-footer">
-                <span class="card-date">Jan 3, 2026</span>
-                <span class="card-link">Read more &rarr;</span>
-            </div>
-        </a>
-
         <a href="clean-up-iphone-screenshots.html" class="blog-card">
-            <span class="card-category">Tips</span>
-            <h2 class="card-title">Screenshot Clutter: How to Clean Up iPhone Screenshots</h2>
-            <p class="card-excerpt">Screenshots pile up fast and most are never looked at again. Here's how to tame the chaos and keep only what matters.</p>
+            <span class="card-category">How-To</span>
+            <h2 class="card-title">How to Clean Up iPhone Screenshots</h2>
+            <p class="card-excerpt">Screenshots pile up fast and most are never looked at again. Tame the chaos in minutes.</p>
             <div class="card-footer">
                 <span class="card-date">Dec 28, 2025</span>
                 <span class="card-link">Read more &rarr;</span>
             </div>
         </a>
 
-        <a href="ai-photo-management-machine-learning.html" class="blog-card">
-            <span class="card-category">Technology</span>
-            <h2 class="card-title">AI Photo Management: How Machine Learning Organizes Your Photos</h2>
-            <p class="card-excerpt">Modern apps use on-device AI to detect duplicates, recognize faces, and sort your library automatically. Here's how the technology works.</p>
+        <a href="organize-photos-iphone-guide.html" class="blog-card">
+            <span class="card-category">How-To</span>
+            <h2 class="card-title">How to Organize Photos on iPhone: Complete Guide</h2>
+            <p class="card-excerpt">From albums and favorites to smart folders and tags &mdash; every tool Apple gives you to keep your library tidy.</p>
             <div class="card-footer">
-                <span class="card-date">Dec 25, 2025</span>
+                <span class="card-date">Jan 3, 2026</span>
+                <span class="card-link">Read more &rarr;</span>
+            </div>
+        </a>
+    </section>
+
+    <div class="section-label">
+        <h2>Reviews &amp; comparisons</h2>
+        <span>Honest app roundups with pricing and paywall breakdowns</span>
+    </div>
+
+    <section class="blog-grid" aria-label="Reviews and comparisons">
+        <a href="best-duplicate-photo-cleaner-iphone.html" class="blog-card">
+            <span class="card-category">Reviews</span>
+            <h2 class="card-title">Best Duplicate Photo Cleaner Apps for iPhone in 2026</h2>
+            <p class="card-excerpt">We compared the top duplicate photo cleaners on the App Store so you don't have to.</p>
+            <div class="card-footer">
+                <span class="card-date">Jan 10, 2026</span>
+                <span class="card-link">Read more &rarr;</span>
+            </div>
+        </a>
+    </section>
+
+    <div class="section-label">
+        <h2>Deep dives</h2>
+        <span>Longer-form pieces on iCloud, privacy, and cleanup data</span>
+    </div>
+
+    <section class="blog-grid" aria-label="Deep dives">
+        <a href="icloud-photos-storage-sync.html" class="blog-card">
+            <span class="card-category">Guide</span>
+            <h2 class="card-title">Understanding iCloud Photos: Storage, Sync &amp; Management</h2>
+            <p class="card-excerpt">How iCloud Photos syncing, storage optimization, and sharing actually work behind the scenes.</p>
+            <div class="card-footer">
+                <span class="card-date">Jan 5, 2026</span>
                 <span class="card-link">Read more &rarr;</span>
             </div>
         </a>
@@ -361,7 +459,7 @@
         <a href="iphone-photo-privacy-safety.html" class="blog-card">
             <span class="card-category">Privacy</span>
             <h2 class="card-title">iPhone Photo Privacy: Keeping Your Images Safe</h2>
-            <p class="card-excerpt">Your photos contain more personal data than you think, including location, time, and device info. Learn how to protect your visual privacy.</p>
+            <p class="card-excerpt">Your photos contain more personal data than you think &mdash; location, time, device. Here's how to protect it.</p>
             <div class="card-footer">
                 <span class="card-date">Dec 22, 2025</span>
                 <span class="card-link">Read more &rarr;</span>
@@ -370,14 +468,24 @@
 
         <a href="space-saved-cleaning-photos.html" class="blog-card">
             <span class="card-category">Case Study</span>
-            <h2 class="card-title">Before vs After: How Much Space Can You Save Cleaning Photos?</h2>
-            <p class="card-excerpt">We cleaned up five real photo libraries and tracked every megabyte saved. The results might surprise you.</p>
+            <h2 class="card-title">Before vs After: How Much Space Can You Save?</h2>
+            <p class="card-excerpt">We cleaned up five real photo libraries and tracked every megabyte saved. The numbers might surprise you.</p>
             <div class="card-footer">
                 <span class="card-date">Dec 20, 2025</span>
                 <span class="card-link">Read more &rarr;</span>
             </div>
         </a>
 
+        <a href="ai-photo-management-machine-learning.html" class="blog-card">
+            <span class="card-category">Technology</span>
+            <h2 class="card-title">AI Photo Management: How Machine Learning Organizes Your Photos</h2>
+            <p class="card-excerpt">Modern apps use on-device AI to detect duplicates, recognize faces, and sort libraries. Here's how the tech works.</p>
+            <div class="card-footer">
+                <span class="card-date">Dec 25, 2025</span>
+                <span class="card-link">Read more &rarr;</span>
+            </div>
+        </a>
+    </section>
     </main>
 
     <footer class="site-footer">

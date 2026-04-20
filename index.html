@@ -694,6 +694,18 @@
             .hero-content { text-align: left; }
         }
 
+        .hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            justify-content: center;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-badges { justify-content: flex-start; }
+        }
+
         .hero-badge {
             display: inline-flex;
             align-items: center;
@@ -705,7 +717,6 @@
             font-size: 0.8rem;
             font-weight: 500;
             color: var(--color-purple-300);
-            margin-bottom: 1.5rem;
             backdrop-filter: blur(10px);
         }
 
@@ -713,6 +724,16 @@
             width: 14px;
             height: 14px;
             color: var(--color-teal-400);
+        }
+
+        .hero-badge--gold {
+            color: var(--color-gold-300);
+            border-color: rgba(212, 168, 83, 0.35);
+            background: rgba(212, 168, 83, 0.08);
+        }
+
+        .hero-badge--gold svg {
+            color: var(--color-gold-400);
         }
 
         .hero-title {
@@ -2242,11 +2263,19 @@
         <section class="hero">
             <div class="container hero-inner">
                 <div class="hero-content">
-                    <div class="hero-badge reveal">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        </svg>
-                        100% On-Device · Private
+                    <div class="hero-badges reveal">
+                        <span class="hero-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                            100% On-Device · Private
+                        </span>
+                        <span class="hero-badge hero-badge--gold">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            Free to Try · No Paywall
+                        </span>
                     </div>
 
                     <h1 class="hero-title reveal reveal-delay-1">
@@ -2255,7 +2284,7 @@
                     </h1>
 
                     <p class="hero-description reveal reveal-delay-2">
-                        LuminaClean finds duplicates, organizes by category, and lets you swipe through memories—all powered by on-device AI. No uploads, no tracking, no accounts.
+                        Find duplicates, blurry shots, and screenshots with on-device AI. Start free with 65 deletions—no paywall, no account, no uploads.
                     </p>
 
                     <div class="hero-actions reveal reveal-delay-3">
@@ -2832,33 +2861,33 @@
         <section class="blog-section">
             <div class="container">
                 <div class="section-header reveal">
-                    <h2 class="section-title">Photo tips & guides</h2>
-                    <p class="section-description">Learn how to keep your iPhone photo library clean and organized.</p>
+                    <h2 class="section-title">iPhone photo guides</h2>
+                    <p class="section-description">Free, in-depth guides on cleaning up, organizing, and protecting your iPhone photo library.</p>
                 </div>
                 <div class="blog-grid reveal">
+                    <a href="/blog/iphone-storage-full-free-space.html" class="blog-link">
+                        <div class="blog-link-title">iPhone Storage Full? 10 Ways to Free Up Space</div>
+                        <div class="blog-link-desc">The complete guide to reclaiming iPhone storage — duplicates, videos, iCloud, and more.</div>
+                    </a>
                     <a href="/blog/best-photo-cleaner-no-subscription-iphone.html" class="blog-link">
                         <div class="blog-link-title">Best iPhone Photo Cleaner Without Subscription (2026)</div>
                         <div class="blog-link-desc">Tired of photo cleaner apps that charge $5/week? We compared 7 popular iPhone photo cleaners.</div>
                     </a>
                     <a href="/blog/delete-duplicate-photos-iphone.html" class="blog-link">
                         <div class="blog-link-title">How to Delete Duplicate Photos on iPhone</div>
-                        <div class="blog-link-desc">Step-by-step guide to finding and removing duplicate photos.</div>
-                    </a>
-                    <a href="/blog/iphone-storage-full-free-space.html" class="blog-link">
-                        <div class="blog-link-title">iPhone Storage Full? 10 Ways to Free Up Space</div>
-                        <div class="blog-link-desc">Practical tips to reclaim storage on your iPhone fast.</div>
+                        <div class="blog-link-desc">Step-by-step: 4 methods compared, including Apple's built-in Duplicates album.</div>
                     </a>
                     <a href="/blog/best-duplicate-photo-cleaner-iphone.html" class="blog-link">
                         <div class="blog-link-title">Best Duplicate Photo Cleaner Apps for iPhone in 2026</div>
-                        <div class="blog-link-desc">Compare the top apps for finding and removing duplicate photos.</div>
+                        <div class="blog-link-desc">Honest comparison of the top apps for finding and removing duplicate photos.</div>
+                    </a>
+                    <a href="/blog/find-remove-blurry-photos-iphone.html" class="blog-link">
+                        <div class="blog-link-title">Find &amp; Remove Blurry Photos on iPhone</div>
+                        <div class="blog-link-desc">Blurry shots are the silent storage killer. Here's how to spot and delete them fast.</div>
                     </a>
                     <a href="/blog/clean-up-iphone-screenshots.html" class="blog-link">
                         <div class="blog-link-title">How to Clean Up Screenshots on iPhone</div>
                         <div class="blog-link-desc">Remove old screenshots cluttering your photo library in minutes.</div>
-                    </a>
-                    <a href="/blog/iphone-photo-privacy-safety.html" class="blog-link">
-                        <div class="blog-link-title">iPhone Photo Privacy & Safety Guide</div>
-                        <div class="blog-link-desc">Keep your personal photos secure with these privacy best practices.</div>
                     </a>
                 </div>
                 <div class="blog-view-all reveal">
