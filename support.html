@@ -11,6 +11,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://luminaclean.app/#organization",
+        "name": "LuminaClean",
+        "url": "https://luminaclean.app/",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "email": "nextstep.appstudio@gmail.com",
+            "url": "https://luminaclean.app/support.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://luminaclean.app/#website",
+        "url": "https://luminaclean.app/",
+        "name": "LuminaClean",
+        "publisher": { "@id": "https://luminaclean.app/#organization" },
+        "inLanguage": "en"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "@id": "https://luminaclean.app/support.html#contactpage",
+        "url": "https://luminaclean.app/support.html",
+        "name": "Support",
+        "inLanguage": "en",
+        "about": { "@id": "https://luminaclean.app/#organization" },
+        "isPartOf": { "@id": "https://luminaclean.app/#website" }
+      }
+    ]
+    </script>
+
     <style>
         :root {
             --color-bg-dark: #08080d;

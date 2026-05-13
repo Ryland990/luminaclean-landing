@@ -50,16 +50,20 @@
     {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
+        "@id": "https://luminaclean.app/#app",
         "name": "LuminaClean",
         "alternateName": "LuminaClean Photo Cleaner",
+        "url": "https://luminaclean.app/",
         "operatingSystem": "iOS 15.0 or later",
         "applicationCategory": "UtilitiesApplication",
         "description": "LuminaClean is an iOS app that helps users clean and organize their photo libraries by detecting duplicates, similar photos, blurry images, and screenshots using AI-powered on-device processing. All analysis happens locally on the device, ensuring complete privacy.",
+        "isAccessibleForFree": true,
         "offers": {
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock"
+            "availability": "https://schema.org/InStock",
+            "url": "https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8"
         },
         "aggregateRating": {
             "@type": "AggregateRating",
@@ -68,31 +72,36 @@
             "ratingCount": "1200"
         },
         "featureList": [
-            "Duplicate photo detection using AI",
+            "Duplicate photo detection using on-device AI",
             "Similar photo finder for burst shots",
             "Blurry image detector",
             "Screenshot cleanup and organization",
-            "Smart photo organization by category",
-            "Daily Bites photo timeline with streaks",
-            "On-This-Day memory flashbacks",
-            "Flashback feature to clean photos by year",
+            "Smart Photo Organization (Pets, Food, Travel, Family, etc.)",
+            "Daily Bites timeline with streaks and On-This-Day flashbacks",
+            "Flashback cleaning by year",
             "On-device machine learning processing",
             "Privacy-first design with no cloud uploads",
             "Swipe interface for quick photo review",
             "Bulk delete functionality",
-            "iCloud Photos integration"
+            "iCloud Photos integration",
+            "Video compression",
+            "Daily free deletions (65 to start, +10/day thereafter)"
         ],
         "screenshot": [
-            "https://luminaclean.app/assets/images/screenshot-dashboard.jpeg",
-            "https://luminaclean.app/assets/images/screenshot-swipe.jpeg"
+            "https://luminaclean.app/assets/images/dailybites.PNG",
+            "https://luminaclean.app/assets/images/swipe.jpeg",
+            "https://luminaclean.app/assets/images/flashback.PNG",
+            "https://luminaclean.app/assets/images/organize.PNG"
         ],
         "downloadUrl": "https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8",
         "installUrl": "https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8",
         "softwareVersion": "1.0",
         "datePublished": "2024-01-01",
         "author": {
-            "@type": "Organization",
-            "name": "LuminaClean"
+            "@id": "https://luminaclean.app/#organization"
+        },
+        "publisher": {
+            "@id": "https://luminaclean.app/#organization"
         }
     }
     </script>
@@ -160,9 +169,13 @@
     {
         "@context": "https://schema.org",
         "@type": "Organization",
+        "@id": "https://luminaclean.app/#organization",
         "name": "LuminaClean",
-        "url": "https://luminaclean.app",
-        "logo": "https://luminaclean.app/assets/images/logo.png",
+        "url": "https://luminaclean.app/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://luminaclean.app/assets/images/icon.png"
+        },
         "description": "LuminaClean develops privacy-focused photo management tools for iOS.",
         "sameAs": []
     }
@@ -173,9 +186,14 @@
     {
         "@context": "https://schema.org",
         "@type": "WebSite",
+        "@id": "https://luminaclean.app/#website",
         "name": "LuminaClean",
-        "url": "https://luminaclean.app",
-        "description": "Clean up duplicate photos on iPhone with AI-powered detection and complete privacy."
+        "url": "https://luminaclean.app/",
+        "description": "Clean up duplicate photos on iPhone with AI-powered detection and complete privacy.",
+        "inLanguage": "en",
+        "publisher": {
+            "@id": "https://luminaclean.app/#organization"
+        }
     }
     </script>
 
