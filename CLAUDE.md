@@ -16,11 +16,15 @@ LuminaClean is an iPhone photo cleaner app (App Store ID: 6757949814). This repo
 - Email: nextstep.appstudio@gmail.com
 - App Store: https://apps.apple.com/us/app/luminaclean-photo-cleaner/id6757949814
 
-## Design System
-- Background: #080510 dark with purple gradient + noise texture + diagonal streaks
-- Primary: purple (#8b5cf6), Gold CTA (#d4a853)
-- Font: Plus Jakarta Sans (Google Fonts)
-- Glass-morphism cards (semi-transparent bg, blur, subtle borders)
+## Design System (ScreenRoast — matches the iOS app since its 2026-05 pivot)
+- Background: near-black #0a0a0a surfaces (#111111 cards) + film-grain noise overlay
+- Accents: hot pink #FF2E63 (brand) + lime #C7F464 (CTA/success); universe accents per feature
+  (sage #9CAF88 organize, sepia #D4A373 flashback, indigo #7B5CFF blurry, audit red #E63946 optimize)
+- Fonts: Anton (uppercase display), JetBrains Mono (labels/badges, wide tracking),
+  Caveat (script accents, sparingly), system sans for body
+- NO glassmorphism (no backdrop blur) — solid dark surfaces, 14/18px radii, lime CTA buttons
+- Implementation: original CSS is recolored in place + a "SCREENROAST BRAND LAYER" override
+  block at the end of each page's <style>. Edit the brand layer, not the legacy rules above it.
 
 ## Site Structure
 - `index.html` — Landing page (single-file, inline CSS/JS, base64 images)
@@ -62,6 +66,38 @@ LuminaClean is an iPhone photo cleaner app (App Store ID: 6757949814). This repo
 - Set up Google Search Console (verified via HTML file method)
 - Submitted sitemap.xml to Google Search Console
 
+### Session 3 (2026-07-02)
+- Full ScreenRoast reskin of all 21 pages (index, privacy, terms, support, blog index + 16 articles):
+  color remap purple/gold/teal → pink/lime + universe accents, Anton/JetBrains Mono/Caveat fonts,
+  glassmorphism removed, lime CTA buttons, per-feature universe accent borders on bento cards
+- Copy fixes: "no subscription" → "no subscription required" (app sells an optional monthly sub),
+  hero badge "No Paywall" → "No Account", removed stale "NEW" badges on year-old features
+- Updated this file's Design System section
+
+### Session 3b (2026-07-02, same day)
+- Replaced all in-page screenshots with post-pivot captures John provided (in `../New Screenshots /`):
+  hero-mess, organize-categories, swipe-keep, dailybites-timeline, flashback-sections, review-wrapit
+  (.jpeg, 602x1308). Old pre-pivot images git-rm'd (recoverable from history). Schema screenshot
+  URLs + alt texts updated to match.
+- Regenerated og-image.png (1200x630) on-brand via headless Chrome (source: scratchpad og.html)
+
+### Session 3c (2026-07-02, SEO/AIO pass)
+- Corrected fabricated schema values against real App Store data (iTunes lookup API):
+  ratingCount 1200 → 40, OS 15.0 → 17.6, softwareVersion 1.0 → 2.7, datePublished 2024-01-01 → 2026-01-20.
+  NEVER inflate these — fake review markup risks a Google structured-data manual action.
+- Added llms.txt (AI-crawler site summary; keep updated when posts are added)
+- Populated Organization sameAs (App Store + @ct_pleb X profile)
+- Bumped all sitemap lastmod to 2026-07-02
+
+### Session 3d (2026-07-02, mascot icon)
+- New site icon: lime-mascot artwork (source: `../New Screenshots /mascot.png`, 1024px).
+  Regenerated icon.png (512), apple-touch-icon (180), favicon-32/16, and re-rendered og-image with it.
+  NOTE: the App Store app icon is still the old purple one (deliberate, separate art task) —
+  site and store icons differ until John updates the app side.
+
 ## Remaining Tasks
+- Commit + push to publish (Vercel auto-deploys on push to main) — get John's approval first
+- OPEN QUESTION for John: the "photos cleaned" live counter is synthetic (1,847,293 base + 2,000/day
+  formula in JS). AI engines may quote it as fact — consider replacing with a real PostHog number or cutting it.
 - Review blog article quality — AI-generated content may need polish for accuracy and tone
 - Test all pages on mobile — verify responsive design
