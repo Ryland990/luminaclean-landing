@@ -36,9 +36,9 @@
     <meta name="theme-color" content="#0a0a0a">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png?v=2">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -3191,6 +3191,19 @@
         .bento-card { border-top: 2px solid color-mix(in srgb, var(--uni, #ff2e63) 55%, transparent); }
         .bento-card:hover { border-color: var(--uni, #ff2e63); }
         .bento-icon svg { color: var(--uni, #ff5c84); }
+
+        /* hero link to the /try.html swipe demo */
+        .hero-try { margin-top: 1.4rem; }
+        .hero-try a {
+            font-family: 'JetBrains Mono', ui-monospace, monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #c7f464;
+            border-bottom: 1px solid rgba(199, 244, 100, 0.4);
+            padding-bottom: 2px;
+        }
+        .hero-try a:hover { color: #d8ff7a; border-color: #d8ff7a; }
     </style>
 </head>
 <body>
@@ -3209,12 +3222,13 @@
         <div class="container nav-inner">
             <a href="/" class="nav-logo" aria-label="LuminaClean Home">
                 <div class="nav-logo-icon">
-                    <img src="assets/images/icon.png" alt="LuminaClean" width="40" height="40">
+                    <img src="assets/images/icon.png?v=2" alt="LuminaClean" width="40" height="40">
                 </div>
                 <span class="nav-logo-text">LuminaClean</span>
             </a>
 
             <div class="nav-links">
+                <a href="/try.html">Try It</a>
                 <a href="#features">Features</a>
                 <a href="#showcase">How It Works</a>
                 <a href="#privacy">Privacy</a>
@@ -3247,6 +3261,7 @@
                 <line x1="6" y1="6" x2="18" y2="18"/>
             </svg>
         </button>
+        <a href="/try.html" class="mobile-menu-link">Try It</a>
         <a href="#features" class="mobile-menu-link">Features</a>
         <a href="#showcase" class="mobile-menu-link">How It Works</a>
         <a href="#privacy" class="mobile-menu-link">Privacy</a>
@@ -3319,6 +3334,8 @@
                             <span>4.9 · Free Download</span>
                         </div>
                     </div>
+
+                    <p class="hero-try reveal reveal-delay-4"><a href="/try.html">Not sure yet? Try the swipe in your browser &rarr;</a></p>
 
                     <div class="hero-live-counter reveal reveal-delay-4">
                         <div class="hero-live-counter-inner">

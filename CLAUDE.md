@@ -95,8 +95,39 @@ LuminaClean is an iPhone photo cleaner app (App Store ID: 6757949814). This repo
   NOTE: the App Store app icon is still the old purple one (deliberate, separate art task) —
   site and store icons differ until John updates the app side.
 
+### Session 4 (2026-07-02, web2app swipe demo)
+- Built /try.html: 60-second interactive swipe-to-clean demo (web2app funnel top).
+  Three beats: pain-point intro → 6-card swipe deck (SVG sample "photos" stamped SAMPLE:
+  screenshot/EXHIBIT A, blurry/OUT OF FOCUS, keeper sunset, TWINS duplicate, LOOKALIKES
+  similar, dog keeper) → honest result screen with App Store CTA.
+  Deliberate design: includes KEEP moments (brand = "keep the memories"), coaching toasts on
+  "wrong" swipes (mentions Recently Deleted safety), no dark patterns, no fake urgency.
+- Attribution: own AppsFlyer OneLink init with campaign defaultValue "try-demo" (UTMs still
+  override for ads). Vercel custom events: try_demo_start / try_demo_complete / try_demo_store_click.
+- Wired: nav "Try It" link, mobile menu, hero demo link, sitemap entry, llms.txt entry.
+
+### Session 4b (2026-07-02, John's feedback round)
+- /try.html v2: replaced static intro with 5 tap-through story slides (Instagram-story bars,
+  stamp-slam entrances, skip link, new event try_demo_skip_story). Slide 1 mirrors the app's
+  own onboarding ("Your library is a mess").
+- Result screen: freed-MB now counts up huge (Anton, lime) then a pink "GONE ✦" stamp slams in
+  with a body shake. Gotcha fixed: stampSlam keyframes must declare opacity at 75%/100% —
+  elements with base opacity:0 (payoff stamp) otherwise end invisible under fill:both.
+- Favicon cache-bust (?v=2 on all favicon/apple-touch/nav-icon URLs, 16 files) — John saw the
+  old purple icon due to browser favicon cache; files were already correct on disk and live.
+
+### Session 4c (2026-07-02, real demo photos + bigger payoff)
+- Deck cards now use John's GPT-image photos (assets/images/demo/, source `../New Screenshots /GPT/`):
+  receipt, blurry sunset, sharp sunset (reused twice = literally an exact duplicate), lookalike
+  sunset with bird, retriever+kitten. SVG art generators removed. Captions kept per John.
+- Per-card lime file-size chips; realistic 48MP sizes; junk total now 37.4 MB
+  ("sample math at 48-megapixel sizes" note keeps it honest).
+- Count-up hardened with a setTimeout completion fallback (background-tab rAF throttling).
+- img cards need draggable=false + -webkit-user-drag:none or native image-drag breaks swiping.
+
 ## Remaining Tasks
 - Commit + push to publish (Vercel auto-deploys on push to main) — get John's approval first
+- Consider linking /try.html from blog article CTA boxes (16 articles) once the demo proves itself
 - OPEN QUESTION for John: the "photos cleaned" live counter is synthetic (1,847,293 base + 2,000/day
   formula in JS). AI engines may quote it as fact — consider replacing with a real PostHog number or cutting it.
 - Review blog article quality — AI-generated content may need polish for accuracy and tone

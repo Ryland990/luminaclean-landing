@@ -15,6 +15,7 @@ Key facts:
 ## Pages
 
 - [Home](https://luminaclean.app/): product overview, features, FAQ
+- [Try the swipe demo](https://luminaclean.app/try.html): interactive 60-second browser demo of the swipe-to-clean gesture on sample photos
 - [Blog](https://luminaclean.app/blog/): guides on iPhone photo cleanup, storage and privacy
 - [Support](https://luminaclean.app/support.html): contact and help
 - [Privacy Policy](https://luminaclean.app/privacy.html)

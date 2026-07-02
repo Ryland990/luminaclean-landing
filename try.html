@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Try LuminaClean in Your Browser — 60-Second Swipe Demo</title>
+    <meta name="description" content="Feel the swipe-to-clean gesture on sample messy photos — duplicates, blurry shots, screenshots — right in your browser. No sign-up, takes under a minute.">
+    <link rel="canonical" href="https://luminaclean.app/try.html">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://luminaclean.app/try.html">
+    <meta property="og:title" content="Try LuminaClean in Your Browser — 60-Second Swipe Demo">
+    <meta property="og:description" content="Swipe through sample messy photos and feel the clean. No sign-up, under a minute.">
+    <meta property="og:image" content="https://luminaclean.app/assets/images/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Try LuminaClean in Your Browser — 60-Second Swipe Demo">
+    <meta name="twitter:image" content="https://luminaclean.app/assets/images/og-image.png">
+
+    <meta name="apple-itunes-app" content="app-id=6757949814">
+    <meta name="theme-color" content="#0a0a0a">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png?v=2">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* SCREENROAST BRAND LAYER — native to luminaclean.app */
+        :root {
+            --bg: #0a0a0a;
+            --surface: #111111;
+            --surface-lifted: #191919;
+            --pink: #ff2e63;
+            --pink-soft: #ff5c84;
+            --pink-deep: #b8174a;
+            --lime: #c7f464;
+            --lime-soft: #d8ff7a;
+            --sepia: #d4a373;
+            --dark-on-lime: #0d1a00;
+            --white: #ffffff;
+            --gray: #9a9a9a;
+            --gray-dim: #808080;
+            --stroke: rgba(255, 255, 255, 0.10);
+            --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+            --display: 'Anton', 'Arial Narrow', sans-serif;
+            --script: 'Caveat', cursive;
+            --body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { -webkit-text-size-adjust: 100%; }
+        body {
+            font-family: var(--body);
+            background: var(--bg);
+            color: var(--gray);
+            min-height: 100vh;
+            min-height: 100dvh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        body.shake { animation: bodyShake 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97); }
+        @keyframes bodyShake {
+            10%, 90% { transform: translate(-1px, 0); }
+            20%, 80% { transform: translate(2px, 1px); }
+            30%, 50%, 70% { transform: translate(-3px, -1px); }
+            40%, 60% { transform: translate(3px, 1px); }
+        }
+        a { color: inherit; text-decoration: none; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+        .glow {
+            position: fixed; inset: 0; z-index: -2; pointer-events: none;
+            background:
+                radial-gradient(600px 400px at 20% -10%, rgba(255, 46, 99, 0.22), transparent 65%),
+                radial-gradient(500px 380px at 95% 105%, rgba(199, 244, 100, 0.10), transparent 65%);
+        }
+        .grain {
+            position: fixed; inset: 0; z-index: -1; opacity: 0.05; pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+            background-size: 256px;
+        }
+
+        .top {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 1.1rem 1.4rem;
+        }
+        .wordmark {
+            font-family: var(--mono); font-weight: 500; font-size: 0.85rem;
+            letter-spacing: 0.22em; color: var(--white);
+        }
+        .wordmark .dot { color: var(--pink); }
+        .top-back {
+            font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.1em;
+            color: var(--gray-dim); text-transform: uppercase;
+        }
+        .top-back:hover { color: var(--white); }
+
+        .stage {
+            max-width: 480px; margin: 0 auto; padding: 0 1.4rem 3rem;
+            display: flex; flex-direction: column; align-items: center; text-align: center;
+        }
+        .panel { width: 100%; }
+        .panel[hidden] { display: none; }
+
+        /* ---------- shared type ---------- */
+        .kicker {
+            font-family: var(--mono); font-size: 0.68rem; font-weight: 500;
+            letter-spacing: 0.22em; text-transform: uppercase; color: var(--lime);
+        }
+        .big {
+            font-family: var(--display); font-weight: 400; text-transform: uppercase;
+            font-size: clamp(2.5rem, 10.5vw, 3.5rem); line-height: 0.98; letter-spacing: 0.01em;
+            color: var(--white);
+        }
+        .big .script {
+            font-family: var(--script); text-transform: none; color: var(--pink);
+            font-size: 1.12em; letter-spacing: 0; display: inline-block;
+        }
+        .stamp-chip {
+            display: inline-block; transform: rotate(-6deg);
+            font-family: var(--mono); font-size: 0.78rem; font-weight: 500;
+            letter-spacing: 0.18em; text-transform: uppercase;
+            padding: 7px 13px; border: 2px solid currentColor; border-radius: 4px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        .stamp-slam { animation: stampSlam 0.45s cubic-bezier(0.34, 1.4, 0.64, 1) both; }
+        @keyframes stampSlam {
+            0%   { opacity: 0; transform: scale(2.6) rotate(-18deg); }
+            55%  { opacity: 1; transform: scale(0.92) rotate(-4deg); }
+            75%  { opacity: 1; transform: scale(1.06) rotate(-7deg); }
+            100% { opacity: 1; transform: scale(1) rotate(-6deg); }
+        }
+
+        /* ---------- STORY SLIDES ---------- */
+        .story-bars {
+            display: flex; gap: 6px; width: 100%; margin: 0.6rem 0 0;
+        }
+        .story-bar {
+            flex: 1; height: 3px; border-radius: 2px; background: rgba(255, 255, 255, 0.14);
+            overflow: hidden; position: relative;
+        }
+        .story-bar::after {
+            content: ''; position: absolute; inset: 0; background: var(--lime);
+            transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease;
+        }
+        .story-bar.done::after { transform: scaleX(1); }
+
+        .story-skip {
+            align-self: flex-end; margin-top: 0.8rem;
+            font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.14em;
+            text-transform: uppercase; color: var(--gray-dim);
+        }
+        .story-skip:hover { color: var(--white); }
+
+        .slide-zone {
+            width: 100%; min-height: 58vh; min-height: 58dvh;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            gap: 1.5rem; cursor: pointer; -webkit-tap-highlight-color: transparent;
+            user-select: none; -webkit-user-select: none;
+        }
+        .slide-stamp { min-height: 2.6rem; }
+        .slide-sub {
+            font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.1em;
+            text-transform: uppercase; color: var(--gray-dim);
+        }
+        .slide-enter { animation: slideEnter 0.4s cubic-bezier(0.22, 1, 0.36, 1) both; }
+        @keyframes slideEnter {
+            from { opacity: 0; transform: translateY(18px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .tap-hint {
+            font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.2em;
+            text-transform: uppercase; color: var(--gray-dim);
+            animation: hintPulse 1.8s ease-in-out infinite;
+        }
+        @keyframes hintPulse { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
+
+        .btn-lime {
+            display: inline-flex; align-items: center; gap: 0.6rem;
+            background: var(--lime); color: var(--dark-on-lime);
+            font-family: var(--display); font-size: 1.15rem; letter-spacing: 0.04em;
+            text-transform: uppercase; padding: 0.95rem 2.1rem; border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(199, 244, 100, 0.3);
+            transition: transform 0.15s ease, box-shadow 0.3s ease, background 0.3s ease;
+        }
+        .btn-lime:hover { background: var(--lime-soft); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(199, 244, 100, 0.45); }
+        .btn-lime:active { transform: translateY(0); }
+
+        /* ---------- DECK ---------- */
+        .hud {
+            display: flex; justify-content: space-between; align-items: baseline;
+            width: 100%; margin: 1.4rem 0 1rem;
+            font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.16em;
+            text-transform: uppercase; color: var(--gray-dim);
+        }
+        .hud .freed { color: var(--lime); }
+        .hud .freed b { font-size: 0.8rem; }
+
+        .deck-wrap { position: relative; width: 100%; }
+        .deck {
+            position: relative; width: min(300px, 78vw); margin: 0 auto;
+            aspect-ratio: 3 / 4; touch-action: pan-y;
+        }
+        .edge-label {
+            position: absolute; top: 50%; transform: translateY(-50%);
+            font-family: var(--mono); font-size: 0.6rem; font-weight: 500;
+            letter-spacing: 0.2em; padding: 5px 9px; border-radius: 6px; text-transform: uppercase;
+        }
+        .edge-label--del { left: -0.4rem; color: var(--pink-soft); border: 1px solid rgba(255, 46, 99, 0.4); }
+        .edge-label--keep { right: -0.4rem; color: var(--lime); border: 1px solid rgba(199, 244, 100, 0.4); }
+        @media (min-width: 560px) {
+            .edge-label--del { left: 1rem; }
+            .edge-label--keep { right: 1rem; }
+        }
+
+        .card {
+            position: absolute; inset: 0; border-radius: 18px; overflow: hidden;
+            background: var(--surface-lifted); border: 1px solid rgba(255, 255, 255, 0.14);
+            box-shadow: 0 18px 44px rgba(0, 0, 0, 0.6);
+            will-change: transform; user-select: none; -webkit-user-select: none;
+        }
+        .card svg, .card > img {
+            width: 100%; height: 100%; display: block; pointer-events: none;
+            object-fit: cover; -webkit-user-drag: none;
+        }
+        .card[data-pos="1"] { transform: translate(10px, 10px) rotate(2.5deg) scale(0.97); opacity: 0.75; }
+        .card[data-pos="2"] { transform: translate(-9px, 18px) rotate(-3deg) scale(0.94); opacity: 0.5; }
+        .card[data-pos="gone"] { display: none; }
+        .card.settling { transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.45s ease; }
+        .card.flying { transition: transform 0.5s cubic-bezier(0.5, 0, 0.75, 0.8), opacity 0.5s ease; opacity: 0; }
+
+        .card .sample-tag {
+            position: absolute; top: 10px; left: 10px;
+            font-family: var(--mono); font-size: 0.55rem; font-weight: 500;
+            letter-spacing: 0.2em; color: rgba(255, 255, 255, 0.85);
+            background: rgba(0, 0, 0, 0.55); border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 3px 7px; border-radius: 5px;
+        }
+        .card .stamp {
+            position: absolute; top: 12px; right: 10px; transform: rotate(6deg);
+            font-family: var(--mono); font-size: 0.6rem; font-weight: 500;
+            letter-spacing: 0.16em; padding: 4px 8px; border-radius: 3px;
+            border: 1.5px solid currentColor; background: rgba(0, 0, 0, 0.35);
+        }
+        .card .caption {
+            position: absolute; left: 0; right: 0; bottom: 0;
+            padding: 1.6rem 0.9rem 0.8rem;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.82));
+            font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.04em;
+            color: #e5e5e5; text-align: left;
+            display: flex; justify-content: space-between; align-items: flex-end; gap: 0.6rem;
+        }
+        .card .caption .size { color: var(--lime); font-weight: 500; white-space: nowrap; }
+        .card .verdict {
+            position: absolute; top: 42%; transform: translateY(-50%) rotate(-8deg);
+            font-family: var(--display); font-size: 2rem; letter-spacing: 0.05em;
+            text-transform: uppercase; padding: 0.3rem 1rem; border-radius: 10px;
+            opacity: 0; pointer-events: none;
+        }
+        .verdict--keep { right: 8%; color: var(--dark-on-lime); background: var(--lime); transform: translateY(-50%) rotate(8deg); }
+        .verdict--del { left: 8%; color: #fff; background: var(--pink); }
+
+        .deck-controls {
+            display: flex; justify-content: center; align-items: center; gap: 2.2rem;
+            margin-top: 1.4rem;
+        }
+        .ctrl {
+            width: 62px; height: 62px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            background: var(--surface); transition: transform 0.15s ease, box-shadow 0.3s ease;
+        }
+        .ctrl svg { width: 26px; height: 26px; }
+        .ctrl:active { transform: scale(0.92); }
+        .ctrl--del { border: 1.5px solid rgba(255, 46, 99, 0.55); color: var(--pink-soft); }
+        .ctrl--del:hover { box-shadow: 0 0 24px rgba(255, 46, 99, 0.35); }
+        .ctrl--keep { border: 1.5px solid rgba(199, 244, 100, 0.55); color: var(--lime); }
+        .ctrl--keep:hover { box-shadow: 0 0 24px rgba(199, 244, 100, 0.35); }
+        .ctrl-hint {
+            margin-top: 1rem; font-family: var(--mono); font-size: 0.62rem;
+            letter-spacing: 0.16em; text-transform: uppercase; color: var(--gray-dim);
+        }
+
+        .toast {
+            position: fixed; left: 50%; bottom: 1.6rem; transform: translateX(-50%) translateY(20px);
+            max-width: min(400px, 88vw);
+            font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.04em; line-height: 1.5;
+            color: var(--white); background: var(--surface-lifted);
+            border: 1px solid var(--stroke); border-left: 3px solid var(--pink);
+            border-radius: 10px; padding: 0.7rem 1rem; text-align: left;
+            opacity: 0; pointer-events: none; transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 50;
+        }
+        .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+        .toast--lime { border-left-color: var(--lime); }
+
+        /* ---------- RESULT ---------- */
+        .result-ring {
+            width: 96px; height: 96px; margin: 1.8rem auto 1.6rem;
+            border-radius: 50%; border: 3px solid var(--lime);
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 0 44px rgba(199, 244, 100, 0.35);
+            animation: ringIn 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        @keyframes ringIn { from { transform: scale(0.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+        .result-ring svg { width: 42px; height: 42px; color: var(--lime); }
+
+        .payoff { position: relative; display: inline-block; padding: 0.4rem 1rem 0; margin-top: 0.6rem; }
+        .payoff-num {
+            font-family: var(--display); font-weight: 400;
+            font-size: clamp(4.6rem, 22vw, 7rem); line-height: 1; color: var(--lime);
+            font-variant-numeric: tabular-nums; letter-spacing: 0.01em;
+        }
+        .payoff-unit {
+            font-family: var(--display); font-size: clamp(1.6rem, 7vw, 2.4rem);
+            color: var(--lime); margin-left: 0.3rem;
+        }
+        .payoff-word {
+            display: block; font-family: var(--display); text-transform: uppercase;
+            font-size: clamp(2rem, 9vw, 2.9rem); line-height: 1; color: var(--white);
+            margin-top: 0.2rem;
+        }
+        .payoff-stamp {
+            position: absolute; top: -1.1rem; right: -1.4rem;
+            color: var(--pink); font-size: 1rem; letter-spacing: 0.2em;
+            font-family: var(--mono); font-weight: 500; text-transform: uppercase;
+            padding: 8px 14px; border: 2.5px solid currentColor; border-radius: 5px;
+            background: rgba(10, 10, 10, 0.75);
+            box-shadow: 0 0 30px rgba(255, 46, 99, 0.4);
+            opacity: 0; transform: rotate(-6deg);
+        }
+        @media (max-width: 420px) { .payoff-stamp { right: -0.4rem; } }
+
+        .result-stats {
+            display: flex; justify-content: center; gap: 1px; margin: 2rem 0 0.5rem;
+            background: var(--stroke); border: 1px solid var(--stroke); border-radius: 14px; overflow: hidden;
+            width: 100%;
+        }
+        .rstat { flex: 1; background: var(--surface); padding: 1rem 0.5rem; }
+        .rstat b {
+            display: block; font-family: var(--display); font-weight: 400;
+            font-size: 1.7rem; color: var(--white); line-height: 1.1;
+            font-variant-numeric: tabular-nums;
+        }
+        .rstat b.pink { color: var(--pink-soft); }
+        .rstat span {
+            font-family: var(--mono); font-size: 0.58rem; letter-spacing: 0.18em;
+            text-transform: uppercase; color: var(--gray-dim);
+        }
+        .sample-note {
+            font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.06em;
+            color: var(--gray-dim); margin-bottom: 1.6rem;
+        }
+        .result-copy {
+            font-size: 0.98rem; line-height: 1.65; color: var(--gray);
+            margin-bottom: 1.8rem; text-align: left;
+        }
+        .result-copy b { color: var(--white); font-weight: 600; }
+        .btn-store {
+            display: inline-flex; align-items: center; gap: 0.8rem;
+            background: var(--lime); color: var(--dark-on-lime);
+            padding: 0.9rem 1.7rem; border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(199, 244, 100, 0.3);
+            transition: transform 0.15s ease, box-shadow 0.3s ease, background 0.3s ease;
+        }
+        .btn-store:hover { background: var(--lime-soft); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(199, 244, 100, 0.45); }
+        .btn-store svg { width: 26px; height: 26px; }
+        .btn-store .lines { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.2; }
+        .btn-store .s { font-family: var(--mono); font-size: 0.58rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; }
+        .btn-store .l { font-size: 1.1rem; font-weight: 700; }
+        .result-sub {
+            margin-top: 0.9rem; font-family: var(--mono); font-size: 0.62rem;
+            letter-spacing: 0.14em; text-transform: uppercase; color: var(--gray-dim);
+        }
+        .result-back { margin-top: 2rem; font-family: var(--mono); font-size: 0.68rem; color: var(--gray-dim); }
+        .result-back a { color: var(--lime); }
+
+        @media (prefers-reduced-motion: reduce) {
+            .card.settling, .card.flying, .btn-lime, .btn-store, .ctrl { transition: none !important; }
+            .result-ring, .stamp-slam, .slide-enter, .tap-hint, body.shake { animation: none !important; }
+            .payoff-stamp { opacity: 1 !important; }
+            .story-bar::after { transition: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="glow" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="top">
+        <a class="wordmark" href="/">LUMINACLEAN <span class="dot">●</span></a>
+        <a class="top-back" href="/">← Back to site</a>
+    </header>
+
+    <main class="stage">
+        <!-- STORY ONBOARDING -->
+        <section class="panel" id="panel-story">
+            <div class="story-bars" id="story-bars" aria-hidden="true"></div>
+            <button class="story-skip" id="story-skip">Skip to the demo &rarr;</button>
+            <div class="slide-zone" id="slide-zone" role="button" aria-label="Tap to continue">
+                <div class="slide-stamp" id="slide-stamp"></div>
+                <div class="big" id="slide-title"></div>
+                <p class="slide-sub" id="slide-sub"></p>
+                <p class="tap-hint" id="slide-hint">tap to continue</p>
+            </div>
+        </section>
+
+        <!-- DECK -->
+        <section class="panel" id="panel-deck" hidden>
+            <div class="hud">
+                <span id="hud-count">Sample library · 6 photos</span>
+                <span class="freed">Freed <b id="hud-mb">0.0</b> MB</span>
+            </div>
+            <div class="deck-wrap">
+                <span class="edge-label edge-label--del" aria-hidden="true">&larr; Delete</span>
+                <span class="edge-label edge-label--keep" aria-hidden="true">Keep &rarr;</span>
+                <div class="deck" id="deck" aria-label="Sample photo deck. Swipe or use the buttons below."></div>
+            </div>
+            <div class="deck-controls">
+                <button class="ctrl ctrl--del" id="btn-del" aria-label="Delete this sample photo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                </button>
+                <button class="ctrl ctrl--keep" id="btn-keep" aria-label="Keep this sample photo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+                </button>
+            </div>
+            <p class="ctrl-hint">swipe the card &middot; or tap</p>
+        </section>
+
+        <!-- RESULT -->
+        <section class="panel" id="panel-result" hidden>
+            <div class="result-ring" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <p class="kicker">Sample cleanup complete</p>
+            <div class="payoff">
+                <span class="payoff-num" id="r-mb-big">0.0</span><span class="payoff-unit">MB</span>
+                <span class="payoff-word">Lighter.</span>
+                <span class="payoff-stamp" id="payoff-stamp">Gone ✦</span>
+            </div>
+            <div class="result-stats">
+                <div class="rstat"><b class="pink" id="r-deleted">0</b><span>deleted</span></div>
+                <div class="rstat"><b id="r-kept">0</b><span>kept</span></div>
+            </div>
+            <p class="sample-note">sample math at 48-megapixel sizes — your camera roll has years of this</p>
+            <p class="result-copy">
+                That was the whole mechanic. In the app it runs on <b>your real library</b> — processed
+                on your iPhone, nothing uploaded, works in airplane mode. And it's not only about deleting:
+                <b>Flashback</b> and <b>On This Day</b> resurface photos you forgot you had.
+                No stock photo can fake that feeling, so we won't try — you'll need your own memories for that part.
+            </p>
+            <a class="btn-store" id="btn-store" href="https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Try%20Demo&mt=8">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                <span class="lines"><span class="s">Do it for real — free</span><span class="l">Download on the App Store</span></span>
+            </a>
+            <p class="result-sub">65 free deletions &middot; no account &middot; 100% on-device</p>
+            <p class="result-back">or read <a href="/blog/">the guides</a> first</p>
+        </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <!-- Vercel Web Analytics -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <script>
+    (function() {
+        'use strict';
+
+        var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        function track(name) {
+            try { if (window.va) window.va('event', { name: name }); } catch (e) {}
+        }
+
+        /* ================= STORY ONBOARDING ================= */
+        var SLIDES = [
+            { stamp: 'CASE FILE №1', color: '#ffffff',
+              title: 'Your library <span class="script">is a mess.</span>',
+              sub: 'years of photos · zero cleanup · no offense' },
+            { stamp: 'TWINS ✦', color: '#ff5c84',
+              title: 'The same sunset. <span class="script">four times.</span>',
+              sub: 'duplicates multiply when nobody’s watching' },
+            { stamp: 'EXHIBIT A', color: '#d4a373',
+              title: 'Receipts. <span class="script">from march.</span>',
+              sub: 'screenshots you’ll never open again' },
+            { stamp: '⚠ 0 BYTES FREE', color: '#ff2e63',
+              title: 'Storage full. <span class="script">at the worst moment.</span>',
+              sub: 'right when the good photo happens' },
+            { stamp: 'THE FIX', color: '#c7f464',
+              title: 'Fixing it takes <span class="script">a swipe.</span>',
+              sub: 'left = delete · right = keep', last: true }
+        ];
+        var slideIdx = 0, storyStarted = false;
+        var bars = document.getElementById('story-bars');
+        var zone = document.getElementById('slide-zone');
+        var stampEl = document.getElementById('slide-stamp');
+        var titleEl = document.getElementById('slide-title');
+        var subEl = document.getElementById('slide-sub');
+        var hintEl = document.getElementById('slide-hint');
+
+        SLIDES.forEach(function () {
+            var b = document.createElement('div');
+            b.className = 'story-bar';
+            bars.appendChild(b);
+        });
+
+        function renderSlide() {
+            var s = SLIDES[slideIdx];
+            bars.querySelectorAll('.story-bar').forEach(function (b, i) {
+                b.classList.toggle('done', i <= slideIdx);
+            });
+            stampEl.innerHTML = '<span class="stamp-chip stamp-slam" style="color:' + s.color + '">' + s.stamp + '</span>';
+            titleEl.innerHTML = s.title;
+            subEl.textContent = s.sub;
+            titleEl.classList.remove('slide-enter'); subEl.classList.remove('slide-enter');
+            void titleEl.offsetWidth; /* restart animations */
+            titleEl.classList.add('slide-enter'); subEl.classList.add('slide-enter');
+            if (s.last) {
+                hintEl.outerHTML = '<button class="btn-lime" id="btn-start">Show me &rarr;</button>';
+                document.getElementById('btn-start').addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    startDeck();
+                });
+            }
+        }
+        renderSlide();
+
+        function advanceSlide() {
+            if (!storyStarted) { storyStarted = true; track('try_demo_start'); }
+            if (SLIDES[slideIdx].last) { startDeck(); return; }
+            slideIdx++;
+            renderSlide();
+        }
+        zone.addEventListener('click', advanceSlide);
+        document.getElementById('story-skip').addEventListener('click', function () {
+            track('try_demo_skip_story');
+            startDeck();
+        });
+
+        /* ================= PANELS ================= */
+        var panels = {
+            story: document.getElementById('panel-story'),
+            deck: document.getElementById('panel-deck'),
+            result: document.getElementById('panel-result')
+        };
+        function show(name) {
+            Object.keys(panels).forEach(function (k) { panels[k].hidden = (k !== name); });
+            window.scrollTo({ top: 0 });
+        }
+        function startDeck() { show('deck'); track('try_demo_deck'); }
+
+        /* ================= SAMPLE PHOTOS (GPT-image, clearly tagged SAMPLE) ================= */
+        function photo(src, alt) {
+            return '<img src="' + src + '" alt="' + alt + '" draggable="false">';
+        }
+
+        /* ================= DECK ================= */
+        var CARDS = [
+            { art: photo('/assets/images/demo/demo-receipt.jpg', 'Sample photo: a grocery receipt on a table'),
+              stamp: 'EXHIBIT A', stampColor: '#ff5c84',
+              caption: 'A receipt. From March. Still here.', mb: 4.6, junk: true },
+            { art: photo('/assets/images/demo/demo-blurry.jpg', 'Sample photo: blurry sunset over the sea'),
+              stamp: 'OUT OF FOCUS', stampColor: '#a99cff',
+              caption: 'The one where your hand moved.', mb: 8.4, junk: true },
+            { art: photo('/assets/images/demo/demo-sunset.jpg', 'Sample photo: sharp sunset over the sea'),
+              stamp: '', stampColor: '',
+              caption: 'The good one. This is a keeper.', mb: 11.2, junk: false },
+            { art: photo('/assets/images/demo/demo-sunset.jpg', 'Sample photo: exact duplicate of the previous sunset'),
+              stamp: 'TWINS ✦', stampColor: '#ff5c84',
+              caption: 'Exact copy of the last one. Saved twice, somehow.', mb: 12.6, junk: true },
+            { art: photo('/assets/images/demo/demo-lookalike.jpg', 'Sample photo: nearly identical sunset, a bird in the sky'),
+              stamp: 'LOOKALIKES', stampColor: '#c7f464',
+              caption: 'Same sunset, four seconds later. A bird showed up.', mb: 11.8, junk: true },
+            { art: photo('/assets/images/demo/demo-pets.jpg', 'Sample photo: golden retriever cuddling a kitten'),
+              stamp: '', stampColor: '',
+              caption: 'Baxter and the intern. Obviously keepers.', mb: 9.7, junk: false }
+        ];
+
+        var deck = document.getElementById('deck');
+        var toastEl = document.getElementById('toast');
+        var idx = 0, deleted = 0, kept = 0, mbFreed = 0;
+
+        CARDS.forEach(function (c, i) {
+            var el = document.createElement('div');
+            el.className = 'card';
+            el.dataset.index = i;
+            el.innerHTML = c.art
+                + '<span class="sample-tag">SAMPLE ' + (i + 1) + '/6</span>'
+                + (c.stamp ? '<span class="stamp" style="color:' + c.stampColor + '">' + c.stamp + '</span>' : '')
+                + '<div class="caption"><span>' + c.caption + '</span><b class="size">' + c.mb.toFixed(1) + ' MB</b></div>'
+                + '<span class="verdict verdict--keep">Keep</span>'
+                + '<span class="verdict verdict--del">Delete</span>';
+            deck.appendChild(el);
+        });
+
+        function layout() {
+            deck.querySelectorAll('.card').forEach(function (el) {
+                var i = parseInt(el.dataset.index, 10);
+                if (i < idx) { el.dataset.pos = 'gone'; }
+                else if (i === idx) { el.removeAttribute('data-pos'); el.style.zIndex = 3; }
+                else if (i === idx + 1) { el.dataset.pos = '1'; el.style.zIndex = 2; }
+                else { el.dataset.pos = '2'; el.style.zIndex = 1; }
+            });
+        }
+        layout();
+
+        var toastTimer;
+        function toast(msg, lime) {
+            toastEl.textContent = msg;
+            toastEl.classList.toggle('toast--lime', !!lime);
+            toastEl.classList.add('show');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(function () { toastEl.classList.remove('show'); }, 3400);
+        }
+
+        function resolve(el, dir) {
+            var c = CARDS[parseInt(el.dataset.index, 10)];
+            if (dir === 'left') {
+                deleted++;
+                if (c.junk) {
+                    mbFreed += c.mb;
+                } else {
+                    toast("That was the good one 💔 — relax, in the real app deletes sit in Recently Deleted for 30 days.");
+                }
+            } else {
+                kept++;
+                if (c.junk) {
+                    toast("Packrat move — fair. The app shows twins side-by-side so you're sure before deleting.");
+                } else {
+                    toast("Correct. That's the whole point — clean the junk, keep the memories.", true);
+                }
+            }
+            document.getElementById('hud-mb').textContent = mbFreed.toFixed(1);
+            var left = CARDS.length - idx - 1;
+            document.getElementById('hud-count').textContent = left > 0
+                ? 'Sample library · ' + left + ' left'
+                : 'Sample library · done';
+
+            el.classList.add('flying');
+            var x = dir === 'left' ? -window.innerWidth : window.innerWidth;
+            el.style.transform = 'translate(' + x + 'px, -40px) rotate(' + (dir === 'left' ? -24 : 24) + 'deg)';
+            idx++;
+            setTimeout(function () { el.style.display = 'none'; }, reduceMotion ? 0 : 320);
+            layout();
+
+            if (idx >= CARDS.length) {
+                setTimeout(finish, reduceMotion ? 100 : 650);
+            }
+        }
+
+        /* ================= RESULT (count-up + stamp slam) ================= */
+        function finish() {
+            document.getElementById('r-deleted').textContent = deleted;
+            document.getElementById('r-kept').textContent = kept;
+            show('result');
+            track('try_demo_complete');
+
+            var numEl = document.getElementById('r-mb-big');
+            var stamp = document.getElementById('payoff-stamp');
+            if (reduceMotion) {
+                numEl.textContent = mbFreed.toFixed(1);
+                return;
+            }
+            /* count up the freed MB, then slam the GONE stamp with a shake */
+            var dur = 900, start = Date.now(), slammed = false;
+            function ease(t) { return 1 - Math.pow(1 - t, 3); }
+            function slam() {
+                if (slammed) return;
+                slammed = true;
+                numEl.textContent = mbFreed.toFixed(1);
+                setTimeout(function () {
+                    stamp.classList.add('stamp-slam');
+                    stamp.style.opacity = 1;
+                    document.body.classList.add('shake');
+                    setTimeout(function () { document.body.classList.remove('shake'); }, 450);
+                }, 150);
+            }
+            function step() {
+                if (slammed) return;
+                var p = Math.min(1, (Date.now() - start) / dur);
+                numEl.textContent = (mbFreed * ease(p)).toFixed(1);
+                if (p < 1) { requestAnimationFrame(step); }
+                else { slam(); }
+            }
+            requestAnimationFrame(step);
+            /* guarantee completion even if rAF is throttled (background tab) */
+            setTimeout(slam, dur + 250);
+        }
+
+        function topCard() {
+            return deck.querySelector('.card[data-index="' + idx + '"]');
+        }
+
+        /* ---------- drag mechanics ---------- */
+        var drag = null;
+        deck.addEventListener('pointerdown', function (e) {
+            var el = topCard();
+            if (!el || drag) return;
+            drag = { el: el, x0: e.clientX, y0: e.clientY, dx: 0, dy: 0 };
+            el.classList.remove('settling');
+            el.setPointerCapture && deck.setPointerCapture(e.pointerId);
+        });
+        deck.addEventListener('pointermove', function (e) {
+            if (!drag) return;
+            drag.dx = e.clientX - drag.x0;
+            drag.dy = e.clientY - drag.y0;
+            var rot = drag.dx * 0.08;
+            drag.el.style.transform = 'translate(' + drag.dx + 'px, ' + (drag.dy * 0.3) + 'px) rotate(' + rot + 'deg)';
+            drag.el.querySelector('.verdict--keep').style.opacity = Math.min(1, Math.max(0, drag.dx / 80));
+            drag.el.querySelector('.verdict--del').style.opacity = Math.min(1, Math.max(0, -drag.dx / 80));
+        });
+        function endDrag() {
+            if (!drag) return;
+            var el = drag.el, dx = drag.dx;
+            drag = null;
+            if (dx > 90) { resolve(el, 'right'); }
+            else if (dx < -90) { resolve(el, 'left'); }
+            else {
+                el.classList.add('settling');
+                el.style.transform = '';
+                el.querySelector('.verdict--keep').style.opacity = 0;
+                el.querySelector('.verdict--del').style.opacity = 0;
+            }
+        }
+        deck.addEventListener('pointerup', endDrag);
+        deck.addEventListener('pointercancel', endDrag);
+
+        /* ---------- buttons + keyboard ---------- */
+        function buttonSwipe(dir) {
+            var el = topCard();
+            if (!el) return;
+            el.querySelector(dir === 'left' ? '.verdict--del' : '.verdict--keep').style.opacity = 1;
+            resolve(el, dir);
+        }
+        document.getElementById('btn-del').addEventListener('click', function () { buttonSwipe('left'); });
+        document.getElementById('btn-keep').addEventListener('click', function () { buttonSwipe('right'); });
+        document.addEventListener('keydown', function (e) {
+            if (panels.deck.hidden) return;
+            if (e.key === 'ArrowLeft') buttonSwipe('left');
+            if (e.key === 'ArrowRight') buttonSwipe('right');
+        });
+
+        document.getElementById('btn-store').addEventListener('click', function () {
+            track('try_demo_store_click');
+        });
+    })();
+    </script>
+
+    <!-- AppsFlyer OneLink Smart Script (attributes installs from this page as campaign "try-demo" when no UTMs present) -->
+    <script src="/assets/js/af-smart-script.js"></script>
+    <script>
+    (function() {
+        var result = window.AF_SMART_SCRIPT && window.AF_SMART_SCRIPT.generateOneLinkURL({
+            oneLinkURL: "https://luminaclean.onelink.me/mKbo",
+            webReferrer: "af_channel",
+            afParameters: {
+                mediaSource: { keys: ["utm_source"], defaultValue: "Website" },
+                campaign: { keys: ["utm_campaign"], defaultValue: "try-demo" },
+                adSet: { keys: ["utm_medium"] },
+                ad: { keys: ["utm_content"] },
+                afCustom: [{ paramKey: "af_ss_ui", defaultValue: "true" }]
+            }
+        });
+        if (result && result.clickURL) {
+            document.querySelectorAll('a[href*="apps.apple.com"][href*="id6757949814"]').forEach(function(link) {
+                link.href = result.clickURL;
+            });
+        }
+    })();
+    </script>
+</body>
+</html>
