@@ -6,6 +6,11 @@
       "permanent": true
     },
     {
+      "source": "/tryme",
+      "destination": "/try.html",
+      "permanent": false
+    },
+    {
       "source": "/blog/ai-photo-management-machine-learning.html",
       "destination": "/blog/why-iphone-storage-full-after-deleting-photos.html",
       "permanent": true

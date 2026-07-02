@@ -125,6 +125,22 @@ LuminaClean is an iPhone photo cleaner app (App Store ID: 6757949814). This repo
 - Count-up hardened with a setTimeout completion fallback (background-tab rAF throttling).
 - img cards need draggable=false + -webkit-user-drag:none or native image-drag breaks swiping.
 
+### Session 5 (2026-07-02, TikTok ads pixel)
+- Installed TikTok Pixel (browser-only method — site is static/Vercel, no backend for Events API)
+  sitewide in <head>, all 22 pages. Pixel ID D933DJ3C77U133LMH9CG.
+- try.html track() now also fires ttq.track() for 3 mapped events:
+  try_demo_deck → 'ViewContent' (TikTok optimization target — fires on EITHER finishing the
+  story OR clicking skip, so it always means "reached the swipe mechanic", not the earlier
+  first-tap try_demo_start), try_demo_complete → 'DemoComplete' (custom), try_demo_store_click
+  → 'ClickButton'. Verified live: pixel + all 3 events POST 200 to analytics.tiktok.com.
+- TikTok campaign plan (capped $140 test, 7 days, $20/day, iOS+US/UK/CA/AU only): Sales →
+  Website objective (not App Promotion — would skip the demo). Optimize on ViewContent once it
+  has event volume (visit /try.html once after any deploy to seed it). Kill criteria: <30%
+  landing→ViewContent, <40% ViewContent→DemoComplete, <10% →ClickButton, or CPC on ClickButton
+  >$5. Do not extend budget past the cap without re-deriving math — LuminaClean's $8.99
+  lifetime price means breakeven CAC is ~$0.40-0.50/install; this test buys funnel data and a
+  reusable organic hook, not profitable paid acquisition (see [[project_web2app_try_demo]]).
+
 ## Remaining Tasks
 - Commit + push to publish (Vercel auto-deploys on push to main) — get John's approval first
 - Consider linking /try.html from blog article CTA boxes (16 articles) once the demo proves itself
