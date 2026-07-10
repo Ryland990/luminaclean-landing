@@ -202,9 +202,9 @@ LuminaClean is an iPhone photo cleaner app (App Store ID: 6757949814). This repo
   recapture from the app set to German/French when convenient (app itself is localized).
 
 ## Remaining Tasks
-- Commit + push to publish (Vercel auto-deploys on push to main) — get John's approval first
-  (pending: analytics merge from Session 6 + this DE/FR pilot; Vercel env vars still needed
-  for Signal: UPSTASH_REDIS_REST_URL, UPSTASH_REDIS_REST_TOKEN, STATS_KEY)
+- PUBLISHED 2026-07-11 (commit 0a669be): DE/FR pilot + Signal analytics live. STILL PENDING:
+  John must add Vercel env vars (UPSTASH_REDIS_REST_URL, UPSTASH_REDIS_REST_TOKEN, STATS_KEY)
+  or Signal/track endpoints return 500 (localized pages unaffected). Resubmit sitemap in GSC/Bing.
 - Consider linking /try.html from blog article CTA boxes (16 articles) once the demo proves itself
 - After DE/FR indexing settles (4–8 weeks): read GSC impressions per locale before any 3rd language
 - OPEN QUESTION for John: the "photos cleaned" live counter is synthetic (1,847,293 base + 2,000/day

@@ -3216,6 +3216,35 @@
             padding-bottom: 2px;
         }
         .hero-try a:hover { color: #d8ff7a; border-color: #d8ff7a; }
+
+        /* language switcher */
+        .lang-switch { position: relative; }
+        .lang-btn {
+            font-family: 'JetBrains Mono', ui-monospace, monospace;
+            font-size: 0.72rem; font-weight: 500; letter-spacing: 0.14em;
+            color: #9a9a9a; background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 10px;
+            padding: 0.45rem 0.7rem; cursor: pointer;
+            display: inline-flex; align-items: center; gap: 0.35rem;
+            transition: color 0.2s ease, border-color 0.2s ease;
+        }
+        .lang-btn:hover { color: #ffffff; border-color: rgba(255, 46, 99, 0.5); }
+        .lang-btn svg { width: 10px; height: 10px; }
+        .lang-menu {
+            position: absolute; top: calc(100% + 8px); right: 0;
+            background: #111111; border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px; padding: 0.35rem; min-width: 140px;
+            display: none; z-index: 1002;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+        }
+        .lang-menu.open { display: block; }
+        .lang-menu a {
+            display: block; font-family: 'JetBrains Mono', ui-monospace, monospace;
+            font-size: 0.72rem; letter-spacing: 0.1em; text-decoration: none;
+            padding: 0.5rem 0.7rem; border-radius: 8px; color: #9a9a9a;
+        }
+        .lang-menu a:hover { background: #191919; color: #ffffff; }
+        .lang-menu a.active { color: #c7f464; }
     </style>
 </head>
 <body>
@@ -3246,6 +3275,15 @@
                 <a href="#privacy">Privatsph&auml;re</a>
                 <a href="#faq">FAQ</a>
                 <a href="#guides">Guides</a>
+            </div>
+
+            <div class="lang-switch">
+                <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Language">DE <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+                <div class="lang-menu" id="lang-menu">
+                    <a href="/" hreflang="en">English</a>
+                    <a href="/de/" class="active" hreflang="de">Deutsch</a>
+                    <a href="/fr/" hreflang="fr">Fran&ccedil;ais</a>
+                </div>
             </div>
 
             <a href="https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8" class="nav-cta">
@@ -3279,6 +3317,7 @@
         <a href="#privacy" class="mobile-menu-link">Privatsph&auml;re</a>
         <a href="#faq" class="mobile-menu-link">FAQ</a>
         <a href="#guides" class="mobile-menu-link">Guides</a>
+        <div style="display:flex;gap:1.4rem;font-family:'JetBrains Mono',monospace;font-size:0.8rem;letter-spacing:0.14em;"><a href="/" style="color:#9a9a9a;">EN</a><a href="/de/" style="color:#c7f464;">DE</a><a href="/fr/" style="color:#9a9a9a;">FR</a></div>
         <a href="https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8" class="btn-appstore" style="margin-top: 1rem;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
@@ -4236,5 +4275,22 @@
     <!-- AppsFlyer OneLink Smart Script -->
     <script src="/assets/js/af-smart-script.js"></script>
     <script src="/assets/js/af-init.js"></script>
+
+<script>
+(function () {
+    var btn = document.getElementById('lang-btn');
+    var menu = document.getElementById('lang-menu');
+    if (!btn || !menu) return;
+    btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var open = menu.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('click', function () {
+        menu.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+    });
+})();
+</script>
 </body>
 </html>

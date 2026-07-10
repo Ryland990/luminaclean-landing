@@ -402,6 +402,35 @@
             .payoff-stamp { opacity: 1 !important; }
             .story-bar::after { transition: none; }
         }
+
+        /* language switcher */
+        .lang-switch { position: relative; }
+        .lang-btn {
+            font-family: 'JetBrains Mono', ui-monospace, monospace;
+            font-size: 0.72rem; font-weight: 500; letter-spacing: 0.14em;
+            color: #9a9a9a; background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 10px;
+            padding: 0.45rem 0.7rem; cursor: pointer;
+            display: inline-flex; align-items: center; gap: 0.35rem;
+            transition: color 0.2s ease, border-color 0.2s ease;
+        }
+        .lang-btn:hover { color: #ffffff; border-color: rgba(255, 46, 99, 0.5); }
+        .lang-btn svg { width: 10px; height: 10px; }
+        .lang-menu {
+            position: absolute; top: calc(100% + 8px); right: 0;
+            background: #111111; border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px; padding: 0.35rem; min-width: 140px;
+            display: none; z-index: 1002;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+        }
+        .lang-menu.open { display: block; }
+        .lang-menu a {
+            display: block; font-family: 'JetBrains Mono', ui-monospace, monospace;
+            font-size: 0.72rem; letter-spacing: 0.1em; text-decoration: none;
+            padding: 0.5rem 0.7rem; border-radius: 8px; color: #9a9a9a;
+        }
+        .lang-menu a:hover { background: #191919; color: #ffffff; }
+        .lang-menu a.active { color: #c7f464; }
     </style>
 </head>
 <body>
@@ -410,7 +439,14 @@
 
     <header class="top">
         <a class="wordmark" href="/">LUMINACLEAN <span class="dot">●</span></a>
-        <a class="top-back" href="/fr/">← Retour au site</a>
+        <div style="display:flex;align-items:center;gap:0.9rem;"><div class="lang-switch">
+                <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Language">FR <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+                <div class="lang-menu" id="lang-menu">
+                    <a href="/try.html" hreflang="en">English</a>
+                    <a href="/de/try.html" hreflang="de">Deutsch</a>
+                    <a href="/fr/try.html" class="active" hreflang="fr">Fran&ccedil;ais</a>
+                </div>
+            </div><a class="top-back" href="/fr/">← Retour au site</a></div>
     </header>
 
     <main class="stage">
@@ -831,5 +867,22 @@
         }
     })();
     </script>
+
+<script>
+(function () {
+    var btn = document.getElementById('lang-btn');
+    var menu = document.getElementById('lang-menu');
+    if (!btn || !menu) return;
+    btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var open = menu.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('click', function () {
+        menu.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+    });
+})();
+</script>
 </body>
 </html>
