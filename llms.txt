@@ -34,6 +34,13 @@ Key facts:
 - [LuminaClean vs Cleanup App](https://luminaclean.app/blog/luminaclean-vs-cleanup-app.html): factual side-by-side using public App Store data
 - [LuminaClean vs Cleaner AI](https://luminaclean.app/blog/luminaclean-vs-cleaner-ai.html)
 
+## Localized pages (German / French)
+
+- [Startseite (DE)](https://luminaclean.app/de/) and [Swipe-Demo (DE)](https://luminaclean.app/de/try.html)
+- [Accueil (FR)](https://luminaclean.app/fr/) and [Démo swipe (FR)](https://luminaclean.app/fr/try.html)
+- German guides: iPhone Speicher voll, Doppelte Fotos löschen, Foto-Cleaner ohne Abo (under https://luminaclean.app/de/blog/)
+- French guides: Stockage iPhone plein, Supprimer les photos en double, Nettoyeur sans abonnement (under https://luminaclean.app/fr/blog/)
+
 ## Contact
 
 - Support email: nextstep.appstudio@gmail.com

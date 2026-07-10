@@ -2,3 +2,7 @@
 .DS_Store
 **/.DS_Store
 .claude/
+.env.local
+data.local.json
+dev-server.js
+flush-test-data.js

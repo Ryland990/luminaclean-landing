@@ -141,9 +141,72 @@ LuminaClean is an iPhone photo cleaner app (App Store ID: 6757949814). This repo
   lifetime price means breakeven CAC is ~$0.40-0.50/install; this test buys funnel data and a
   reusable organic hook, not profitable paid acquisition (see [[project_web2app_try_demo]]).
 
+### Session 6 (2026-07-02, self-owned analytics — built + merged into this repo)
+- Sandbox built at `/Users/rp/CascadeProjects/WebAnalytics/` first (self-owned funnel dashboard,
+  avoids Vercel's paid Events tier and TikTok's dashboard). Storage is auto-switching
+  (`lib/store.js`): local JSON file with zero setup when no Upstash env vars are set, real
+  Upstash Redis (REST API) the moment they are — same api/track.js + api/stats.js code runs
+  unchanged either way, and unchanged again once deployed to Vercel (CommonJS
+  `module.exports = async (req,res)=>{}`, matches Vercel's serverless convention exactly).
+- MERGED into this repo (2026-07-02, same day): api/track.js, api/stats.js, lib/store*.js,
+  and signal.html (renamed from dashboard.html; noindex/nofollow, key-gated via STATS_KEY).
+  try.html's track() now POSTs to /api/track on every funnel event (session id via
+  crypto.randomUUID() in localStorage `lc_sid`, plus utm_source/campaign/content from the URL).
+- Funnel shown is 3 stages: try_demo_deck → try_demo_complete → try_demo_store_click.
+  try_demo_deck (not try_demo_start) is the correct top-of-funnel — it fires whether someone
+  taps through the story OR clicks skip, so it's the superset; using try_demo_start as stage 1
+  produced impossible >100% "drop-off" for skippers. try_demo_start/skip_story are reported
+  separately as "entry path" context above the funnel, not as a funnel stage.
+- Verified END TO END for real (not simulated): ran dev-server.js (gitignored, Node http shim
+  that executes the real api/*.js against the real try.html/signal.html — the static
+  `landing-static` python server can't run serverless functions, so this was necessary for a
+  true test), loaded /try.html?utm_source=tiktok&utm_campaign=tt-try-test1&utm_content=roast-hook
+  in the browser, clicked through the ACTUAL page (skip → 6 swipes → store click), then confirmed
+  /api/stats showed the exact real events with correct UTMs. Test data wiped after (data.local.json).
+- John provided real Upstash credentials (database "calm-moose-42257") same day. Verified
+  end-to-end for real against the ACTUAL Upstash instance: ran the full try.html funnel in-browser
+  (skip → 6 swipes → store click) via dev-server.js, confirmed signal.html read back the correct
+  events/UTMs from Upstash, then wiped that test run with flush-test-data.js (gitignored, one-off,
+  reads creds from .env.local — reusable if test data needs clearing again later). Dashboard now
+  confirmed at a clean zero state.
+- LESSON: never pass secrets as literal Bash command-line arguments (e.g. curl -H "Authorization:
+  Bearer <token>") — got flagged mid-session for pasting the raw Upstash token into a curl call.
+  Always write secrets to .env.local (or reference already-set env vars) and let the
+  script/process read them internally; a Bash command's visible text should never contain a
+  literal secret, only variable/file references.
+- STILL BLOCKED on: (1) adding UPSTASH_REDIS_REST_URL / UPSTASH_REDIS_REST_TOKEN / STATS_KEY as
+  real env vars in Vercel's project dashboard (Settings → Environment Variables) — this is
+  dashboard-only, Vercel deliberately disallows declaring secrets in vercel.json, and no `vercel`
+  CLI is installed/authenticated on this machine (deploys have only ever gone through git push +
+  Vercel's GitHub integration all session) — John needs to add these three himself; (2) explicit
+  go-ahead to push api/, lib/, signal.html, and the try.html tracking changes live.
+
+### Session 7 (2026-07-10, DE/FR localization pilot)
+- John chose French + German for the site-localization pilot (SEO play: app already localized
+  in both, funnel intact end-to-end; grounded in App Sprint per-storefront keyword data —
+  DE: speicher/fotos aufräumen/doppelte/fotoreiniger, FR: stockage/nettoyeur/nettoyeur ia/doublons).
+- Built 10 pages: /de/ + /fr/ homepages (full transforms of index.html via replacement-map
+  scripts in scratchpad), /de/try.html + /fr/try.html (AppsFlyer campaigns try-demo-de/-fr,
+  same analytics event names so Signal aggregates one funnel, paths distinguish locales),
+  3 guides each under /de/blog/ + /fr/blog/ (storage pillar, duplicates 4-methods,
+  no-subscription/Abofalle comparison — DE leans into Abofalle angle, FR into nettoyeur IA).
+- Register matches the APP's own localization (checked Localizable.xcstrings): du/tu informal;
+  reused app vocabulary (CHAOS/BORDEL, Behalten/Garder, Doppelgänger/sosies, Mediathek/Photothèque).
+- Localized pages drop the aggregateRating schema + hero star row (DE/FR storefronts have no
+  reviews — verified via iTunes RSS; testimonials keep EN quotes labeled "(EN)", never translate
+  real reviews). Replaced the rating stat cell with the anti-Abo "einmal zahlen / zéro abo" stat.
+- hreflang wired bidirectionally (5 EN counterparts got en/de/fr/x-default), sitemap +10 URLs
+  (32 total), llms.txt has a localized-pages section. All JSON-LD validated, funnel verified
+  live on /de/try.html (events land in Upstash with the /de path; test data flushed after).
+- FOLLOW-UP for John: in-page app screenshots on DE/FR pages still show the EN app UI —
+  recapture from the app set to German/French when convenient (app itself is localized).
+
 ## Remaining Tasks
 - Commit + push to publish (Vercel auto-deploys on push to main) — get John's approval first
+  (pending: analytics merge from Session 6 + this DE/FR pilot; Vercel env vars still needed
+  for Signal: UPSTASH_REDIS_REST_URL, UPSTASH_REDIS_REST_TOKEN, STATS_KEY)
 - Consider linking /try.html from blog article CTA boxes (16 articles) once the demo proves itself
+- After DE/FR indexing settles (4–8 weeks): read GSC impressions per locale before any 3rd language
 - OPEN QUESTION for John: the "photos cleaned" live counter is synthetic (1,847,293 base + 2,000/day
   formula in JS). AI engines may quote it as fact — consider replacing with a real PostHog number or cutting it.
 - Review blog article quality — AI-generated content may need polish for accuracy and tone
