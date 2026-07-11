@@ -201,6 +201,24 @@ LuminaClean is an iPhone photo cleaner app (App Store ID: 6757949814). This repo
 - FOLLOW-UP for John: in-page app screenshots on DE/FR pages still show the EN app UI —
   recapture from the app set to German/French when convenient (app itself is localized).
 
+### Session 8 (2026-07-11, Traditional Chinese)
+- John requested zh-Hant after a real Taiwan purchase overnight (better signal than the Vercel
+  "China" traffic, which is bot-shaped: 27% CN + 15% SG + 20% Linux + 90% bounce on an iOS-only
+  product — documented as NOT a reason to localize). zh-Hant targets TAIWAN/HK (Google-dominant,
+  iOS-heavy); mainland China is unreachable via Google and reads Simplified anyway.
+- Built /zh-hant/: homepage + try.html transforms + 3 guides (English slugs: iphone-storage-full,
+  delete-duplicate-photos, no-subscription-photo-cleaner). Vocabulary from the app's own
+  Localizable.xcstrings zh-Hant (亂成一團/保留/刪除/圖庫/相似照/「最近刪除」/「當年今日」).
+  AppsFlyer campaign try-demo-zh. Anton has no CJK glyphs — headings fall back to heavy system
+  font, which reads fine (deliberate, no webfont added).
+- Wired: zh-Hant hreflang line added to all 15 existing cluster pages, 中文（繁體）added to all
+  language dropdowns + mobile rows + guide footers, sitemap now 37 URLs, llms.txt updated.
+  Verified: zh homepage/demo render, funnel fires, 4-language switcher maps like-for-like.
+- REMINDER carried from June: the zh-Hant App Store listing (app-store-listings-zh-Hant-uk-pl.md
+  in the app repo) is still NOT pasted into App Store Connect — the web funnel now lands TW users
+  on a store listing that isn't in their language. Publishing it is the missing funnel piece
+  (ASC API could do it with John's approval).
+
 ## Remaining Tasks
 - PUBLISHED 2026-07-11 (commit 0a669be): DE/FR pilot + Signal analytics live. STILL PENDING:
   John must add Vercel env vars (UPSTASH_REDIS_REST_URL, UPSTASH_REDIS_REST_TOKEN, STATS_KEY)
