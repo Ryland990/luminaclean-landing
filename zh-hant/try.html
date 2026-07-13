@@ -555,6 +555,13 @@
         })();
 
         function track(name) {
+            try { /* forward to AppCore via its data-appcore-event click delegation */
+                var ac = document.createElement('i');
+                ac.setAttribute('data-appcore-event', name);
+                document.body.appendChild(ac);
+                ac.click();
+                ac.remove();
+            } catch (e) {}
             try { if (window.va) window.va('event', { name: name }); } catch (e) {}
             try {
                 var ttName = TT_EVENT_MAP[name];
