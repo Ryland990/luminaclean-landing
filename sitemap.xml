@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://luminaclean.app/blog/</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -103,18 +103,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luminaclean.app/blog/icloud-photos-storage-sync.html</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luminaclean.app/blog/organize-photos-iphone-guide.html</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luminaclean.app/blog/clean-up-iphone-screenshots.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -129,6 +117,36 @@
   <url>
     <loc>https://luminaclean.app/blog/space-saved-cleaning-photos.html</loc>
     <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luminaclean.app/blog/recover-photos-deleted-by-cleaner-app.html</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luminaclean.app/blog/cancel-photo-cleaner-subscription-refund.html</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luminaclean.app/blog/cleaner-app-deleted-photos-from-icloud.html</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luminaclean.app/blog/photo-cleaner-deleted-wrong-photos.html</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luminaclean.app/blog/photo-cleaner-weekly-subscription-cost.html</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

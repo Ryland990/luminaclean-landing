@@ -14,6 +14,16 @@
       "source": "/blog/ai-photo-management-machine-learning.html",
       "destination": "/blog/why-iphone-storage-full-after-deleting-photos.html",
       "permanent": true
+    },
+    {
+      "source": "/blog/organize-photos-iphone-guide.html",
+      "destination": "/blog/iphone-storage-full-free-space.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/icloud-photos-storage-sync.html",
+      "destination": "/blog/cleaner-app-deleted-photos-from-icloud.html",
+      "permanent": true
     }
   ]
 }

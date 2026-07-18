@@ -30,7 +30,15 @@ Key facts:
 - [How to Delete Similar Photos on iPhone](https://luminaclean.app/blog/delete-similar-photos-iphone.html): burst shots and near-duplicates Apple misses
 - [Find & Remove Blurry Photos on iPhone](https://luminaclean.app/blog/find-remove-blurry-photos-iphone.html)
 - [How to Clean Up Screenshots on iPhone](https://luminaclean.app/blog/clean-up-iphone-screenshots.html)
-- [iCloud Photos, Storage and Sync Explained](https://luminaclean.app/blog/icloud-photos-storage-sync.html)
+- [iPhone Photo Library Too Big? Fix Photos App Crashing](https://luminaclean.app/blog/iphone-photo-library-too-big-crashing.html): 6 fixes for a freezing or crashing Photos app, no data loss
+- [Best Duplicate Photo Cleaner Apps for iPhone](https://luminaclean.app/blog/best-duplicate-photo-cleaner-iphone.html): 5 duplicate cleaner apps honestly compared
+- [Are iPhone Photo Cleaner Apps Safe?](https://luminaclean.app/blog/iphone-photo-privacy-safety.html): cloud vs on-device processing, AI training risks, privacy labels decoded
+- [How Much Storage Do Duplicate Photos Waste?](https://luminaclean.app/blog/space-saved-cleaning-photos.html): original 2026 data on duplicate, blurry and screenshot clutter
+- [Photo Cleaner App Deleted Your Photos? How to Get Them Back](https://luminaclean.app/blog/recover-photos-deleted-by-cleaner-app.html): Recently Deleted recovery steps and what to do after 30 days
+- [Cleaner App Deleted Photos From iCloud? Here's What Happened](https://luminaclean.app/blog/cleaner-app-deleted-photos-from-icloud.html): why an iCloud-synced delete follows you to every device, and how to recover
+- [Photo Cleaner Deleted the Wrong Photos?](https://luminaclean.app/blog/photo-cleaner-deleted-wrong-photos.html): recovering false-positive deletes and why cleaner apps misflag photos
+- [How to Cancel Any Photo Cleaner Subscription (and Get a Refund)](https://luminaclean.app/blog/cancel-photo-cleaner-subscription-refund.html): canceling in Settings, requesting an Apple refund, and spotting pricing traps
+- [Why Photo Cleaner Apps Charge $6.99 a Week](https://luminaclean.app/blog/photo-cleaner-weekly-subscription-cost.html): the true annual cost of weekly subscription pricing and fairer alternatives
 - [LuminaClean vs Cleanup App](https://luminaclean.app/blog/luminaclean-vs-cleanup-app.html): factual side-by-side using public App Store data
 - [LuminaClean vs Cleaner AI](https://luminaclean.app/blog/luminaclean-vs-cleaner-ai.html)
 
