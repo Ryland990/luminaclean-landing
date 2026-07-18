@@ -17,6 +17,14 @@ module.exports = async (req, res) => {
     return;
   }
 
+  // GET /api/stats?key=...&view=pages&days=30 — per-path view counts with one
+  // bucket per day, for watching how individual blog posts perform over time.
+  if (req.query.view === 'pages') {
+    const days = Math.min(Math.max(parseInt(req.query.days, 10) || 30, 1), 90);
+    res.status(200).json(await store.getPageStats(days));
+    return;
+  }
+
   const data = await store.getStats(FUNNEL);
   const entryData = await store.getStats(['try_demo_start', 'try_demo_skip_story']);
   const entryPaths = {
