@@ -39,6 +39,8 @@ Key facts:
 - [Photo Cleaner Deleted the Wrong Photos?](https://luminaclean.app/blog/photo-cleaner-deleted-wrong-photos.html): recovering false-positive deletes and why cleaner apps misflag photos
 - [How to Cancel Any Photo Cleaner Subscription (and Get a Refund)](https://luminaclean.app/blog/cancel-photo-cleaner-subscription-refund.html): canceling in Settings, requesting an Apple refund, and spotting pricing traps
 - [Why Photo Cleaner Apps Charge $6.99 a Week](https://luminaclean.app/blog/photo-cleaner-weekly-subscription-cost.html): the true annual cost of weekly subscription pricing and fairer alternatives
+- [Is Clever Cleaner Really Free? What's the Catch](https://luminaclean.app/blog/is-clever-cleaner-really-free.html): yes — free and ad-free for duplicate cleanup as of mid-2026; the honest catch and how it compares to a broader library cleaner
+- [Does Deleting Duplicate Photos Delete the Original?](https://luminaclean.app/blog/does-deleting-duplicates-delete-original.html): no — one copy always stays; how Apple's Merge and review-based cleaners keep the original, plus the two safety nets and the one real risk
 - [LuminaClean vs Cleanup App](https://luminaclean.app/blog/luminaclean-vs-cleanup-app.html): factual side-by-side using public App Store data
 - [LuminaClean vs Cleaner AI](https://luminaclean.app/blog/luminaclean-vs-cleaner-ai.html)
 

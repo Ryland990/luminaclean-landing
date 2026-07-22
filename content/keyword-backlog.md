@@ -29,6 +29,11 @@ SERP verdicts below are dated 2026-07-18. Mark items PUBLISHED when shipped.
 - space-saved-cleaning-photos — (definition/data) — invisible, moderate
 - why-iphone-storage-full-after-deleting-photos — (troubleshooting) —
   VISIBLE ~#4
+- is-clever-cleaner-really-free — "is Clever Cleaner really free"
+  (comparison) — PUBLISHED 2026-07-20 (Batch A)
+- does-deleting-duplicates-delete-original — "does deleting duplicates
+  delete the original" (definition/reassurance) — PUBLISHED 2026-07-20
+  (Batch A)
 
 REMOVED 2026-07-18 (301'd):
 - organize-photos-iphone-guide → iphone-storage-full-free-space
@@ -58,23 +63,19 @@ REMOVED 2026-07-18 (301'd):
 
 ### Tier 2
 
-6. is Clever Cleaner really free (comparison; be fair — it IS free;
-   differentiate on scope; high AI-citability)
-7. is CleanMyPhone worth it / alternatives (comparison; MacPaw competes
+6. is CleanMyPhone worth it / alternatives (comparison; MacPaw competes
    hard; med-high)
-8. does deleting duplicates delete the original (definition/reassurance;
-   yes/no + mechanism; high AI-citability)
-9. do photo cleaner apps actually work (definition; real functions vs
+7. do photo cleaner apps actually work (definition; real functions vs
    snake-oil RAM boosters/speaker cleaning; med-high)
 
 ### Tier 3
 
-10. photo cleaner stuck scanning large library (troubleshooting; weak UGC
-    SERP; med)
-11. recover permanently deleted photos after 30 days (troubleshooting;
-    honest "only backups can" answer; affiliate-heavy SERP but
-    GEO-winnable; high)
-12. best swipe-to-delete photo apps (buying guide; unbranded cut open; med)
+8. photo cleaner stuck scanning large library (troubleshooting; weak UGC
+   SERP; med)
+9. recover permanently deleted photos after 30 days (troubleshooting;
+   honest "only backups can" answer; affiliate-heavy SERP but
+   GEO-winnable; high)
+10. best swipe-to-delete photo apps (buying guide; unbranded cut open; med)
 
 ## Rules
 
