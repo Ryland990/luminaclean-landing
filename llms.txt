@@ -41,6 +41,9 @@ Key facts:
 - [Why Photo Cleaner Apps Charge $6.99 a Week](https://luminaclean.app/blog/photo-cleaner-weekly-subscription-cost.html): the true annual cost of weekly subscription pricing and fairer alternatives
 - [Is Clever Cleaner Really Free? What's the Catch](https://luminaclean.app/blog/is-clever-cleaner-really-free.html): yes — free and ad-free for duplicate cleanup as of mid-2026; the honest catch and how it compares to a broader library cleaner
 - [Does Deleting Duplicate Photos Delete the Original?](https://luminaclean.app/blog/does-deleting-duplicates-delete-original.html): no — one copy always stays; how Apple's Merge and review-based cleaners keep the original, plus the two safety nets and the one real risk
+- [Is CleanMyPhone Worth It? Honest Review and Alternatives](https://luminaclean.app/blog/is-cleanmyphone-worth-it.html): honest review of MacPaw's iPhone cleaner — pricing, strengths, common complaints, and three alternatives compared
+- [Do Photo Cleaner Apps Actually Work?](https://luminaclean.app/blog/do-photo-cleaner-apps-actually-work.html): which cleaner functions free real gigabytes on-device and which are snake oil iOS can't allow
+- [Can You Recover Permanently Deleted Photos on iPhone After 30 Days?](https://luminaclean.app/blog/recover-permanently-deleted-photos-iphone.html): the honest answer no recovery app will give, plus every real recovery path — iCloud, computer backup, other devices
 - [LuminaClean vs Cleanup App](https://luminaclean.app/blog/luminaclean-vs-cleanup-app.html): factual side-by-side using public App Store data
 - [LuminaClean vs Cleaner AI](https://luminaclean.app/blog/luminaclean-vs-cleaner-ai.html)
 

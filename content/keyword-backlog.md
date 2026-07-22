@@ -34,6 +34,12 @@ SERP verdicts below are dated 2026-07-18. Mark items PUBLISHED when shipped.
 - does-deleting-duplicates-delete-original — "does deleting duplicates
   delete the original" (definition/reassurance) — PUBLISHED 2026-07-20
   (Batch A)
+- is-cleanmyphone-worth-it — "is CleanMyPhone worth it" (comparison) —
+  PUBLISHED 2026-07-22 (Batch B)
+- do-photo-cleaner-apps-actually-work — "do photo cleaner apps actually
+  work" (definition) — PUBLISHED 2026-07-22 (Batch B)
+- recover-permanently-deleted-photos-iphone — "recover permanently deleted
+  photos after 30 days" (troubleshooting) — PUBLISHED 2026-07-22 (Batch B)
 
 REMOVED 2026-07-18 (301'd):
 - organize-photos-iphone-guide → iphone-storage-full-free-space
@@ -61,21 +67,11 @@ REMOVED 2026-07-18 (301'd):
    2026-07-18 batch (definition/exposé; annualized $310-470/yr math;
    flagship anti-dark-pattern piece; high AI-citability)
 
-### Tier 2
-
-6. is CleanMyPhone worth it / alternatives (comparison; MacPaw competes
-   hard; med-high)
-7. do photo cleaner apps actually work (definition; real functions vs
-   snake-oil RAM boosters/speaker cleaning; med-high)
-
 ### Tier 3
 
-8. photo cleaner stuck scanning large library (troubleshooting; weak UGC
+6. photo cleaner stuck scanning large library (troubleshooting; weak UGC
    SERP; med)
-9. recover permanently deleted photos after 30 days (troubleshooting;
-   honest "only backups can" answer; affiliate-heavy SERP but
-   GEO-winnable; high)
-10. best swipe-to-delete photo apps (buying guide; unbranded cut open; med)
+7. best swipe-to-delete photo apps (buying guide; unbranded cut open; med)
 
 ## Rules
 
