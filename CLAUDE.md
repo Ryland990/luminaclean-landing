@@ -229,3 +229,26 @@ LuminaClean is an iPhone photo cleaner app (App Store ID: 6757949814). This repo
   formula in JS). AI engines may quote it as fact — consider replacing with a real PostHog number or cutting it.
 - Review blog article quality — AI-generated content may need polish for accuracy and tone
 - Test all pages on mobile — verify responsive design
+
+## Session 9 (2026-08-12): pricing-claim purge — lifetime/monthly removed site-wide
+
+App pricing pivoted to weekly ($5.99) + yearly ($39.99) only; lifetime ($17.99) and
+monthly ($4.99) are off the paywall (products still APPROVED in ASC, just unsold).
+The site claimed them in 25 files. All purged:
+
+- llms.txt: pricing lines now free-tier-first, no "no weekly subscription" claim
+- DE/FR/ZH homepage hero badges: "pay once/forever" → free-tier stat (65 +10/day);
+  DE title "ohne Abo" → "ohne Abo-Zwang", ZH title 免訂閱 → 不強制訂閱
+- 10 EN articles + 2 drafts: every $17.99/$4.99 claim corrected (incl. FAQ JSON-LD)
+- New positioning everywhere: "paywall-after-scan is the trap, usable free tier is
+  the hero" — full detection free, 65 + 10/day, judge before paying
+- 5 subscription-attack articles re-angled with self-inclusive honesty (we sell
+  weekly too; article math applies to us; yearly is the honest keep-it price):
+  weekly-subscription-cost, best-no-subscription roundup, DE/FR/ZH roundups
+- Comparison pages now concede where competitors win (Cleanup yearly cheaper,
+  Cleaner AI has the lifetime we lack) — credibility play
+- Verified: 0×"17.99" site-wide, all JSON-LD valid, DE badge + weekly-cost page
+  rendered in preview
+- App Store listings v3.1 still say "monthly plan or one-time Lifetime Access" in
+  7 locales — descriptions locked until next version; prepared replacements in
+  ../app-store-description-pricing-fix.md

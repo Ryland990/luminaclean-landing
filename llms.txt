@@ -1,6 +1,6 @@
 # LuminaClean
 
-> LuminaClean is a privacy-first iPhone photo cleaner (iOS 17.6+). It finds duplicate photos, similar shots, blurry images and old screenshots using on-device AI — photos never leave the phone, no account is required, and it works offline. Free to start (65 deletions, +10 more every day); optional Pro is a one-time lifetime purchase or monthly plan — no weekly subscription.
+> LuminaClean is a privacy-first iPhone photo cleaner (iOS 17.6+). It finds duplicate photos, similar shots, blurry images and old screenshots using on-device AI — photos never leave the phone, no account is required, and it works offline. Free to start with a genuinely usable free tier (65 deletions, +10 more every day); optional Premium subscription unlocks everything.
 
 Key facts:
 - On-device processing only (Apple Vision framework): no cloud uploads, no servers, no tracking of photo content.
@@ -9,7 +9,7 @@ Key facts:
 - AI categories: automatically sorts the library into People, Pets, Travel, Food, Nature, Buildings and more.
 - Extras: free video compression for all users, Flashback (clean one year at a time), Daily Bites (on-this-day memories and streaks).
 - Deleted photos go to the iOS Recently Deleted folder and are recoverable for 30 days. With iCloud Photos enabled, deletions sync across devices.
-- Pricing: free tier with daily deletions; Pro as a one-time lifetime purchase or monthly subscription. No weekly subscription pricing.
+- Pricing: usable free tier with daily deletions (65 to start, +10/day, no account needed); Premium as an optional subscription. Everything can be tested free before paying.
 - App Store: https://apps.apple.com/app/id6757949814
 
 ## Pages
@@ -23,7 +23,7 @@ Key facts:
 ## Key guides
 
 - [iPhone Storage Full? 10 Ways to Free Up Space](https://luminaclean.app/blog/iphone-storage-full-free-space.html): pillar guide to reclaiming storage
-- [Best iPhone Photo Cleaner Without Subscription](https://luminaclean.app/blog/best-photo-cleaner-no-subscription-iphone.html): comparison of one-time-purchase vs weekly-subscription cleaner apps
+- [Best iPhone Photo Cleaner Without Subscription](https://luminaclean.app/blog/best-photo-cleaner-no-subscription-iphone.html): free and free-to-start cleaner apps compared honestly with subscription ones
 - [How to Delete Duplicate Photos on iPhone](https://luminaclean.app/blog/delete-duplicate-photos-iphone.html): four methods compared, including Apple's built-in Duplicates album
 - [Why Is iPhone Storage Full After Deleting Photos?](https://luminaclean.app/blog/why-iphone-storage-full-after-deleting-photos.html): Recently Deleted, iCloud sync and caching explained
 - [iPhone Duplicates Album Not Showing](https://luminaclean.app/blog/iphone-photos-duplicates-album-not-showing.html): troubleshooting Apple Photos duplicate detection
