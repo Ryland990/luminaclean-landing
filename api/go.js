@@ -16,7 +16,9 @@ export default async function handler(req) {
   const url = new URL(req.url);
   const campaign = (url.searchParams.get("c") || "oai-install").toLowerCase();
   const safeCampaign = SLUG_RE.test(campaign) ? campaign : "oai-install";
-  const oppref = url.searchParams.get("oppref");
+  // the ticket arrives as ?oppref= (their automatic reserved param) or as
+  // ?clickid= (our explicit clickid={oppref} landing-page template) — accept both
+  const oppref = url.searchParams.get("oppref") || url.searchParams.get("clickid");
   const ip = req.headers.get("x-real-ip") ||
     (req.headers.get("x-forwarded-for") || "").split(",")[0].trim() || null;
   const country = req.headers.get("x-vercel-ip-country");
