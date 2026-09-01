@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- OpenAI Ads Pixel Start -->
+    <script>!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"TAYtVUPVtnccVCA8W2ZwNM",debug:true});
+    // Conversion = App Store click: the last measurable action before the
+    // install happens off-web. Create/select the matching "store_click"
+    // conversion in the OpenAI campaign UI.
+    document.addEventListener("click",function(ev){var el=ev.target&&ev.target.closest&&ev.target.closest('a[href*="apps.apple.com"]');if(!el)return;oaiq("measure","store_click",{type:"customer_action",amount:0,currency:"USD"});},true);</script>
+    <!-- OpenAI Ads Pixel End -->
     <!-- TikTok Pixel Code Start -->
     <script>
     !function (w, d, t) {
