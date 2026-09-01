@@ -3,10 +3,11 @@
 <head>
     <!-- OpenAI Ads Pixel Start -->
     <script>!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"TAYtVUPVtnccVCA8W2ZwNM",debug:true});
-    // Conversion = store-button click (checkout_started in the OpenAI UI).
+    // Conversion = store-button click -> custom event app_store_download_clicked
+    // (must match the custom conversion defined in the OpenAI Ads dashboard).
     // Matches onelink.me too: the AppsFlyer smart script rewrites every
     // App Store href to luminaclean.onelink.me at page load.
-    document.addEventListener("click",function(ev){var el=ev.target&&ev.target.closest&&ev.target.closest('a[href*="apps.apple.com"],a[href*="onelink.me"]');if(!el)return;oaiq("measure","checkout_started",{type:"contents",amount:0,currency:"USD"});},true);</script>
+    document.addEventListener("click",function(ev){var el=ev.target&&ev.target.closest&&ev.target.closest('a[href*="apps.apple.com"],a[href*="onelink.me"]');if(!el)return;oaiq("measure","custom",{type:"custom"},{custom_event_name:"app_store_download_clicked"});},true);</script>
     <!-- OpenAI Ads Pixel End -->
     <!-- TikTok Pixel Code Start -->
     <script>
