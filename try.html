@@ -6,7 +6,7 @@
     // Conversion = store-button click (checkout_started in the OpenAI UI).
     // Matches onelink.me too: the AppsFlyer smart script rewrites every
     // App Store href to luminaclean.onelink.me at page load.
-    document.addEventListener("click",function(ev){var el=ev.target&&ev.target.closest&&ev.target.closest('a[href*="apps.apple.com"],a[href*="onelink.me"]');if(!el)return;oaiq("measure","checkout_started",{type:"customer_action",amount:0,currency:"USD"});},true);</script>
+    document.addEventListener("click",function(ev){var el=ev.target&&ev.target.closest&&ev.target.closest('a[href*="apps.apple.com"],a[href*="onelink.me"]');if(!el)return;oaiq("measure","checkout_started",{type:"contents",amount:0,currency:"USD"});},true);</script>
     <!-- OpenAI Ads Pixel End -->
     <!-- TikTok Pixel Code Start -->
     <script>
