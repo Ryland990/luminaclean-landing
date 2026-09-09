@@ -10,8 +10,9 @@ SERP verdicts below are dated 2026-07-18. Mark items PUBLISHED when shipped.
 - best-photo-cleaner-no-subscription-iphone — (buying guide) — #1 BOTH
   QUERIES, AI-cited. Star post.
 - delete-duplicate-photos-iphone — (how-to) — invisible, winnable
-- delete-similar-photos-iphone — (how-to) — invisible, tough (rd.com,
-  MacPaw)
+- delete-similar-photos-iphone — MERGED 2026-09-09 into
+  delete-duplicate-photos-iphone#similar-photos (31 impressions in 5 months);
+  301'd
 - find-remove-blurry-photos-iphone — (how-to) — VISIBLE ~#5, AI-cited
 - iphone-photos-duplicates-album-not-showing — (troubleshooting) — VISIBLE
   ~#4-6, AI-cited
@@ -26,7 +27,8 @@ SERP verdicts below are dated 2026-07-18. Mark items PUBLISHED when shipped.
   starved; zero competition
 - iphone-photo-privacy-safety — (definition) — invisible but thin low-DA
   competitors, winnable
-- space-saved-cleaning-photos — (definition/data) — invisible, moderate
+- space-saved-cleaning-photos — REMOVED 2026-09-09 (165 impr / 1 click in 9
+  months; unsourced data) → 301 to iphone-storage-full-free-space
 - why-iphone-storage-full-after-deleting-photos — (troubleshooting) —
   VISIBLE ~#4
 - is-clever-cleaner-really-free — "is Clever Cleaner really free"
@@ -46,6 +48,33 @@ REMOVED 2026-07-18 (301'd):
   (Apple-owned SERP, hopeless)
 - icloud-photos-storage-sync → cleaner-app-deleted-photos-from-icloud
   (Apple-owned SERP, angle absorbed by new post)
+
+## GSC-evidenced batch — 2026-09-09 (research pass = Search Console, 90 days)
+
+Rule applied: every topic below is a query the site ALREADY ranks for at
+position 4-10 with ~0 clicks because the ranking page doesn't answer it in
+its title. Dedicated exact-match posts. Drafted 2026-09-09, in content/drafts/.
+
+- recently-deleted-photos-take-up-storage — "do (photos in) recently deleted
+  take up storage" 3 phrasings, 494 impr, pos 8.5-9.2, 0 clicks (definition)
+- how-long-iphone-storage-update-after-deleting-photos — 73 impr pos 4.7 CTR
+  2.7% + "recently deleted album how long" 141 impr pos 10.6 (troubleshooting)
+- how-long-iphone-find-duplicates — 197 impr pos 6.0, 0 clicks (troubleshooting)
+- merge-exact-copies-iphone-photos — "merge exact copies" 2 phrasings, 288
+  impr, pos 7.9-9.8, 0 clicks (definition)
+
+Optimizations shipped same day: storage post retitled around "deleted photos
+but storage still full" (228 impr top phrasing); best-duplicate-cleaner title
+adds "Free & Paid" (16.5K impr at 0.1% CTR); duplicates-album post gains an
+iOS 26 / Utilities section + FAQ ("ios 26 duplicate photos not showing" 48
+impr, 6.2% CTR; "ios 16 ... utilities albums tab" 216 impr).
+
+Next candidates (same method, not yet drafted):
+- "iphone storage full but nothing on it" / "system data" cluster — check GSC
+- head-term cluster "delete duplicate photos iphone" (~860 impr, pos 33-45) —
+  needs links + the merged similar section; re-check position in 6 weeks
+- "best app to delete duplicate photos on iphone free" 116 impr pos 10.8 —
+  watch whether the retitle moves it
 
 ## Backlog (next up)
 

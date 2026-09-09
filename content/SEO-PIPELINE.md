@@ -60,11 +60,14 @@ Every post goes through ALL gates before publishing. No gate, no publish.
   study or dataset. Never present it as sourced, cited, or backed by
   research — if used at all, frame it explicitly as LuminaClean's own
   observation, not a statistic with authority behind it.
-- **Pricing claims must be exact and match `product-facts.md`:** $17.99
-  lifetime (one-time), $4.99/month, and a free tier that is a 65-file
-  onboarding scan + 10 free deletes/day. Never round, simplify, or imply a
-  different structure (no "weekly", no different price points).
+- **Pricing claims must match `product-facts.md` (pivoted 2026-08-12):** the
+  paywall sells ONLY Weekly Premium ($5.99/wk) and Yearly Premium
+  ($39.99/yr). Lifetime and monthly are gone — never mention them. Exact
+  prices only inside comparison tables; elsewhere write "optional Premium
+  subscription". Always lead with the free tier (65 deletions + 10/day, full
+  detection). Positioning: "the paywall-after-scan is the trap; a usable free
+  tier is the hero" — never "subscriptions are the trap" (we sell them too).
 - **Never claim a feature that does not exist.** In particular: no Android
-  version, no cloud backup, no weekly subscription tier, and nothing
+  version, no cloud backup, no lifetime or monthly plan, and nothing
   auto-deletes without explicit user approval. Check every feature claim
   against the DOES-NOT-EXIST list in `product-facts.md` before publishing.

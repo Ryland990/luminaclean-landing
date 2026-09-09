@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://luminaclean.app/blog/</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -79,12 +79,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luminaclean.app/blog/delete-similar-photos-iphone.html</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luminaclean.app/blog/iphone-photo-library-too-big-crashing.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -115,12 +109,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luminaclean.app/blog/space-saved-cleaning-photos.html</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luminaclean.app/blog/recover-photos-deleted-by-cleaner-app.html</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -140,12 +128,6 @@
   </url>
   <url>
     <loc>https://luminaclean.app/blog/photo-cleaner-deleted-wrong-photos.html</loc>
-    <lastmod>2026-07-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luminaclean.app/blog/photo-cleaner-weekly-subscription-cost.html</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -269,5 +251,29 @@
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://luminaclean.app/blog/recently-deleted-photos-take-up-storage.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luminaclean.app/blog/how-long-iphone-storage-update-after-deleting-photos.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luminaclean.app/blog/how-long-iphone-find-duplicates.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luminaclean.app/blog/merge-exact-copies-iphone-photos.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

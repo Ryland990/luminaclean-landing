@@ -24,6 +24,21 @@
       "source": "/blog/icloud-photos-storage-sync.html",
       "destination": "/blog/cleaner-app-deleted-photos-from-icloud.html",
       "permanent": true
+    },
+    {
+      "source": "/blog/photo-cleaner-weekly-subscription-cost.html",
+      "destination": "/blog/best-photo-cleaner-no-subscription-iphone.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/space-saved-cleaning-photos.html",
+      "destination": "/blog/iphone-storage-full-free-space.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/delete-similar-photos-iphone.html",
+      "destination": "/blog/delete-duplicate-photos-iphone.html",
+      "permanent": true
     }
   ],
   "headers": [

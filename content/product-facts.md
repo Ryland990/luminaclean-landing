@@ -1,6 +1,6 @@
 # LuminaClean product facts (validation file for all content)
 
-Last synced with App Store Connect: 2026-07-18.
+Last synced with App Store Connect: 2026-08-12 (pricing pivot to weekly/yearly).
 
 ## Features that EXIST (live today)
 
@@ -35,7 +35,9 @@ Last synced with App Store Connect: 2026-07-18.
 
 - No Android version
 - No cloud backup or cloud storage of any kind
-- No weekly subscription tier
+- No lifetime / one-time purchase on the paywall (retired 2026-08; the ASC
+  product still exists but is not sold — never advertise it)
+- No monthly plan on the paywall (same status as lifetime)
 - No meme detection
 - No background scanning (scanning happens in-app, user-initiated)
 - No auto-delete — nothing is ever deleted without explicit user approval;
@@ -46,9 +48,12 @@ Last synced with App Store Connect: 2026-07-18.
 
 - App Store ID: `id6757949814`
 - Clean App Store link: `https://apps.apple.com/app/id6757949814`
-- Pricing (App Store-confirmed 2026-07-18):
-  - Lifetime Access: $17.99 one-time
-  - Monthly Premium: $4.99/month
+- Pricing (App Store-confirmed 2026-08-12 — paywall sells ONLY these two):
+  - Weekly Premium: $5.99/week (for a one-off deep clean)
+  - Yearly Premium: $39.99/year (the honest keep-it price)
+  - Copy rule: exact prices ONLY inside comparison tables; everywhere else
+    say "optional Premium subscription". Lead with the free tier, never with
+    a price. Never write "no weekly subscription" or any lifetime/monthly claim.
 - Free tier: 65-file onboarding scan + 10 free deletes/day, plus a Daily
   Bonus of +10 deletes for returning users
 - Domain: `luminaclean.app`

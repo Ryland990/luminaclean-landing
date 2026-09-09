@@ -34,7 +34,7 @@
     <meta property="og:image" content="https://luminaclean.app/assets/images/og-image.png">
     <meta property="og:site_name" content="LuminaClean">
     <meta property="article:published_time" content="2026-04-20">
-    <meta property="article:modified_time" content="2026-04-20">
+    <meta property="article:modified_time" content="2026-09-09">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -73,7 +73,7 @@
         "headline": "iPhone Photos Duplicates Album Not Showing? (2026 Fix Guide)",
         "description": "The Duplicates album missing from your iPhone Photos app? Here are the 7 reasons and how to fix each.",
         "datePublished": "2026-04-20T00:00:00+00:00",
-        "dateModified": "2026-04-20T00:00:00+00:00",
+        "dateModified": "2026-09-09T00:00:00+00:00",
         "url": "https://luminaclean.app/blog/iphone-photos-duplicates-album-not-showing.html",
         "mainEntityOfPage": { "@id": "https://luminaclean.app/blog/iphone-photos-duplicates-album-not-showing.html" },
         "image": "https://luminaclean.app/assets/images/og-image.png",
@@ -118,6 +118,14 @@
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "It means iOS didn't find any pixel-identical duplicates. This is common because iOS only detects exact byte-for-byte copies — it misses similar photos, edited versions, and near-duplicates from burst mode or messaging apps. A third-party AI cleaner will typically find 3-5x more duplicates than the built-in album."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where is the Duplicates album on iOS 26?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Under Utilities in the Photos app, alongside Hidden and Recently Deleted. If you have customised the Photos layout, the Utilities section may be collapsed — use Customize & Reorder at the bottom of the screen to bring it back. After upgrading to iOS 26 the album can sit empty for a night or two while the duplicate scan reruns."
                 }
             },
             {
@@ -379,9 +387,15 @@
                 <p>Update to the latest iOS (<strong>Settings &rarr; General &rarr; Software Update</strong>). If that doesn&rsquo;t help, try the classic restart: hold side button + volume down until power-off slider appears, slide to power off, wait 10 seconds, power back on. This forces iOS to re-initialize photo services, which usually brings the album back within a few hours.</p>
             </div>
 
+            <h2 id="ios-26">iOS 26: where the Duplicates album lives now (and why it may look empty after updating)</h2>
+
+            <p>On iOS 26 the Duplicates album hasn&rsquo;t moved: open Photos, scroll down to <strong>Utilities</strong>, and it sits next to Hidden and Recently Deleted. On iOS 16 and 17 that same Utilities section is at the bottom of the Albums tab; on iOS 18 and later it&rsquo;s part of the single scrolling Photos view. If you use the customisable layout, Utilities can be collapsed or reordered, so check the Customize &amp; Reorder menu at the bottom of the Photos screen if the section seems to be gone.</p>
+
+            <p>The common iOS 26 surprise is an album that was full last week and is empty now. A major iOS upgrade resets on-device photo analysis, so the duplicate scan starts from scratch and only runs while the phone is locked, charging, and idle. Give it one or two nights plugged in with Low Power Mode off before assuming anything is broken. Merged pairs you cleared before the update stay merged; the empty album just means the new scan hasn&rsquo;t found fresh pairs yet.</p>
+
             <h2>When the built-in Duplicates album isn&rsquo;t enough</h2>
 
-            <p>Even when it works, iOS&rsquo;s Duplicates album has a hard limitation: it only catches exact copies. On a typical iPhone library, <strong>80%+ of actual wasted storage is not exact duplicates</strong> &mdash; it&rsquo;s similar shots, near-duplicates from burst mode, and edited versions. See the 2026 data in our <a href="space-saved-cleaning-photos.html">how much storage duplicate photos waste</a> breakdown.</p>
+            <p>Even when it works, iOS&rsquo;s Duplicates album has a hard limitation: it only catches exact copies. On a typical iPhone library, <strong>80%+ of actual wasted storage is not exact duplicates</strong> &mdash; it&rsquo;s similar shots, near-duplicates from burst mode, and edited versions. For the full list of what else eats storage, see our <a href="iphone-storage-full-free-space.html">iPhone storage guide</a>.</p>
 
             <p>If you&rsquo;ve confirmed the Duplicates album works but it only finds a handful of items, a third-party AI cleaner will typically find 3&ndash;5&times; more. It&rsquo;s worth running both.</p>
 
@@ -396,6 +410,8 @@
 
             <h2>Related guides</h2>
             <ul>
+                <li><a href="how-long-iphone-find-duplicates.html">How Long Does iPhone Take to Find Duplicates?</a> &mdash; typical timings and how to speed the scan up.</li>
+                <li><a href="merge-exact-copies-iphone-photos.html">What "Merge Exact Copies" Does in iPhone Photos</a> &mdash; what the button keeps and where the rest goes.</li>
                 <li><a href="delete-duplicate-photos-iphone.html">How to Delete Duplicate Photos on iPhone</a> &mdash; 4 methods compared.</li>
                 <li><a href="why-iphone-storage-full-after-deleting-photos.html">Why Is My iPhone Storage Full After I Deleted Photos?</a></li>
                 <li><a href="iphone-storage-full-free-space.html">iPhone Storage Full? 10 Ways to Free Up Space</a>.</li>
@@ -411,10 +427,13 @@
             <p>Open Photos &rarr; Albums &rarr; scroll all the way down past your personal albums and Media Types to the <strong>Utilities</strong> section. You&rsquo;ll see Imports, Hidden, Recently Deleted, and Duplicates there. If Utilities itself is missing, you&rsquo;re on iOS 15 or older.</p>
 
             <h3>How long does it take for the Duplicates album to appear?</h3>
-            <p>On a new iPhone or after an iOS 16+ update, the initial duplicate scan can take anywhere from 30 minutes to several hours. For libraries over 20,000 photos, plan for overnight. The scan only runs when the phone is plugged in and locked.</p>
+            <p>On a new iPhone or after a major iOS update, the initial duplicate scan can take anywhere from 30 minutes to several hours. For libraries over 20,000 photos, plan for one or two nights. The scan only runs when the phone is plugged in and locked.</p>
 
             <h3>Why is the Duplicates album empty?</h3>
             <p>iOS only detects pixel-identical duplicates &mdash; byte-for-byte exact copies. If your library doesn&rsquo;t have any, the album is legitimately empty. A third-party AI cleaner will find 3&ndash;5&times; more because it detects visual similarity, not file identity.</p>
+
+            <h3>Where is the Duplicates album on iOS 26?</h3>
+            <p>Under <strong>Utilities</strong> in the Photos app, alongside Hidden and Recently Deleted. If you&rsquo;ve customised the Photos layout, the Utilities section may be collapsed &mdash; use Customize &amp; Reorder at the bottom of the screen to bring it back. After upgrading to iOS 26 the album can sit empty for a night or two while the duplicate scan reruns.</p>
 
             <h3>Does iCloud Photos affect the Duplicates album?</h3>
             <p>Yes. If iCloud Photos is still syncing, the duplicate scan pauses. Wait until sync completes (check Photos app for "Uploading" or "Downloading" status at the bottom), then leave the iPhone plugged in overnight to let the scan run.</p>

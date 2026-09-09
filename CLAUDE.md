@@ -252,3 +252,27 @@ The site claimed them in 25 files. All purged:
 - App Store listings v3.1 still say "monthly plan or one-time Lifetime Access" in
   7 locales — descriptions locked until next version; prepared replacements in
   ../app-store-description-pricing-fix.md
+
+## Session 10 (2026-09-09): blog performance audit → prune + expand
+
+Data (GSC 90d: 369 clicks / 108K impr; Signal 28d): two posts earn 65% of blog
+clicks — storage-after-deleting (140 clicks, 37.5K impr) and duplicates-album-
+not-showing (61, 25.4K). Bottom 16 posts combined < the #6 post.
+- REMOVED (301'd in vercel.json): photo-cleaner-weekly-subscription-cost →
+  no-subscription roundup; space-saved-cleaning-photos → storage pillar;
+  delete-similar-photos-iphone → merged as #similar-photos section into
+  delete-duplicate-photos-iphone. Inbound links rewired, cards/sitemap/llms cleaned.
+- OPTIMIZED: storage post retitled "iPhone Storage Still Full After Deleting
+  Photos?" (H1 "Deleted Photos but iPhone Storage Still Full?"); best-duplicate-
+  cleaner title now "Free & Paid (2026)"; duplicates-album post gained iOS 26 /
+  Utilities section + FAQ.
+- NEW (GSC-evidenced, exact-match posts for queries already ranking pos 4-10 at
+  0 clicks): recently-deleted-photos-take-up-storage, how-long-iphone-storage-
+  update-after-deleting-photos, how-long-iphone-find-duplicates,
+  merge-exact-copies-iphone-photos. Written by 4 parallel Opus subagents from
+  scratchpad/writer-brief.md, verified by verify_draft.py, cross-linked from winners.
+- Pipeline docs fixed: SEO-PIPELINE.md + product-facts.md still said $17.99
+  lifetime / $4.99 monthly / "no weekly" — corrected to weekly/yearly + free-tier-first.
+- PARKED.md created at repo root (global working-style backlog).
+- Method for next time: GSC Queries sorted by impressions → any query at pos
+  4-12 with ~0 clicks whose ranking page doesn't answer it in the title = new post.

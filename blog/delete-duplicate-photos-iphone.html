@@ -39,7 +39,7 @@
     <meta property="og:image" content="https://luminaclean.app/assets/images/og-image.png">
     <meta property="og:site_name" content="LuminaClean">
     <meta property="article:published_time" content="2026-01-15">
-    <meta property="article:modified_time" content="2026-02-18">
+    <meta property="article:modified_time" content="2026-09-09">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -81,7 +81,7 @@
         "headline": "How to Delete Duplicate Photos on iPhone in 2026: 4 Methods Compared",
         "description": "Step-by-step guide to deleting duplicate photos on iPhone. Compare manual review, iOS built-in Duplicates, and the best AI-powered duplicate photo apps.",
         "datePublished": "2026-01-15T00:00:00+00:00",
-        "dateModified": "2026-02-18T00:00:00+00:00",
+        "dateModified": "2026-09-09T00:00:00+00:00",
         "url": "https://luminaclean.app/blog/delete-duplicate-photos-iphone.html",
         "mainEntityOfPage": { "@id": "https://luminaclean.app/blog/delete-duplicate-photos-iphone.html" },
         "image": "https://luminaclean.app/assets/images/og-image.png",
@@ -101,7 +101,7 @@
         "url": "https://luminaclean.app/blog/delete-duplicate-photos-iphone.html",
         "mainEntityOfPage": { "@id": "https://luminaclean.app/blog/delete-duplicate-photos-iphone.html" },
         "datePublished": "2026-01-15T00:00:00+00:00",
-        "dateModified": "2026-02-18T00:00:00+00:00",
+        "dateModified": "2026-09-09T00:00:00+00:00",
         "inLanguage": "en",
         "author": { "@id": "https://luminaclean.app/#organization" },
         "publisher": { "@id": "https://luminaclean.app/#organization" },
@@ -180,6 +180,14 @@
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Yes. If you have iCloud Photos enabled, deleting duplicates from your iPhone also removes them from iCloud, freeing up both local and cloud storage. Deleted photos first go to the Recently Deleted folder for 30 days. Empty this folder to reclaim the space immediately."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I delete similar (not exact) photos on iPhone?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Apple's Duplicates album only finds byte-identical copies, so similar photos — burst frames, repeated shots of one scene, edited versions, WhatsApp re-saves — need a different tool. The free Bursts album handles burst frames only. For everything else, an on-device AI cleaner such as LuminaClean groups photos by visual similarity and pre-selects the weaker version in each group for you to review; deletions go to Recently Deleted for 30 days."
                 }
             }
         ]
@@ -478,7 +486,7 @@
                 </div>
             </div>
 
-            <p>Apple&rsquo;s built-in tool is a solid first step that everyone with iOS 16+ should use. However, it has a significant limitation: it only catches <strong>exact duplicates</strong>. If you took three nearly identical photos of the same sunset &mdash; each slightly different &mdash; the Duplicates album will not flag them. For the "similar but not identical" case, see our guide on <a href="delete-similar-photos-iphone.html">how to delete similar (not exact) photos on iPhone</a>. You also will not <a href="find-remove-blurry-photos-iphone.html">find blurry photos</a>, old screenshots, or similar shots from burst mode that are wasting your storage.</p>
+            <p>Apple&rsquo;s built-in tool is a solid first step that everyone with iOS 16+ should use. However, it has a significant limitation: it only catches <strong>exact duplicates</strong>. If you took three nearly identical photos of the same sunset &mdash; each slightly different &mdash; the Duplicates album will not flag them. For the "similar but not identical" case, see the <a href="#similar-photos">similar photos section</a> below. You also will not <a href="find-remove-blurry-photos-iphone.html">find blurry photos</a>, old screenshots, or similar shots from burst mode that are wasting your storage.</p>
 
             <div class="pro-tip">
                 <strong>Pro Tip:</strong> The Duplicates album can take several days to populate after you first set up your iPhone or enable iCloud Photos. If it still isn&rsquo;t appearing or is unexpectedly empty, our <a href="iphone-photos-duplicates-album-not-showing.html">Duplicates album not showing fix guide</a> walks through the 7 common causes.
@@ -658,6 +666,28 @@
 
             <p>For the best results, we recommend a two-step approach: start with the built-in Duplicates album to merge exact copies, then run a dedicated app to catch the similar photos, blurry images, and screenshots that Apple&rsquo;s tool overlooks. This combination ensures your photo library is as clean as possible.</p>
 
+            <h2 id="similar-photos">Similar Photos (Not Exact Duplicates): What the Duplicates Album Misses</h2>
+
+            <p>Everything above deals with <em>exact</em> copies. The bigger storage problem on most iPhones is photos that look nearly identical but aren&rsquo;t byte-for-byte the same, and Apple&rsquo;s Duplicates album never touches those. The usual sources:</p>
+
+            <ul>
+                <li><strong>Burst mode:</strong> hold the shutter and iOS captures 10+ frames. One is good; the other nine are near-identical clutter.</li>
+                <li><strong>Multiple shots of the same scene:</strong> three or five &ldquo;just in case&rdquo; photos of the same sunset.</li>
+                <li><strong>Edited versions</strong> saved as separate files instead of non-destructive edits.</li>
+                <li><strong>Messaging re-saves:</strong> WhatsApp or Telegram compresses a photo and saves a copy that looks the same but is a different file.</li>
+                <li><strong>Resolution variants</strong> from AirDrop, email attachments, or web downloads.</li>
+            </ul>
+
+            <p>Apple&rsquo;s duplicate check compares file hashes, so a one-pixel difference makes two photos &ldquo;different.&rdquo; Finding similar photos needs perceptual hashing or a vision model that compares images the way you would. iOS has that technology (it powers Memories and People), but Apple hasn&rsquo;t exposed it for cleanup.</p>
+
+            <h3>Three ways to clear similar photos</h3>
+
+            <p><strong>Bursts album (free, narrow).</strong> Photos &rarr; Albums &rarr; Media Types &rarr; Bursts. Open a burst, tap Select, tick the frames to keep, tap Done &rarr; Keep Only Favorites. It handles burst frames and nothing else.</p>
+
+            <p><strong>Manual review (free, slow).</strong> Scroll the library and delete near-duplicates by eye. Fine under 500 photos; on a 5,000-photo library it&rsquo;s a 5&ndash;10 hour job nobody finishes.</p>
+
+            <p><strong>On-device AI cleaner (the practical option).</strong> An app groups photos by visual similarity, pre-selects the lower-quality version in each group, and lets you review before deleting. LuminaClean does this on-device in a few minutes for a typical library; the free tier includes the full similar-photo detection with 65 deletions to start and 10 more every day, and every deletion lands in Recently Deleted for 30 days. Auto-grouping isn&rsquo;t perfect, so spot-check groups with more than two photos before bulk-deleting.</p>
+
             <h2>The WhatsApp and Messaging App Problem</h2>
 
             <p>One of the most common sources of duplicates that deserves special attention is <strong>messaging app auto-save</strong>. WhatsApp, Telegram, and other apps can automatically save every photo and video you receive to your camera roll.</p>
@@ -685,8 +715,8 @@
 
             <h2>Related Articles</h2>
             <ul>
+                <li><a href="how-long-iphone-find-duplicates.html">How Long Does iPhone Take to Find Duplicates?</a> &mdash; why the built-in album takes nights, not minutes.</li>
                 <li><a href="best-duplicate-photo-cleaner-iphone.html">Best Duplicate Photo Cleaner Apps for iPhone in 2026</a></li>
-                <li><a href="space-saved-cleaning-photos.html">Before vs After: How Much Space Can You Save Cleaning Photos?</a></li>
                 <li><a href="iphone-storage-full-free-space.html">iPhone Storage Full? 10 Ways to Free Up Space</a></li>
                 <li><a href="clean-up-iphone-screenshots.html">Screenshot Clutter: How to Clean Up iPhone Screenshots</a></li>
                 <li><a href="iphone-photo-privacy-safety.html">iPhone Photo Privacy: Keeping Your Images Safe</a></li>
