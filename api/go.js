@@ -34,6 +34,9 @@ export default async function handler(req) {
           ...(ua ? { "x-client-ua": ua.slice(0, 300) } : {}),
           ...(oppref ? { "x-client-oppref": encodeURIComponent(oppref.slice(0, 300)) } : {}),
           ...(ip ? { "x-client-ip": ip } : {}),
+          // proves to FolioKit's `go` function that these x-client-* values
+          // come from this relay (Vercel env FOLIOKIT_RELAY_SECRET)
+          ...(process.env.FOLIOKIT_RELAY_SECRET ? { "x-relay-secret": process.env.FOLIOKIT_RELAY_SECRET } : {}),
         },
         redirect: "manual",
       },
