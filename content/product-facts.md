@@ -50,7 +50,7 @@ Last synced with App Store Connect: 2026-08-12 (pricing pivot to weekly/yearly).
 - Clean App Store link: `https://apps.apple.com/app/id6757949814`
 - Pricing (App Store-confirmed 2026-08-12 — paywall sells ONLY these two):
   - Weekly Premium: $5.99/week (for a one-off deep clean)
-  - Yearly Premium: $39.99/year (the honest keep-it price)
+  - Yearly Premium: $17.99/year (the keep-it price; lowered from $39.99, Sep 2026)
   - Copy rule: exact prices ONLY inside comparison tables; everywhere else
     say "optional Premium subscription". Lead with the free tier, never with
     a price. Never write "no weekly subscription" or any lifetime/monthly claim.

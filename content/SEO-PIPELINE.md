@@ -62,7 +62,7 @@ Every post goes through ALL gates before publishing. No gate, no publish.
   observation, not a statistic with authority behind it.
 - **Pricing claims must match `product-facts.md` (pivoted 2026-08-12):** the
   paywall sells ONLY Weekly Premium ($5.99/wk) and Yearly Premium
-  ($39.99/yr). Lifetime and monthly are gone — never mention them. Exact
+  ($17.99/yr). Lifetime and monthly are gone — never mention them. Exact
   prices only inside comparison tables; elsewhere write "optional Premium
   subscription". Always lead with the free tier (65 deletions + 10/day, full
   detection). Positioning: "the paywall-after-scan is the trap; a usable free
