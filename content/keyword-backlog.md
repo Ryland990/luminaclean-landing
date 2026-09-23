@@ -102,6 +102,27 @@ Next candidates (same method, not yet drafted):
    SERP; med)
 7. best swipe-to-delete photo apps (buying guide; unbranded cut open; med)
 
+## 2026-09-23 batch: iOS 27 / new-iPhone demand (research run + GSC/Bing)
+
+Evidence: research pass 2026-09-23 (MacRumors, 9to5Mac, Apple support docs,
+Apple Community); GSC 90d pages + 28d queries; Bing Webmaster + Copilot AI
+citations. Publishing status: all four are IN PROGRESS.
+- shared-albums-icloud-storage-ios-27 (NEW; troubleshooting/definition):
+  "do shared albums count toward iCloud storage". iOS 27 change.
+- new-iphone-transfer-not-enough-storage (NEW; how-to): "not enough iCloud
+  storage to back up new iPhone". iPhone 18 / Duo season.
+- iphone-storage-full-free-space (REFRESH): add iOS 27 "not enough storage
+  to update" + Apple Intelligence 14GB. It had 4 clicks / 2.5K impressions
+  in 90 days.
+- clean-up-iphone-screenshots (REFRESH): iOS 27 "Captured by Me" angle.
+  It had 2 clicks / 1.1K impressions in 90 days.
+
+Parked candidates from the same research:
+- Apple Intelligence storage (14GB): standalone post only if the refresh's
+  section gets impressions.
+- "Optimize iPhone Storage not working": evergreen, no post covers it yet.
+- iOS 27 System Data: low fit (the app can't clear it). Traffic play only.
+
 ## Rules
 
 - If this backlog is empty: STOP. Run a research pass (GPT consult + own

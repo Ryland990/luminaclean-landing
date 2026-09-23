@@ -22,15 +22,15 @@ Key facts:
 
 ## Key guides
 
-- [iPhone Storage Full? 10 Ways to Free Up Space](https://luminaclean.app/blog/iphone-storage-full-free-space.html): pillar guide to reclaiming storage
+- [iPhone Storage Full? How to Free Up Space (and Make Room for iOS 27)](https://luminaclean.app/blog/iphone-storage-full-free-space.html): pillar guide to reclaiming storage, including free space for the iOS 27 update and Apple Intelligence
 - [Best iPhone Photo Cleaner Without Subscription](https://luminaclean.app/blog/best-photo-cleaner-no-subscription-iphone.html): free and free-to-start cleaner apps compared honestly with subscription ones
 - [How to Delete Duplicate Photos on iPhone](https://luminaclean.app/blog/delete-duplicate-photos-iphone.html): four methods compared, including Apple's built-in Duplicates album
 - [Why Is iPhone Storage Full After Deleting Photos?](https://luminaclean.app/blog/why-iphone-storage-full-after-deleting-photos.html): Recently Deleted, iCloud sync and caching explained
 - [iPhone Duplicates Album Not Showing](https://luminaclean.app/blog/iphone-photos-duplicates-album-not-showing.html): troubleshooting Apple Photos duplicate detection
 - [Find & Remove Blurry Photos on iPhone](https://luminaclean.app/blog/find-remove-blurry-photos-iphone.html)
-- [How to Clean Up Screenshots on iPhone](https://luminaclean.app/blog/clean-up-iphone-screenshots.html)
+- [Clean Up iPhone Screenshots & Saved Images (iOS 27 Captured by Me)](https://luminaclean.app/blog/clean-up-iphone-screenshots.html): clear screenshots, screen recordings and saved WhatsApp images
 - [iPhone Photo Library Too Big? Fix Photos App Crashing](https://luminaclean.app/blog/iphone-photo-library-too-big-crashing.html): 6 fixes for a freezing or crashing Photos app, no data loss
-- [Best Duplicate Photo Cleaner Apps for iPhone](https://luminaclean.app/blog/best-duplicate-photo-cleaner-iphone.html): 5 duplicate cleaner apps honestly compared
+- [Best Free Apps to Delete Duplicate Photos on iPhone (2026)](https://luminaclean.app/blog/best-duplicate-photo-cleaner-iphone.html): 5 duplicate cleaner apps honestly compared
 - [Are iPhone Photo Cleaner Apps Safe?](https://luminaclean.app/blog/iphone-photo-privacy-safety.html): cloud vs on-device processing, AI training risks, privacy labels decoded
 - [Photo Cleaner App Deleted Your Photos? How to Get Them Back](https://luminaclean.app/blog/recover-photos-deleted-by-cleaner-app.html): Recently Deleted recovery steps and what to do after 30 days
 - [Cleaner App Deleted Photos From iCloud? Here's What Happened](https://luminaclean.app/blog/cleaner-app-deleted-photos-from-icloud.html): why an iCloud-synced delete follows you to every device, and how to recover
@@ -44,6 +44,8 @@ Key facts:
 - [LuminaClean vs Cleanup App](https://luminaclean.app/blog/luminaclean-vs-cleanup-app.html): factual side-by-side using public App Store data
 - [LuminaClean vs Cleaner AI](https://luminaclean.app/blog/luminaclean-vs-cleaner-ai.html)
 - [Do Photos in Recently Deleted Take Up Storage? (2026)](https://luminaclean.app/blog/recently-deleted-photos-take-up-storage.html): Yes. Photos in Recently Deleted still count against iPhone and iCloud storage for up to 30 days. How to empty the album and free the space now.
+- [Do Shared Albums Count Toward iCloud Storage? (iOS 27)](https://luminaclean.app/blog/shared-albums-icloud-storage-ios-27.html): Yes for new and upgraded albums in iOS 27. The owner pays for full-resolution items, including other people's. Temporary albums don't count.
+- [Not Enough Storage to Move to Your New iPhone?](https://luminaclean.app/blog/new-iphone-transfer-not-enough-storage.html): Apple's free 21-day temporary iCloud storage for moving to a new iPhone, and what to trim if the new phone is smaller.
 - [How Long Until iPhone Storage Updates After Deleting Photos?](https://luminaclean.app/blog/how-long-iphone-storage-update-after-deleting-photos.html): Emptying Recently Deleted frees space in seconds to minutes. Photos sit there 30 days first. Why the Settings number lags and how to refresh it.
 - [How Long Does iPhone Take to Find Duplicates? (2026)](https://luminaclean.app/blog/how-long-iphone-find-duplicates.html): Apple's Duplicates album fills from a background scan that runs only when your iPhone is locked and charging. Typical timings and how to speed it up.
 - [What "Merge Exact Copies" Does in iPhone Photos (2026)](https://luminaclean.app/blog/merge-exact-copies-iphone-photos.html): Tapping Merge in the Duplicates album keeps the best copy, combines the data, and sends the extras to Recently Deleted for 30 days. Nothing is erased.

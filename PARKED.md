@@ -8,9 +8,14 @@
 - App Store listing v3.1 still says "monthly plan or one-time Lifetime Access"
   in 7 locales. Locked until the next app version — replacement text ready in
   ../app-store-description-pricing-fix.md; apply via asc.py when v3.2 exists.
-- Two July posts (is-cleanmyphone-worth-it, recover-permanently-deleted-photos)
-  show 0 Google impressions after 7 weeks; one is "crawled, not indexed". Hit
-  Request Indexing in GSC for both, then re-judge all 10 July posts ~2026-10-22.
+- Re-judge the July posts ~2026-10-22 using Google AND Bing/Copilot data,
+  not Google alone. As of 2026-09-23:
+  - is-cleanmyphone-worth-it: 0 Google impressions, but it's the #1
+    Copilot-cited page (112 citations for "cleanmyphone review") and has 6
+    Bing clicks.
+  - is-clever-cleaner-really-free: 8 Bing clicks (17% CTR).
+  Don't cut either of them. recover-permanently-deleted and
+  cancel-refund remain weak on both engines.
 - Resubmit sitemap in GSC + Bing after the 2026-09-09 publish (3 removals,
   4 additions).
 
