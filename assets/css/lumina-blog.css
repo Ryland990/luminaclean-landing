@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500&display=swap');
+/* Lumina blog aside (app 3.4 companion) — shared by every blog post.
+   No-JS: all lines show as a stacked list. JS (lumina-blog.js) turns it into
+   a one-line-at-a-time monologue with pose changes. */
+.lumina-aside { display: grid; grid-template-columns: 150px 1fr; gap: 1.25rem; align-items: center; margin: 2.4rem 0; padding: 1.4rem 1.4rem 1.3rem; background: #0c0c0c; border: 1px solid rgba(255,255,255,0.08); border-top: 2px solid rgba(199,244,100,0.6); border-radius: 18px; color: #e8e8e8; }
+.lumina-aside--gentle { border-top-color: rgba(212,163,115,0.7); }
+@media (max-width: 560px) { .lumina-aside { grid-template-columns: 1fr; text-align: center; padding: 1.2rem 1rem 1.1rem; } }
+.la-stage { position: relative; height: 150px; }
+@media (max-width: 560px) { .la-stage { width: 170px; margin: 0 auto; } }
+.la-stage::before { content: ''; position: absolute; left: 50%; bottom: 4px; transform: translateX(-50%); width: 144px; height: 30px; border-radius: 50%; background: radial-gradient(ellipse at center, #000 55%, rgba(0,0,0,0) 74%); border: 2px solid #c7f464; box-shadow: 0 0 16px rgba(199,244,100,0.55), 0 0 40px rgba(199,244,100,0.2); }
+.la-her { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); width: 118px; padding: 0; margin: 0; border: 0; background: none; cursor: pointer; line-height: 0; }
+.la-her img { width: 100%; height: auto; transition: opacity 0.18s ease, transform 0.25s ease; }
+.la-her:hover img { transform: translateY(-3px); }
+.la-her:focus-visible { outline: 2px solid #c7f464; outline-offset: 4px; border-radius: 12px; }
+.la-kicker { font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace; font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: #8a8a8a; margin: 0 0 0.6rem; display: flex; align-items: center; gap: 0.5rem; }
+@media (max-width: 560px) { .la-kicker { justify-content: center; } }
+.la-kicker::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #c7f464; flex: none; }
+.la-lines { list-style: none; margin: 0 0 1rem; padding: 0; display: grid; gap: 0.45rem; }
+.la-lines li { position: relative; background: #161616; border: 1px solid rgba(199,244,100,0.3); border-radius: 12px; padding: 0.6rem 0.85rem; font-size: 1rem; line-height: 1.45; color: #f0f0f0; margin: 0; }
+.la-lines li:last-child { font-family: 'Anton', 'Arial Narrow', sans-serif; text-transform: uppercase; letter-spacing: 0.02em; font-size: 1.15rem; color: #c7f464; }
+.lumina-aside[lang^="zh"] .la-lines li:last-child, .lumina-aside:lang(zh) .la-lines li:last-child { font-family: inherit; text-transform: none; font-weight: 700; }
+/* live mode: one line at a time, bubble tail pointing at her */
+.lumina-aside.la-live .la-lines { display: block; min-height: 3.2em; }
+.lumina-aside.la-live .la-lines li { display: none; }
+.lumina-aside.la-live .la-lines li.is-on { display: block; animation: laPop 0.28s ease both; }
+.lumina-aside.la-live .la-lines li.is-on::before { content: ''; position: absolute; left: -7px; top: 50%; width: 12px; height: 12px; background: #161616; border-left: 1px solid rgba(199,244,100,0.3); border-bottom: 1px solid rgba(199,244,100,0.3); transform: translateY(-50%) rotate(45deg); }
+@media (max-width: 560px) { .lumina-aside.la-live .la-lines li.is-on::before { display: none; } }
+@keyframes laPop { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.la-dots { display: none; gap: 5px; margin: -0.4rem 0 0.9rem; }
+.lumina-aside.la-live .la-dots { display: flex; }
+@media (max-width: 560px) { .la-dots { justify-content: center; } }
+.la-dots span { width: 18px; height: 3px; border-radius: 2px; background: rgba(255,255,255,0.15); transition: background 0.3s ease; }
+.la-dots span.is-on { background: #c7f464; }
+.la-cta { display: inline-flex; align-items: center; gap: 0.55rem; font-family: 'Anton', 'Arial Narrow', sans-serif; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1rem; background: #c7f464; color: #0d1a00 !important; text-decoration: none !important; padding: 0.8rem 1.2rem; border-radius: 14px; box-shadow: 0 4px 20px rgba(199,244,100,0.25); transition: transform 0.15s ease, box-shadow 0.2s ease; }
+@media (max-width: 560px) { .la-cta { width: 100%; justify-content: center; font-size: 0.95rem; padding: 0.8rem 0.9rem; } }
+.la-cta:hover { transform: translateY(-1px); box-shadow: 0 8px 28px rgba(199,244,100,0.4); }
+.la-cta svg { width: 18px; height: 18px; flex: none; }
+.lumina-aside.la-done .la-cta { animation: laNudge 0.6s ease 1; }
+@keyframes laNudge { 0%,100% { transform: none; } 40% { transform: translateY(-4px); } 70% { transform: translateY(1px); } }
+.la-sub { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: #6f6f6f; margin: 0.8rem 0 0; line-height: 1.6; }
+@media (prefers-reduced-motion: reduce) { .la-her img, .la-cta { transition: none; } .lumina-aside.la-done .la-cta, .lumina-aside.la-live .la-lines li.is-on { animation: none; } }
+/* App Store badge variant (lost-photo posts): same two-line badge as the homepage hero */
+.la-cta--badge { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; text-transform: none; letter-spacing: 0; padding: 0.55rem 1.2rem 0.55rem 1rem; }
+.la-cta--badge svg { width: 24px; height: 24px; }
+.la-badge { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.1; }
+.la-badge-small { font-size: 0.66rem; font-weight: 500; opacity: 0.85; }
+.la-badge-large { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em; }
+/* GET JUDGED — [Apple] Download on the App Store */
+.la-cta--judged { gap: 0.7rem; padding: 0.75rem 1.2rem; }
+.la-cta-dash { opacity: 0.5; }
+.la-cta-dl { display: inline-flex; align-items: center; gap: 0.4rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; text-transform: none; letter-spacing: 0; font-size: 0.9rem; font-weight: 600; }
+.la-cta-dl svg { width: 17px; height: 17px; }
+@media (max-width: 560px) {
+  .la-cta--judged { flex-direction: column; gap: 0.25rem; padding: 0.7rem 0.9rem; }
+  .la-cta-main { font-size: 1.1rem; }
+  .la-cta-dash { display: none; }
+  .la-cta-dl { font-size: 0.82rem; opacity: 0.85; }
+}

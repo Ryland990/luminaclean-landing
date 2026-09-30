@@ -299,3 +299,17 @@ LOCAL ONLY until Razvan OKs the push.
   large-video/compressed/converted deletes free). product-facts.md: Lumina,
   12 languages, corrected free tier. Sitemap homepage lastmod → 2026-09-30.
 - Rules held: no "sees your camera roll", no prices, no Live Photo claim.
+
+## Session 11b (2026-09-30): Lumina on every blog post (36 posts, EN/DE/FR/zh-Hant)
+- Static <aside class="lumina-aside"> inserted before the 3rd h2 (EN) / 2nd h2
+  (localized) of each post; shared assets/css/lumina-blog.css + assets/js/lumina-blog.js.
+- Monologue per topic cluster (duplicates / storage / screenshots / blurry /
+  shopping-comparisons / gentle), 3 lines, pose per line, ends on a "Guess
+  your … Go on." challenge + App Store button. Lost-photo posts (recover*,
+  cleaner-deleted-*) get the GENTLE variant: no roast, Recently Deleted
+  reassurance, fond/thumbs-up poses, amber border.
+- Markup is static so af-init OneLink rewriting and FolioKit per-page store
+  clicks count her button. Measure in FolioKit "Landing page by week" (store
+  clicks per post) vs the 2026-09 baseline.
+- To add her to a NEW post: copy an existing aside of the right topic + the
+  css <link> and script tag.
