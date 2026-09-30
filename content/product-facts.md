@@ -1,6 +1,6 @@
 # LuminaClean product facts (validation file for all content)
 
-Last synced with App Store Connect: 2026-08-12 (pricing pivot to weekly/yearly).
+Last synced with App Store Connect: 2026-08-12 (pricing pivot to weekly/yearly); Lumina/3.4 facts added 2026-09-30.
 
 ## Features that EXIST (live today)
 
@@ -27,9 +27,18 @@ Last synced with App Store Connect: 2026-08-12 (pricing pivot to weekly/yearly).
 - Filter by file size and by media type
 - 100% on-device processing via Apple's Vision framework — no cloud
   processing, no account required
-- Localized in 7 languages: English + French, German, Spanish, Brazilian
-  Portuguese, Simplified Chinese, Japanese, Korean (EN FR DE ES PT-BR
-  ZH-Hans JA KO)
+- Localized in 12 languages (3.4): EN DE ES FR JA KO PL PT-BR UK ZH-Hans
+  ZH-Hant AR
+- Lumina (3.4, live 2026-09-30): lime soft-vinyl companion in a glowing hole
+  at the bottom of the screen. GET JUDGED = she finds your worst pile
+  (screenshots, duplicates, receipts, bursts, blurry, nature/food/pets/travel),
+  you guess the count, she counts up, points, roasts. Answers: "I NEED THOSE"
+  (polaroid line) or "FAIR." → swipe through or one-tap cleanup. She eats
+  what you delete (nibble → feast → stuffed, fixes hair). Verdict/meal can be
+  exported as a 9:16 video, thumbnails blurred. ~500 roast lines, 12 languages.
+  Voice: deadpan second person, roasts HABITS never people/bodies/memories.
+  NEVER say she "sees"/"has seen" your camera roll (surveillance read).
+- Also live: Space Goals, Geek Mode, On This Day, Large Videos.
 
 ## Features that DO NOT exist (never claim)
 
@@ -54,7 +63,10 @@ Last synced with App Store Connect: 2026-08-12 (pricing pivot to weekly/yearly).
   - Copy rule: exact prices ONLY inside comparison tables; everywhere else
     say "optional Premium subscription". Lead with the free tier, never with
     a price. Never write "no weekly subscription" or any lifetime/monthly claim.
-- Free tier: 65-file onboarding scan + 10 free deletes/day, plus a Daily
-  Bonus of +10 deletes for returning users
+- Free tier: 65 free deletes or 1 GB to start (whichever comes first), then
+  10 free deletes every day. Deleting Large Videos and compressed/converted
+  originals is free and unlimited. Canonical copy: "65 to start, then 10 more
+  every day". (Live Photo conversion becomes free in the NEXT version, not
+  3.4 — don't claim it yet.)
 - Domain: `luminaclean.app`
 - Support contact: `nextstep.appstudio@gmail.com`

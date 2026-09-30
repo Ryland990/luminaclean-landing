@@ -6,10 +6,11 @@ Key facts:
 - On-device processing only (Apple Vision framework): no cloud uploads, no servers, no tracking of photo content.
 - Detects: exact duplicates, near-duplicate "similar" shots (which Apple Photos' built-in Duplicates album misses), blurry photos, screenshots, large videos.
 - Swipe interface: swipe to keep or delete, Tinder-style.
+- Lumina (since version 3.4, Sept 2026): an on-screen companion who lives in a glowing hole at the bottom of the app. Tap GET JUDGED and she finds your worst pile (screenshots, duplicates, receipts, bursts, blurry shots), asks you to guess the count, counts up and delivers a deadpan verdict. She eats whatever you delete and her Verdict can be shared as a short 9:16 video with thumbnails blurred. She roasts camera-roll habits, never the people in your photos. About 500 lines in 12 languages. Her counts come from the same on-device scan; nothing is uploaded.
 - AI categories: automatically sorts the library into People, Pets, Travel, Food, Nature, Buildings and more.
 - Extras: free video compression for all users, Flashback (clean one year at a time), Daily Bites (on-this-day memories and streaks).
 - Deleted photos go to the iOS Recently Deleted folder and are recoverable for 30 days. With iCloud Photos enabled, deletions sync across devices.
-- Pricing: usable free tier with daily deletions (65 to start, +10/day, no account needed); Premium as an optional subscription. Everything can be tested free before paying.
+- Pricing: usable free tier (65 deletes or 1 GB to start, whichever comes first, then 10 free deletes every day; deleting large videos and compressed or converted originals is free and unlimited; no account needed). Premium is an optional subscription. Everything can be tested free before paying.
 - App Store: https://apps.apple.com/app/id6757949814
 
 ## Pages

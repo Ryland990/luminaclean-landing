@@ -28,7 +28,7 @@
 
     <!-- Primary SEO Meta Tags -->
     <title>LuminaClean - Clean Up Duplicate Photos on iPhone | Free Photo Organizer</title>
-    <meta name="description" content="Free iPhone duplicate photo cleaner. Find duplicates, similar shots & blurry images with on-device AI. 100% private — no account, no subscription required.">
+    <meta name="description" content="Free iPhone duplicate photo cleaner. Meet Lumina: she counts your screenshots, roasts your habits and eats what you delete. 100% on-device.">
     <meta name="keywords" content="iPhone photo cleaner, duplicate photo remover, delete duplicate photos iPhone, photo storage cleaner, iPhone storage full, similar photo finder, blurry photo detector, photo organizer app, free up iPhone space, iOS photo management">
     <meta name="author" content="LuminaClean">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -43,8 +43,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://luminaclean.app/">
     <meta property="og:title" content="LuminaClean - Clean Up Duplicate Photos on iPhone">
-    <meta property="og:description" content="Reclaim iPhone storage by finding duplicate photos, similar shots, and blurry images. AI-powered, 100% private—all processing on your device.">
-    <meta property="og:image" content="https://luminaclean.app/assets/images/og-image.png">
+    <meta property="og:description" content="Your screenshots have a new enemy. She&#x27;s small, she&#x27;s green, and she&#x27;s always hungry. Meet Lumina. Guess your screenshot count. Go on.">
+    <meta property="og:image" content="https://luminaclean.app/assets/images/og-lumina-en.png">
     <meta property="og:site_name" content="LuminaClean">
     <meta property="og:locale" content="en_US">
 
@@ -52,8 +52,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://luminaclean.app/">
     <meta name="twitter:title" content="LuminaClean - Clean Up Duplicate Photos on iPhone">
-    <meta name="twitter:description" content="Reclaim iPhone storage by finding duplicate photos, similar shots, and blurry images. AI-powered, 100% private.">
-    <meta name="twitter:image" content="https://luminaclean.app/assets/images/og-image.png">
+    <meta name="twitter:description" content="Your screenshots have a new enemy. She&#x27;s small, she&#x27;s green, and she&#x27;s always hungry. Meet Lumina. Guess your screenshot count. Go on.">
+    <meta name="twitter:image" content="https://luminaclean.app/assets/images/og-lumina-en.png">
 
     <!-- Apple/iOS Smart Banner -->
     <meta name="apple-itunes-app" content="app-id=6757949814">
@@ -83,7 +83,7 @@
         "url": "https://luminaclean.app/",
         "operatingSystem": "iOS 17.6 or later",
         "applicationCategory": "UtilitiesApplication",
-        "description": "LuminaClean is an iOS app that helps users clean and organize their photo libraries by detecting duplicates, similar photos, blurry images, and screenshots using AI-powered on-device processing. All analysis happens locally on the device, ensuring complete privacy.",
+        "description": "LuminaClean is an iOS app that helps users clean and organize their photo libraries by detecting duplicates, similar photos, blurry images, and screenshots using AI-powered on-device processing. All analysis happens locally on the device, ensuring complete privacy. Version 3.4 adds Lumina, an on-screen companion who counts your biggest pile of clutter, delivers a deadpan verdict, and eats whatever you delete.",
         "isAccessibleForFree": true,
         "offers": {
             "@type": "Offer",
@@ -99,6 +99,8 @@
             "ratingCount": "40"
         },
         "featureList": [
+            "Lumina companion: GET JUDGED verdicts that count and roast your biggest pile of clutter",
+            "Shareable 9:16 verdict videos with blurred thumbnails",
             "Duplicate photo detection using on-device AI",
             "Similar photo finder for burst shots",
             "Blurry image detector",
@@ -139,6 +141,8 @@
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
+            {"@type": "Question", "name": "Who is Lumina?", "acceptedAnswer": {"@type": "Answer", "text": "Lumina is the companion inside LuminaClean, new in version 3.4. She lives at the bottom of the screen, counts your biggest pile of screenshots, duplicates or receipts when you tap GET JUDGED, roasts your camera-roll habits (never the people in your photos), and eats whatever you delete. Her roasts come in 12 languages."}},
+            {"@type": "Question", "name": "Does Lumina send my photos anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. Her counts come from the same on-device scan the rest of LuminaClean uses. Nothing is uploaded, and the videos you share blur your thumbnails."}},
             {
                 "@type": "Question",
                 "name": "Does LuminaClean upload my photos to the cloud?",
@@ -3260,6 +3264,69 @@
         }
         .lang-menu a:hover { background: #191919; color: #ffffff; }
         .lang-menu a.active { color: #c7f464; }
+        /* ===========================================
+           LUMINA (3.4) — hero video, GET JUDGED, feast, share
+           =========================================== */
+        .hero-badge--new { color: #c7f464; border-color: rgba(199, 244, 100, 0.45); background: rgba(199, 244, 100, 0.08); }
+        .hero-phone--video::before { display: none; }
+        .hero-phone video { width: 100%; height: auto; display: block; border-radius: 32px; background: #000; aspect-ratio: 432 / 936; }
+
+        .judged { position: relative; padding: 6rem 0 5rem; }
+        .judged-grid { display: grid; gap: 3rem; align-items: center; }
+        @media (min-width: 900px) { .judged-grid { grid-template-columns: 1.05fr 1fr; gap: 4rem; } }
+        .judged-copy .section-title { margin-bottom: 1.2rem; }
+        .judged-intro { color: #a8a8a8; font-size: 1.05rem; line-height: 1.6; max-width: 34rem; }
+        .judged-steps { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; gap: 0.75rem; }
+        .judged-step { display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.9rem; align-items: start; padding: 0.95rem 1.1rem; background: #111111; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 14px; }
+        .judged-step-num { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.7rem; letter-spacing: 0.18em; color: #c7f464; padding-top: 0.28rem; }
+        .judged-step h3 { font-family: 'Anton', 'Arial Narrow', sans-serif; font-weight: 400; text-transform: uppercase; font-size: 1.1rem; letter-spacing: 0.03em; color: #ffffff; margin: 0 0 0.2rem; }
+        .judged-step p { margin: 0; color: #9a9a9a; font-size: 0.93rem; line-height: 1.5; }
+        .judged-cta { margin-top: 1.8rem; }
+        .judged-cta .btn-appstore { font-family: 'Anton', 'Arial Narrow', sans-serif; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.05rem; padding: 0.95rem 1.4rem; display: inline-flex; align-items: center; gap: 0.6rem; text-decoration: none; }
+        .judged-cta .btn-appstore svg { width: 20px; height: 20px; }
+
+        .verdict-card { position: relative; max-width: 420px; margin: 0 auto; background: #050505; border: 1px solid rgba(199, 244, 100, 0.2); border-radius: 28px; padding: 1.6rem 1.3rem 1.3rem; text-align: center; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 0 0 80px rgba(199, 244, 100, 0.06); }
+        .verdict-kicker { display: inline-flex; align-items: center; gap: 0.45rem; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.6rem; letter-spacing: 0.22em; color: #9a9a9a; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 999px; padding: 0.3rem 0.65rem; text-transform: uppercase; }
+        .verdict-kicker::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #c7f464; }
+        .verdict-num { font-family: 'Anton', 'Arial Narrow', sans-serif; font-size: clamp(3.8rem, 11vw, 5.2rem); color: #c7f464; line-height: 1; margin: 1rem 0 0.35rem; font-variant-numeric: tabular-nums; }
+        .verdict-unit { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.64rem; letter-spacing: 0.3em; color: #8a8a8a; text-transform: uppercase; }
+        .verdict-roast { font-family: 'Anton', 'Arial Narrow', sans-serif; font-weight: 400; text-transform: uppercase; font-size: 1.2rem; line-height: 1.18; color: #ffffff; margin: 1rem auto 0.5rem; max-width: 23ch; }
+        .verdict-guess { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.62rem; letter-spacing: 0.16em; color: #ff2e63; text-transform: uppercase; }
+        .verdict-stage { position: relative; height: 250px; margin-top: 0.8rem; }
+        .verdict-bubble { position: absolute; left: 50%; top: 0; transform: translateX(-50%); z-index: 3; width: max-content; max-width: 270px; background: #161616; border: 1px solid rgba(199, 244, 100, 0.35); border-radius: 12px; padding: 0.6rem 0.85rem; font-size: 0.9rem; line-height: 1.4; color: #ececec; text-align: left; transition: opacity 0.2s ease; }
+        .verdict-bubble::after { content: ''; position: absolute; left: 50%; bottom: -7px; width: 12px; height: 12px; background: #161616; border-right: 1px solid rgba(199, 244, 100, 0.35); border-bottom: 1px solid rgba(199, 244, 100, 0.35); transform: translateX(-50%) rotate(45deg); }
+        .verdict-hole { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 250px; height: 170px; }
+        .verdict-hole::before { content: ''; position: absolute; left: 50%; bottom: 6px; transform: translateX(-50%); width: 236px; height: 48px; border-radius: 50%; background: radial-gradient(ellipse at center, #000 55%, rgba(0,0,0,0) 74%); border: 2px solid #c7f464; box-shadow: 0 0 22px rgba(199, 244, 100, 0.55), 0 0 60px rgba(199, 244, 100, 0.22); }
+        .verdict-pose { position: absolute; left: 50%; bottom: 20px; transform: translateX(-50%); width: 178px; height: auto; z-index: 2; transition: opacity 0.18s ease; }
+        .verdict-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; margin-top: 1.1rem; }
+        .verdict-btn { font-family: 'Anton', 'Arial Narrow', sans-serif; font-weight: 400; text-transform: uppercase; font-size: 1rem; letter-spacing: 0.04em; padding: 0.85rem 0.5rem; border-radius: 14px; cursor: pointer; border: 1px solid #ff2e63; background: transparent; color: #ff2e63; transition: transform 0.15s ease, background 0.2s ease; }
+        .verdict-btn--fair { background: #c7f464; color: #0d1a00; border-color: #c7f464; }
+        .verdict-btn:hover { transform: translateY(-1px); }
+        .verdict-btn[aria-pressed="true"] { outline: 2px solid #ffffff; outline-offset: 2px; }
+        .verdict-note { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.58rem; letter-spacing: 0.12em; color: #6a6a6a; text-transform: uppercase; margin-top: 1rem; line-height: 1.6; }
+
+        .companion { padding: 2rem 0 6rem; }
+        .companion-grid { display: grid; gap: 1.5rem; }
+        @media (min-width: 900px) { .companion-grid { grid-template-columns: 1fr 1fr; } }
+        .companion-card { background: #111111; border: 1px solid rgba(255, 255, 255, 0.08); border-top: 2px solid rgba(199, 244, 100, 0.55); border-radius: 18px; padding: 2rem 1.6rem 1.6rem; display: flex; flex-direction: column; }
+        .companion-card--share { border-top-color: rgba(255, 46, 99, 0.55); }
+        .companion-title { font-family: 'Anton', 'Arial Narrow', sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.02; color: #ffffff; margin: 0 0 0.9rem; }
+        .companion-body { color: #a8a8a8; font-size: 1rem; line-height: 1.6; margin: 0; }
+        .feast-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; margin: 1.8rem 0 1.2rem; align-items: end; }
+        .feast-row figure { margin: 0; text-align: center; }
+        .feast-row img { width: 100%; height: auto; display: block; }
+        .feast-row figcaption { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.62rem; letter-spacing: 0.16em; color: #c7f464; text-transform: uppercase; margin-top: 0.55rem; }
+        .feast-stamp { font-family: 'Anton', 'Arial Narrow', sans-serif; font-weight: 400; text-transform: uppercase; font-size: 1.35rem; line-height: 1.15; color: #ffffff; text-align: center; margin: 0.4rem 0 1rem; }
+        .feast-stamp em { font-style: normal; color: #c7f464; }
+        .companion-note { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.64rem; letter-spacing: 0.1em; color: #7a7a7a; text-transform: uppercase; line-height: 1.6; margin-top: auto; padding-top: 0.8rem; }
+        .share-fan { position: relative; height: 300px; margin: 1.8rem 0 1rem; }
+        .share-fan img { position: absolute; top: 10px; left: 50%; width: 150px; height: auto; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.14); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55); }
+        .share-fan img:nth-child(1) { transform: translateX(-50%) translateX(-112px) rotate(-8deg) scale(0.9); }
+        .share-fan img:nth-child(2) { transform: translateX(-50%); z-index: 2; top: 0; }
+        .share-fan img:nth-child(3) { transform: translateX(-50%) translateX(112px) rotate(8deg) scale(0.9); }
+        @media (max-width: 420px) { .share-fan { height: 250px; } .share-fan img { width: 120px; } .share-fan img:nth-child(1) { transform: translateX(-50%) translateX(-82px) rotate(-8deg) scale(0.9); } .share-fan img:nth-child(3) { transform: translateX(-50%) translateX(82px) rotate(8deg) scale(0.9); } }
+        .share-tail { font-family: 'Caveat', cursive; font-size: 1.7rem; color: #ff2e63; margin: 0.8rem 0 0; }
+
     </style>
 </head>
 <body>
@@ -3284,6 +3351,7 @@
             </a>
 
             <div class="nav-links">
+                <a href="#get-judged">Lumina</a>
                 <a href="/try.html">Try It</a>
                 <a href="#features">Features</a>
                 <a href="#showcase">How It Works</a>
@@ -3328,6 +3396,7 @@
             </svg>
         </button>
         <a href="/try.html" class="mobile-menu-link">Try It</a>
+        <a href="#get-judged" class="mobile-menu-link">Lumina</a>
         <a href="#features" class="mobile-menu-link">Features</a>
         <a href="#showcase" class="mobile-menu-link">How It Works</a>
         <a href="#privacy" class="mobile-menu-link">Privacy</a>
@@ -3362,21 +3431,15 @@
                             </svg>
                             100% On-Device · Private
                         </span>
-                        <span class="hero-badge hero-badge--gold">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M20 6L9 17l-5-5"/>
-                            </svg>
-                            Free to Start · No Account
-                        </span>
+                        <span class="hero-badge hero-badge--new">New in 3.4 · Meet Lumina</span>
                     </div>
 
                     <h1 class="hero-title reveal reveal-delay-1">
-                        Clean your photos.<br>
-                        Keep the <span class="serif-italic">memories</span><span class="hero-caret" aria-hidden="true"></span>
+                        Your screenshots have a new <span class="serif-italic">enemy</span><span class="hero-caret" aria-hidden="true"></span>
                     </h1>
 
                     <p class="hero-description reveal reveal-delay-2">
-                        Find duplicates, blurry shots, and screenshots with on-device AI. Start free with 65 deletions — no account, no uploads, no subscription required.
+                        She's small, she's green, and she's always hungry. Lumina lives at the bottom of LuminaClean, counts your worst pile, and eats whatever you delete. Start free with 65 deletes, then 10 more every day. No account, nothing uploaded.
                     </p>
 
                     <div class="hero-actions reveal reveal-delay-3">
@@ -3416,8 +3479,10 @@
                 <div class="hero-visual reveal reveal-delay-2">
                     <div class="hero-glow"></div>
                     <div class="hero-phone-wrapper" id="hero-phone-wrapper">
-                        <div class="hero-phone">
-                            <img src="assets/images/hero-mess.jpeg" alt="LuminaClean home screen: Your library is a mess, we'll fix it — duplicates section and Give It A Shot button" width="300" height="652" loading="eager">
+                        <div class="hero-phone hero-phone--video">
+                            <video autoplay muted loop playsinline preload="metadata" width="432" height="936" poster="/assets/images/lumina/verdict-poster-en.jpg" aria-label="LuminaClean 3.4 in action: Lumina counts 1,249 screenshots, delivers her verdict, then eats what you delete">
+                                <source src="/assets/video/lumina-verdict-en.mp4" type="video/mp4">
+                            </video>
                         </div>
                     </div>
                 </div>
@@ -3459,6 +3524,76 @@
                 </div>
             </div>
         </section>
+        <!-- ===== LUMINA: GET JUDGED (3.4) ===== -->
+        <section class="judged" id="get-judged">
+            <div class="container judged-grid">
+                <div class="judged-copy reveal">
+                    <p class="section-label">Get judged</p>
+                    <h2 class="section-title">Guess your screenshot count. <span class="serif-italic">Go on.</span></h2>
+                    <p class="judged-intro">Tap GET JUDGED and Lumina goes looking for your worst pile: screenshots, duplicates, receipts, bursts, blurry shots. You guess how many. She counts up. Then she points at you.</p>
+                    <ol class="judged-steps">
+                        <li class="judged-step"><span class="judged-step-num">01</span><div><h3>Guess</h3><p>400? 900? Everyone lowballs.</p></div></li>
+                        <li class="judged-step"><span class="judged-step-num">02</span><div><h3>Count</h3><p>The real number counts up in front of you. It is never smaller.</p></div></li>
+                        <li class="judged-step"><span class="judged-step-num">03</span><div><h3>Verdict</h3><p>She points. She says one line. It lands.</p></div></li>
+                        <li class="judged-step"><span class="judged-step-num">04</span><div><h3>Answer</h3><p>I NEED THOSE, or FAIR. Then swipe through them, or clear the lot in one tap.</p></div></li>
+                    </ol>
+                    <div class="judged-cta">
+                        <a href="https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8" class="btn-appstore"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg><span>GET JUDGED · APP STORE</span></a>
+                    </div>
+                </div>
+
+                <div class="verdict-card reveal reveal-delay-2" id="verdict-card" data-states='{&quot;need&quot;: {&quot;img&quot;: &quot;/assets/images/lumina/lumina-polaroid.webp&quot;, &quot;line&quot;: &quot;Same. I keep this blurry polaroid. We are not proud.&quot;, &quot;alt&quot;: &quot;Lumina holding her blurry polaroid&quot;}, &quot;fair&quot;: {&quot;img&quot;: &quot;/assets/images/lumina/lumina-thumbsup.webp&quot;, &quot;line&quot;: &quot;Correct. Swipe through them, or clear the lot in one tap.&quot;, &quot;alt&quot;: &quot;Lumina giving a thumbs up&quot;}}'>
+                    <span class="verdict-kicker">LUMINA'S VERDICT</span>
+                    <div class="verdict-num" data-target="1249" data-sep=",">1,249</div>
+                    <div class="verdict-unit">Screenshots</div>
+                    <p class="verdict-roast">1,249 captures of things you swore you'd read later. You didn't.</p>
+                    <p class="verdict-guess">You guessed 400. Off by 849.</p>
+                    <div class="verdict-stage">
+                        <p class="verdict-bubble" aria-live="polite">Well?</p>
+                        <div class="verdict-hole">
+                            <img class="verdict-pose" src="/assets/images/lumina/lumina-point.webp" alt="Lumina pointing at you" width="640" height="572" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="verdict-actions">
+                        <button type="button" class="verdict-btn" data-answer="need" aria-pressed="false">I NEED THOSE</button>
+                        <button type="button" class="verdict-btn verdict-btn--fair" data-answer="fair" aria-pressed="false">FAIR.</button>
+                    </div>
+                    <p class="verdict-note">Sample verdict. Yours is counted on your iPhone and stays there.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== LUMINA: FEAST + SHARE (3.4) ===== -->
+        <section class="companion" id="lumina">
+            <div class="container companion-grid">
+                <article class="companion-card reveal">
+                    <p class="section-label">She eats what you delete</p>
+                    <h2 class="companion-title">Every delete is a meal</h2>
+                    <p class="companion-body">Every delete button feeds her. A few screenshots get a bored nibble. A thousand duplicates get a feast. She ends up stuffed, then fixes her hair like nothing happened.</p>
+                    <div class="feast-row">
+                        <figure><img src="/assets/images/lumina/lumina-chew.webp" alt="Lumina chewing" width="605" height="640" loading="lazy"><figcaption>A nibble.</figcaption></figure>
+                        <figure><img src="/assets/images/lumina/lumina-stuffed.webp" alt="Lumina stuffed after a big meal" width="640" height="603" loading="lazy"><figcaption>A feast.</figcaption></figure>
+                        <figure><img src="/assets/images/lumina/lumina-fixhair.webp" alt="Lumina fixing her hair" width="640" height="636" loading="lazy"><figcaption>Composure.</figcaption></figure>
+                    </div>
+                    <p class="feast-stamp">She is full.<br>You freed <em>1.2 GB</em></p>
+                    <p class="companion-note">Everything she eats lands in Recently Deleted first. You have 30 days to take it back.</p>
+                </article>
+
+                <article class="companion-card companion-card--share reveal reveal-delay-2">
+                    <p class="section-label">Share</p>
+                    <h2 class="companion-title">Some of her reactions are worth showing a friend</h2>
+                    <p class="companion-body">Her Verdict or her meal becomes a short vertical video, ready to post. Your thumbnails are blurred in the export, so the roast travels and your photos don't.</p>
+                    <div class="share-fan" aria-hidden="true">
+                        <img src="/assets/images/lumina/frame-polaroid.webp" alt="" width="405" height="720" loading="lazy">
+                        <img src="/assets/images/lumina/frame-point.webp" alt="" width="405" height="720" loading="lazy">
+                        <img src="/assets/images/lumina/frame-stuffed.webp" alt="" width="405" height="720" loading="lazy">
+                    </div>
+                    <p class="share-tail">You'll know which.</p>
+                </article>
+            </div>
+        </section>
+
+
 
         <!-- ===== BENTO FEATURES GRID ===== -->
         <section class="bento" id="features">
@@ -3841,6 +3976,30 @@
                 </header>
 
                 <div class="faq-grid">
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            Who is Lumina?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-inner">Lumina is the companion inside LuminaClean, new in version 3.4. She lives at the bottom of the screen, counts your biggest pile of screenshots, duplicates or receipts when you tap GET JUDGED, roasts your camera-roll habits (never the people in your photos), and eats whatever you delete. Her roasts come in 12 languages.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            Does Lumina send my photos anywhere?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-inner">No. Her counts come from the same on-device scan the rest of LuminaClean uses. Nothing is uploaded, and the videos you share blur your thumbnails.</p>
+                        </div>
+                    </div>
                     <div class="faq-item reveal reveal-delay-1">
                         <button class="faq-question" aria-expanded="false">
                             Does LuminaClean upload my photos to the cloud?
@@ -4329,5 +4488,56 @@
 })();
 </script>
 <script src="https://appcore-ctplebs-projects.vercel.app/appcore-web.js" data-app-id="luminacleanweb" data-api-key="265b4c70-971a-4a83-936c-af1999e83d00" defer></script>
+    <script>
+    /* Lumina 3.4: verdict card interaction + count-up, reduced-motion video */
+    (function () {
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var v = document.querySelector('.hero-phone video');
+        if (v && reduce) { v.removeAttribute('autoplay'); try { v.pause(); } catch (e) {} }
+        var card = document.getElementById('verdict-card');
+        if (!card) return;
+        var pose = card.querySelector('.verdict-pose');
+        var bubble = card.querySelector('.verdict-bubble');
+        var states = JSON.parse(card.getAttribute('data-states'));
+        var btns = card.querySelectorAll('.verdict-btn');
+        btns.forEach(function (b) {
+            b.addEventListener('click', function () {
+                var s = states[b.getAttribute('data-answer')];
+                btns.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+                pose.style.opacity = '0'; bubble.style.opacity = '0';
+                setTimeout(function () {
+                    pose.src = s.img; pose.alt = s.alt; bubble.textContent = s.line;
+                    pose.style.opacity = '1'; bubble.style.opacity = '1';
+                }, 180);
+                if (window.va) { try { window.va('event', { name: 'verdict_answer', answer: b.getAttribute('data-answer') }); } catch (e) {} }
+            });
+        });
+        var num = card.querySelector('.verdict-num');
+        var target = parseInt(num.getAttribute('data-target'), 10);
+        var finalText = num.textContent;
+        if (reduce || !('IntersectionObserver' in window)) return;
+        var sep = num.getAttribute('data-sep');
+        function fmt(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, sep); }
+        var done = false;
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                if (!e.isIntersecting || done) return;
+                done = true; io.disconnect();
+                var t0 = null, dur = 1300;
+                function step(ts) {
+                    if (t0 === null) t0 = ts;
+                    var p = Math.min(1, (ts - t0) / dur), eased = 1 - Math.pow(1 - p, 3);
+                    num.textContent = fmt(Math.round(target * eased));
+                    if (p < 1) requestAnimationFrame(step); else num.textContent = finalText;
+                }
+                num.textContent = fmt(0);
+                requestAnimationFrame(step);
+                setTimeout(function () { num.textContent = finalText; }, dur + 400);
+            });
+        }, { threshold: 0.5 });
+        io.observe(num);
+    })();
+    </script>
+
 </body>
 </html>

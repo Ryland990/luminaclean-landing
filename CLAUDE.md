@@ -276,3 +276,26 @@ not-showing (61, 25.4K). Bottom 16 posts combined < the #6 post.
 - PARKED.md created at repo root (global working-style backlog).
 - Method for next time: GSC Queries sorted by impressions → any query at pos
   4-12 with ~0 clicks whose ranking page doesn't answer it in the title = new post.
+
+## Session 11 (2026-09-30): LuminaClean 3.4 — Lumina on the homepages (EN/DE/FR/zh-Hant)
+LOCAL ONLY until Razvan OKs the push.
+- Hero: "Your screenshots have a new enemy" + the real 3.4 App Store preview
+  video (Verdict → swipes → feast) in the phone frame, per language
+  (assets/video/lumina-verdict-{en,de,fr,zh-Hant}.mp4, 432px wide, ~0.7 MB each,
+  re-encoded from store-preview/out/preview_*.mp4; posters at the 10 s verdict
+  frame). Fake CSS notch suppressed via .hero-phone--video. Reduced-motion
+  users get the poster, no autoplay.
+- New #get-judged section: 4 steps + an interactive verdict card that mirrors
+  the app screen (count-up 1,249, roast line, I NEED THOSE → polaroid line,
+  FAIR. → thumbs-up). Localized lines are copied verbatim from the localized
+  preview videos / Localizable.xcstrings so the site matches the app.
+- New #lumina section: "Every delete is a meal" (nibble/feast/composure) +
+  "Some of her reactions are worth showing a friend" (9:16 frames).
+- 2 FAQ entries (Who is Lumina? / Does Lumina send my photos anywhere?) in
+  visible FAQ + FAQPage JSON-LD; featureList + SoftwareApplication description
+  extended; og/twitter description = 3.4 promo text; new OG images
+  assets/images/og-lumina-{lang}.png (1200x630, pointing pose).
+- llms.txt: Lumina fact + precise free tier (65 deletes or 1 GB, then 10/day;
+  large-video/compressed/converted deletes free). product-facts.md: Lumina,
+  12 languages, corrected free tier. Sitemap homepage lastmod → 2026-09-30.
+- Rules held: no "sees your camera roll", no prices, no Live Photo claim.

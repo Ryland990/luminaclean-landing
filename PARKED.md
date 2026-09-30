@@ -5,7 +5,6 @@
   formula, not a real metric). Decide: replace with a real number or cut.
 
 ## Data fixes
-- content/product-facts.md still describes the free tier as "10 free deletes/day + Daily Bonus"; the canonical wording is "65 free deletes to start, then +10 every day". (2026-09-23)
 - Localized blog posts (DE/FR/zh-Hant): ~8 Google clicks and 0 App Store clicks in 90 days, mostly on page 2. Re-judge ~Oct 11 (3 months) before adding any language. (2026-09-23)
 - App Store listing v3.1 still says "monthly plan or one-time Lifetime Access"
   in 7 locales. Locked until the next app version — replacement text ready in

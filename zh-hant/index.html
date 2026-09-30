@@ -43,8 +43,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://luminaclean.app/zh-hant/">
     <meta property="og:title" content="LuminaClean – 刪除 iPhone 重複照片">
-    <meta property="og:description" content="找出重複相片、相似照與模糊照片，釋放 iPhone 儲存空間。AI 驅動、100% 私密——全部在你的裝置上完成。">
-    <meta property="og:image" content="https://luminaclean.app/assets/images/og-image.png">
+    <meta property="og:description" content="你的截圖有了新天敵。個子小，綠色，永遠吃不飽。她叫露米娜。猜猜你有多少張截圖。來吧。">
+    <meta property="og:image" content="https://luminaclean.app/assets/images/og-lumina-zh-hant.png">
     <meta property="og:site_name" content="LuminaClean">
     <meta property="og:locale" content="zh_TW">
 
@@ -52,8 +52,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://luminaclean.app/zh-hant/">
     <meta name="twitter:title" content="LuminaClean – 刪除 iPhone 重複照片">
-    <meta name="twitter:description" content="重複相片、相似照、模糊照片——找出來，刪掉。AI 驅動、100% 私密。">
-    <meta name="twitter:image" content="https://luminaclean.app/assets/images/og-image.png">
+    <meta name="twitter:description" content="你的截圖有了新天敵。個子小，綠色，永遠吃不飽。她叫露米娜。猜猜你有多少張截圖。來吧。">
+    <meta name="twitter:image" content="https://luminaclean.app/assets/images/og-lumina-zh-hant.png">
 
     <!-- Apple/iOS Smart Banner -->
     <meta name="apple-itunes-app" content="app-id=6757949814">
@@ -83,7 +83,7 @@
         "url": "https://luminaclean.app/",
         "operatingSystem": "iOS 17.6 or later",
         "applicationCategory": "UtilitiesApplication",
-        "description": "LuminaClean 是一款 iOS App，透過裝置端 AI 偵測重複相片、相似照、模糊照片與截圖。所有分析都在本機完成，完全私密。",
+        "description": "LuminaClean 是一款 iOS App，透過裝置端 AI 偵測重複相片、相似照、模糊照片與截圖。所有分析都在本機完成，完全私密。 3.4 版新增露米娜：一個會數出你最大一堆雜物、冷面宣判，並吃掉你刪除內容的夥伴。",
         "isAccessibleForFree": true,
         "offers": {
             "@type": "Offer",
@@ -93,6 +93,8 @@
             "url": "https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8"
         },
         "featureList": [
+            "露米娜夥伴：「接受審判」數出並吐槽你最大的一堆照片",
+            "可分享的直式短影片，縮圖自動模糊",
             "裝置端 AI 重複相片偵測",
             "相似照與連拍偵測",
             "模糊照片偵測",
@@ -133,6 +135,8 @@
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
+            {"@type": "Question", "name": "露米娜是誰？", "acceptedAnswer": {"@type": "Answer", "text": "露米娜是 LuminaClean 從 3.4 版開始的夥伴。她住在螢幕底部，點「接受審判」後會數出你最大的一堆截圖、重複照片或收據，吐槽你的相簿習慣（從不針對照片裡的人），還會吃掉你刪除的所有東西。她的吐槽有 12 種語言。"}},
+            {"@type": "Question", "name": "露米娜會把我的照片傳到別的地方嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不會。她的數字來自 LuminaClean 在裝置上進行的同一次掃描。什麼都不會上傳，分享的影片也會把你的縮圖模糊處理。"}},
             {
                 "@type": "Question",
                 "name": "LuminaClean 會把我的相片上傳到雲端嗎？",
@@ -3254,6 +3258,69 @@
         }
         .lang-menu a:hover { background: #191919; color: #ffffff; }
         .lang-menu a.active { color: #c7f464; }
+        /* ===========================================
+           LUMINA (3.4) — hero video, GET JUDGED, feast, share
+           =========================================== */
+        .hero-badge--new { color: #c7f464; border-color: rgba(199, 244, 100, 0.45); background: rgba(199, 244, 100, 0.08); }
+        .hero-phone--video::before { display: none; }
+        .hero-phone video { width: 100%; height: auto; display: block; border-radius: 32px; background: #000; aspect-ratio: 432 / 936; }
+
+        .judged { position: relative; padding: 6rem 0 5rem; }
+        .judged-grid { display: grid; gap: 3rem; align-items: center; }
+        @media (min-width: 900px) { .judged-grid { grid-template-columns: 1.05fr 1fr; gap: 4rem; } }
+        .judged-copy .section-title { margin-bottom: 1.2rem; }
+        .judged-intro { color: #a8a8a8; font-size: 1.05rem; line-height: 1.6; max-width: 34rem; }
+        .judged-steps { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; gap: 0.75rem; }
+        .judged-step { display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.9rem; align-items: start; padding: 0.95rem 1.1rem; background: #111111; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 14px; }
+        .judged-step-num { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.7rem; letter-spacing: 0.18em; color: #c7f464; padding-top: 0.28rem; }
+        .judged-step h3 { font-family: 'Anton', 'Arial Narrow', sans-serif; font-weight: 400; text-transform: uppercase; font-size: 1.1rem; letter-spacing: 0.03em; color: #ffffff; margin: 0 0 0.2rem; }
+        .judged-step p { margin: 0; color: #9a9a9a; font-size: 0.93rem; line-height: 1.5; }
+        .judged-cta { margin-top: 1.8rem; }
+        .judged-cta .btn-appstore { font-family: 'Anton', 'Arial Narrow', sans-serif; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.05rem; padding: 0.95rem 1.4rem; display: inline-flex; align-items: center; gap: 0.6rem; text-decoration: none; }
+        .judged-cta .btn-appstore svg { width: 20px; height: 20px; }
+
+        .verdict-card { position: relative; max-width: 420px; margin: 0 auto; background: #050505; border: 1px solid rgba(199, 244, 100, 0.2); border-radius: 28px; padding: 1.6rem 1.3rem 1.3rem; text-align: center; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 0 0 80px rgba(199, 244, 100, 0.06); }
+        .verdict-kicker { display: inline-flex; align-items: center; gap: 0.45rem; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.6rem; letter-spacing: 0.22em; color: #9a9a9a; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 999px; padding: 0.3rem 0.65rem; text-transform: uppercase; }
+        .verdict-kicker::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #c7f464; }
+        .verdict-num { font-family: 'Anton', 'Arial Narrow', sans-serif; font-size: clamp(3.8rem, 11vw, 5.2rem); color: #c7f464; line-height: 1; margin: 1rem 0 0.35rem; font-variant-numeric: tabular-nums; }
+        .verdict-unit { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.64rem; letter-spacing: 0.3em; color: #8a8a8a; text-transform: uppercase; }
+        .verdict-roast { font-family: 'Anton', 'Arial Narrow', sans-serif; font-weight: 400; text-transform: uppercase; font-size: 1.2rem; line-height: 1.18; color: #ffffff; margin: 1rem auto 0.5rem; max-width: 23ch; }
+        .verdict-guess { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.62rem; letter-spacing: 0.16em; color: #ff2e63; text-transform: uppercase; }
+        .verdict-stage { position: relative; height: 250px; margin-top: 0.8rem; }
+        .verdict-bubble { position: absolute; left: 50%; top: 0; transform: translateX(-50%); z-index: 3; width: max-content; max-width: 270px; background: #161616; border: 1px solid rgba(199, 244, 100, 0.35); border-radius: 12px; padding: 0.6rem 0.85rem; font-size: 0.9rem; line-height: 1.4; color: #ececec; text-align: left; transition: opacity 0.2s ease; }
+        .verdict-bubble::after { content: ''; position: absolute; left: 50%; bottom: -7px; width: 12px; height: 12px; background: #161616; border-right: 1px solid rgba(199, 244, 100, 0.35); border-bottom: 1px solid rgba(199, 244, 100, 0.35); transform: translateX(-50%) rotate(45deg); }
+        .verdict-hole { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 250px; height: 170px; }
+        .verdict-hole::before { content: ''; position: absolute; left: 50%; bottom: 6px; transform: translateX(-50%); width: 236px; height: 48px; border-radius: 50%; background: radial-gradient(ellipse at center, #000 55%, rgba(0,0,0,0) 74%); border: 2px solid #c7f464; box-shadow: 0 0 22px rgba(199, 244, 100, 0.55), 0 0 60px rgba(199, 244, 100, 0.22); }
+        .verdict-pose { position: absolute; left: 50%; bottom: 20px; transform: translateX(-50%); width: 178px; height: auto; z-index: 2; transition: opacity 0.18s ease; }
+        .verdict-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; margin-top: 1.1rem; }
+        .verdict-btn { font-family: 'Anton', 'Arial Narrow', sans-serif; font-weight: 400; text-transform: uppercase; font-size: 1rem; letter-spacing: 0.04em; padding: 0.85rem 0.5rem; border-radius: 14px; cursor: pointer; border: 1px solid #ff2e63; background: transparent; color: #ff2e63; transition: transform 0.15s ease, background 0.2s ease; }
+        .verdict-btn--fair { background: #c7f464; color: #0d1a00; border-color: #c7f464; }
+        .verdict-btn:hover { transform: translateY(-1px); }
+        .verdict-btn[aria-pressed="true"] { outline: 2px solid #ffffff; outline-offset: 2px; }
+        .verdict-note { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.58rem; letter-spacing: 0.12em; color: #6a6a6a; text-transform: uppercase; margin-top: 1rem; line-height: 1.6; }
+
+        .companion { padding: 2rem 0 6rem; }
+        .companion-grid { display: grid; gap: 1.5rem; }
+        @media (min-width: 900px) { .companion-grid { grid-template-columns: 1fr 1fr; } }
+        .companion-card { background: #111111; border: 1px solid rgba(255, 255, 255, 0.08); border-top: 2px solid rgba(199, 244, 100, 0.55); border-radius: 18px; padding: 2rem 1.6rem 1.6rem; display: flex; flex-direction: column; }
+        .companion-card--share { border-top-color: rgba(255, 46, 99, 0.55); }
+        .companion-title { font-family: 'Anton', 'Arial Narrow', sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.02; color: #ffffff; margin: 0 0 0.9rem; }
+        .companion-body { color: #a8a8a8; font-size: 1rem; line-height: 1.6; margin: 0; }
+        .feast-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; margin: 1.8rem 0 1.2rem; align-items: end; }
+        .feast-row figure { margin: 0; text-align: center; }
+        .feast-row img { width: 100%; height: auto; display: block; }
+        .feast-row figcaption { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.62rem; letter-spacing: 0.16em; color: #c7f464; text-transform: uppercase; margin-top: 0.55rem; }
+        .feast-stamp { font-family: 'Anton', 'Arial Narrow', sans-serif; font-weight: 400; text-transform: uppercase; font-size: 1.35rem; line-height: 1.15; color: #ffffff; text-align: center; margin: 0.4rem 0 1rem; }
+        .feast-stamp em { font-style: normal; color: #c7f464; }
+        .companion-note { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.64rem; letter-spacing: 0.1em; color: #7a7a7a; text-transform: uppercase; line-height: 1.6; margin-top: auto; padding-top: 0.8rem; }
+        .share-fan { position: relative; height: 300px; margin: 1.8rem 0 1rem; }
+        .share-fan img { position: absolute; top: 10px; left: 50%; width: 150px; height: auto; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.14); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55); }
+        .share-fan img:nth-child(1) { transform: translateX(-50%) translateX(-112px) rotate(-8deg) scale(0.9); }
+        .share-fan img:nth-child(2) { transform: translateX(-50%); z-index: 2; top: 0; }
+        .share-fan img:nth-child(3) { transform: translateX(-50%) translateX(112px) rotate(8deg) scale(0.9); }
+        @media (max-width: 420px) { .share-fan { height: 250px; } .share-fan img { width: 120px; } .share-fan img:nth-child(1) { transform: translateX(-50%) translateX(-82px) rotate(-8deg) scale(0.9); } .share-fan img:nth-child(3) { transform: translateX(-50%) translateX(82px) rotate(8deg) scale(0.9); } }
+        .share-tail { font-family: 'Caveat', cursive; font-size: 1.7rem; color: #ff2e63; margin: 0.8rem 0 0; }
+
     </style>
 </head>
 <body>
@@ -3278,6 +3345,7 @@
             </a>
 
             <div class="nav-links">
+                <a href="#get-judged">露米娜</a>
                 <a href="/zh-hant/try.html">先試玩</a>
                 <a href="#features">功能</a>
                 <a href="#showcase">運作方式</a>
@@ -3322,6 +3390,7 @@
             </svg>
         </button>
         <a href="/zh-hant/try.html" class="mobile-menu-link">先試玩</a>
+        <a href="#get-judged" class="mobile-menu-link">露米娜</a>
         <a href="#features" class="mobile-menu-link">功能</a>
         <a href="#showcase" class="mobile-menu-link">運作方式</a>
         <a href="#privacy" class="mobile-menu-link">隱私</a>
@@ -3356,21 +3425,15 @@
                             </svg>
                             100% 裝置端運算 &middot; 私密
                         </span>
-                        <span class="hero-badge hero-badge--gold">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M20 6L9 17l-5-5"/>
-                            </svg>
-                            免費開始 &middot; 不用帳號
-                        </span>
+                        <span class="hero-badge hero-badge--new">3.4 新登場 · 認識露米娜</span>
                     </div>
 
                     <h1 class="hero-title reveal reveal-delay-1">
-                        清掉爛照片。<br>
-                        留下<span class="serif-italic">回憶</span><span class="hero-caret" aria-hidden="true"></span>
+                        你的截圖有了新<span class="serif-italic">天敵</span><span class="hero-caret" aria-hidden="true"></span>
                     </h1>
 
                     <p class="hero-description reveal reveal-delay-2">
-                        AI 直接在裝置上找出重複相片、模糊照片和截圖。免費開始，先送 65 次刪除額度——不用帳號、不上傳、不強制訂閱。
+                        個子小，綠色，永遠吃不飽。露米娜住在 LuminaClean 的最底部，幫你數出最糟的那一堆，再把你刪掉的東西通通吃掉。免費開始，先送 65 次刪除，之後每天再送 10 次。不用帳號，什麼都不上傳。
                     </p>
 
                     <div class="hero-actions reveal reveal-delay-3">
@@ -3403,8 +3466,10 @@
                 <div class="hero-visual reveal reveal-delay-2">
                     <div class="hero-glow"></div>
                     <div class="hero-phone-wrapper" id="hero-phone-wrapper">
-                        <div class="hero-phone">
-                            <img src="/assets/images/hero-mess.jpeg" alt="LuminaClean 主畫面：你的圖庫亂成一團，我們來搞定" width="300" height="652" loading="eager">
+                        <div class="hero-phone hero-phone--video">
+                            <video autoplay muted loop playsinline preload="metadata" width="432" height="936" poster="/assets/images/lumina/verdict-poster-zh-Hant.jpg" aria-label="LuminaClean 3.4 實際畫面：露米娜數出 1,249 張截圖、宣判，然後吃掉你刪除的東西">
+                                <source src="/assets/video/lumina-verdict-zh-Hant.mp4" type="video/mp4">
+                            </video>
                         </div>
                     </div>
                 </div>
@@ -3446,6 +3511,76 @@
                 </div>
             </div>
         </section>
+        <!-- ===== LUMINA: GET JUDGED (3.4) ===== -->
+        <section class="judged" id="get-judged">
+            <div class="container judged-grid">
+                <div class="judged-copy reveal">
+                    <p class="section-label">接受審判</p>
+                    <h2 class="section-title">猜猜你有多少張截圖。<span class="serif-italic">來吧。</span></h2>
+                    <p class="judged-intro">點一下「接受審判」，露米娜就會去找你最糟的那一堆：截圖、重複照片、收據、連拍、模糊照片。你先猜有幾張。她往上數。然後她指著你。</p>
+                    <ol class="judged-steps">
+                        <li class="judged-step"><span class="judged-step-num">01</span><div><h3>猜</h3><p>400？900？大家都猜太少。</p></div></li>
+                        <li class="judged-step"><span class="judged-step-num">02</span><div><h3>數</h3><p>真實數字在你眼前往上跳。從來不會變少。</p></div></li>
+                        <li class="judged-step"><span class="judged-step-num">03</span><div><h3>判決</h3><p>她指著你，說一句話。一針見血。</p></div></li>
+                        <li class="judged-step"><span class="judged-step-num">04</span><div><h3>回答</h3><p>「我需要它們」或「有道理」。然後滑動整理，或一鍵清掉。</p></div></li>
+                    </ol>
+                    <div class="judged-cta">
+                        <a href="https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8" class="btn-appstore"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg><span>接受審判 · APP STORE</span></a>
+                    </div>
+                </div>
+
+                <div class="verdict-card reveal reveal-delay-2" id="verdict-card" data-states='{&quot;need&quot;: {&quot;img&quot;: &quot;/assets/images/lumina/lumina-polaroid.webp&quot;, &quot;line&quot;: &quot;我也是。我留著這張糊掉的拍立得。我們都不光彩。&quot;, &quot;alt&quot;: &quot;Lumina holding her blurry polaroid&quot;}, &quot;fair&quot;: {&quot;img&quot;: &quot;/assets/images/lumina/lumina-thumbsup.webp&quot;, &quot;line&quot;: &quot;很好。滑動整理，或一鍵清掉。&quot;, &quot;alt&quot;: &quot;Lumina giving a thumbs up&quot;}}'>
+                    <span class="verdict-kicker">露米娜的判決</span>
+                    <div class="verdict-num" data-target="1249" data-sep=",">1,249</div>
+                    <div class="verdict-unit">張截圖</div>
+                    <p class="verdict-roast">1,249 張「之後再看」的截圖。之後從來沒來過。</p>
+                    <p class="verdict-guess">你猜的是 400。差了 849。</p>
+                    <div class="verdict-stage">
+                        <p class="verdict-bubble" aria-live="polite">所以呢？</p>
+                        <div class="verdict-hole">
+                            <img class="verdict-pose" src="/assets/images/lumina/lumina-point.webp" alt="Lumina pointing at you" width="640" height="572" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="verdict-actions">
+                        <button type="button" class="verdict-btn" data-answer="need" aria-pressed="false">我需要它們</button>
+                        <button type="button" class="verdict-btn verdict-btn--fair" data-answer="fair" aria-pressed="false">有道理。</button>
+                    </div>
+                    <p class="verdict-note">判決範例。你的數字在你的 iPhone 上計算，也只留在那裡。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== LUMINA: FEAST + SHARE (3.4) ===== -->
+        <section class="companion" id="lumina">
+            <div class="container companion-grid">
+                <article class="companion-card reveal">
+                    <p class="section-label">你刪什麼，她吃什麼</p>
+                    <h2 class="companion-title">每次刪除都是一餐</h2>
+                    <p class="companion-body">每個刪除按鈕都在餵她。刪幾張截圖，她意興闌珊地啃兩口。刪一千張重複照片，就是一場大餐。最後她吃到撐，還若無其事地撥撥頭髮。</p>
+                    <div class="feast-row">
+                        <figure><img src="/assets/images/lumina/lumina-chew.webp" alt="Lumina chewing" width="605" height="640" loading="lazy"><figcaption>啃兩口。</figcaption></figure>
+                        <figure><img src="/assets/images/lumina/lumina-stuffed.webp" alt="Lumina stuffed after a big meal" width="640" height="603" loading="lazy"><figcaption>大餐。</figcaption></figure>
+                        <figure><img src="/assets/images/lumina/lumina-fixhair.webp" alt="Lumina fixing her hair" width="640" height="636" loading="lazy"><figcaption>整理儀容。</figcaption></figure>
+                    </div>
+                    <p class="feast-stamp">她吃飽了。<br>你釋放了 <em>1.2 GB</em></p>
+                    <p class="companion-note">她吃下的東西都會先進「最近刪除」。你有 30 天可以反悔。</p>
+                </article>
+
+                <article class="companion-card companion-card--share reveal reveal-delay-2">
+                    <p class="section-label">分享</p>
+                    <h2 class="companion-title">她有些反應，值得給朋友看</h2>
+                    <p class="companion-body">她的判決或她的大餐，會變成一段可以直接發的直式短影片。匯出時你的縮圖會模糊處理：笑點傳出去，照片留在家。</p>
+                    <div class="share-fan" aria-hidden="true">
+                        <img src="/assets/images/lumina/frame-polaroid.webp" alt="" width="405" height="720" loading="lazy">
+                        <img src="/assets/images/lumina/frame-point.webp" alt="" width="405" height="720" loading="lazy">
+                        <img src="/assets/images/lumina/frame-stuffed.webp" alt="" width="405" height="720" loading="lazy">
+                    </div>
+                    <p class="share-tail">你會知道是哪些。</p>
+                </article>
+            </div>
+        </section>
+
+
 
         <!-- ===== BENTO FEATURES GRID ===== -->
         <section class="bento" id="features">
@@ -3828,6 +3963,30 @@
                 </header>
 
                 <div class="faq-grid">
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            露米娜是誰？
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-inner">露米娜是 LuminaClean 從 3.4 版開始的夥伴。她住在螢幕底部，點「接受審判」後會數出你最大的一堆截圖、重複照片或收據，吐槽你的相簿習慣（從不針對照片裡的人），還會吃掉你刪除的所有東西。她的吐槽有 12 種語言。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            露米娜會把我的照片傳到別的地方嗎？
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-inner">不會。她的數字來自 LuminaClean 在裝置上進行的同一次掃描。什麼都不會上傳，分享的影片也會把你的縮圖模糊處理。</p>
+                        </div>
+                    </div>
                     <div class="faq-item reveal reveal-delay-1">
                         <button class="faq-question" aria-expanded="false">
                             LuminaClean 會把我的相片上傳到雲端嗎？
@@ -4304,5 +4463,56 @@
 })();
 </script>
 <script src="https://appcore-ctplebs-projects.vercel.app/appcore-web.js" data-app-id="luminacleanweb" data-api-key="265b4c70-971a-4a83-936c-af1999e83d00" defer></script>
+    <script>
+    /* Lumina 3.4: verdict card interaction + count-up, reduced-motion video */
+    (function () {
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var v = document.querySelector('.hero-phone video');
+        if (v && reduce) { v.removeAttribute('autoplay'); try { v.pause(); } catch (e) {} }
+        var card = document.getElementById('verdict-card');
+        if (!card) return;
+        var pose = card.querySelector('.verdict-pose');
+        var bubble = card.querySelector('.verdict-bubble');
+        var states = JSON.parse(card.getAttribute('data-states'));
+        var btns = card.querySelectorAll('.verdict-btn');
+        btns.forEach(function (b) {
+            b.addEventListener('click', function () {
+                var s = states[b.getAttribute('data-answer')];
+                btns.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+                pose.style.opacity = '0'; bubble.style.opacity = '0';
+                setTimeout(function () {
+                    pose.src = s.img; pose.alt = s.alt; bubble.textContent = s.line;
+                    pose.style.opacity = '1'; bubble.style.opacity = '1';
+                }, 180);
+                if (window.va) { try { window.va('event', { name: 'verdict_answer', answer: b.getAttribute('data-answer') }); } catch (e) {} }
+            });
+        });
+        var num = card.querySelector('.verdict-num');
+        var target = parseInt(num.getAttribute('data-target'), 10);
+        var finalText = num.textContent;
+        if (reduce || !('IntersectionObserver' in window)) return;
+        var sep = num.getAttribute('data-sep');
+        function fmt(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, sep); }
+        var done = false;
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                if (!e.isIntersecting || done) return;
+                done = true; io.disconnect();
+                var t0 = null, dur = 1300;
+                function step(ts) {
+                    if (t0 === null) t0 = ts;
+                    var p = Math.min(1, (ts - t0) / dur), eased = 1 - Math.pow(1 - p, 3);
+                    num.textContent = fmt(Math.round(target * eased));
+                    if (p < 1) requestAnimationFrame(step); else num.textContent = finalText;
+                }
+                num.textContent = fmt(0);
+                requestAnimationFrame(step);
+                setTimeout(function () { num.textContent = finalText; }, dur + 400);
+            });
+        }, { threshold: 0.5 });
+        io.observe(num);
+    })();
+    </script>
+
 </body>
 </html>
