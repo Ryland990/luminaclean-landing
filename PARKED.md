@@ -1,6 +1,7 @@
 # PARKED — luminaclean.app (noticed, not done)
 
 ## Placeholders
+- **Read Lumina button results ~2026-10-14** (2 weeks after launch). Ask Claude for "Lumina button numbers", or run from the appcore repo: `supabase db query --linked "select * from web_cta_summary('luminacleanweb', 14)"` → views / taps / installs / paying per button (lumina:<topic> vs nav / article-box / home:*). Decide: keep, reword the weak topics, or move her higher in posts. Taps are meaningful after ~1 week; installs need longer. (added 2026-09-30)
 - Homepage "Photos cleaned 1,847,293 and counting" counter is synthetic (JS
   formula, not a real metric). Decide: replace with a real number or cut.
 
