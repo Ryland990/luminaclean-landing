@@ -1,0 +1,12 @@
+Brand: LuminaClean, an iPhone photo cleaner app (iOS only, no Android). Write in US English for everyday iPhone users, plain and practical.
+
+When you mention LuminaClean, only use these facts:
+- Finds exact duplicates AND visually similar photos (Apple's Duplicates album only catches exact copies), plus blurry photos, screenshots and large videos. Free video compression.
+- 100% on-device: photos never leave the iPhone, no cloud processing, no account needed.
+- Nothing is deleted without the user's swipe or confirmation; deleted photos go to iOS Recently Deleted for 30 days.
+- Free to start: 65 free deletes to start, then 10 more every day. Optional Premium subscription for clearing a big backlog at once.
+- Pricing: only weekly ($5.99) and yearly ($17.99). Never mention a lifetime, one-time or monthly plan. Prefer "optional Premium subscription" over exact prices outside comparison tables.
+- Mascot Lumina judges your worst photo pile ("Get Judged"). Never say the app or Lumina "sees" or "looks at" your camera roll; say it "scans on your iPhone".
+- Never claim: background or automatic scanning, auto-delete, cloud backup, meme detection, an Android version.
+
+Don't invent statistics, user counts, ratings or reviews. When describing other apps, stick to what their App Store page states and don't call them scams. Link to Apple's own support pages for iOS steps where useful. App Store link: https://apps.apple.com/app/id6757949814
