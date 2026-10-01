@@ -1,8 +1,8 @@
 # PARKED — luminaclean.app (noticed, not done)
 
 ## Placeholders
-- **Outrank trial (paid 2026-10-01, renews ~2026-10-31).** Auto-publishes to /blog via `api/outrank.js` (manifest `content/outrank-posts.json`). Baseline: Google Search Console = 86 clicks in the 7 days to 2026-10-01 (Razvan's GSC view). Outrank's "719 clicks" tile has no date range — don't compare against it.
-  - **~2026-10-08 week-1 audit:** validate every Outrank post against `content/product-facts.md` (pricing, free tier, "sees", competitor claims, YouTube embeds) → fix, or turn off "Mention similar products"/YouTube.
+- **Outrank trial (paid 2026-10-01, renews 2026-11-01).** Auto-publishes to /blog via `api/outrank.js` (manifest `content/outrank-posts.json`). Baseline: Google Search Console = 86 clicks in the 7 days to 2026-10-01 (Razvan's GSC view). Outrank's "719 clicks" tile has no date range — don't compare against it.
+  - **~2026-10-08 week-1 audit:** validate every Outrank post against `content/product-facts.md` (pricing, free tier, "sees", competitor claims, YouTube embeds) + list every outbound link (backlink-exchange links Outrank inserts for other members) and flag spam/off-topic domains → disable Network Participation or strip them in api/outrank.js → fix, or turn off "Mention similar products"/YouTube.
   - **~2026-10-28 verdict, before renewal:** GSC clicks vs baseline (site-wide AND Outrank pages only), `web_cta_summary('luminacleanweb', 30)` rows `outrank:*` vs `lumina:*`, backlinks gained (DR was 5). Keep or cancel.
 - **Read Lumina button results ~2026-10-14** (2 weeks after launch). Ask Claude for "Lumina button numbers", or run from the appcore repo: `supabase db query --linked "select * from web_cta_summary('luminacleanweb', 14)"` → views / taps / installs / paying per button (lumina:<topic> vs nav / article-box / home:*). Decide: keep, reword the weak topics, or move her higher in posts. Taps are meaningful after ~1 week; installs need longer. (added 2026-09-30)
 - Homepage "Photos cleaned 1,847,293 and counting" counter is synthetic (JS
