@@ -103,7 +103,7 @@ function realArticle(a) {
     String(a.content_html || '').length >= MIN_CONTENT;
 }
 
-async function processBatch(articles) {
+async function processBatch(articles, type) {
   const ref = await gh('GET', `/git/ref/heads/${BRANCH}`);
   const headSha = ref.object.sha;
   const head = await gh('GET', `/git/commits/${headSha}`);
@@ -122,6 +122,9 @@ async function processBatch(articles) {
   for (const a of articles) {
     if (!realArticle(a)) { done.push({ id: a && a.id, skipped: 'sample or too short' }); continue; }
     let entry = manifest.find((m) => m.id === String(a.id));
+    // Outrank "Improvements" can target any page with Search Console traffic,
+    // including hand-written posts. Updates only ever touch Outrank's own posts.
+    if (!entry && type === 'update_article') { done.push({ id: String(a.id), skipped: 'update for a page Outrank did not publish' }); continue; }
     let path;
     if (entry) {
       path = entry.path;                                   // update: same URL forever
@@ -206,7 +209,7 @@ module.exports = async (req, res) => {
 
   for (let attempt = 1; ; attempt++) {
     try {
-      const result = await processBatch(articles);
+      const result = await processBatch(articles, type);
       console.log('[outrank]', type, JSON.stringify(result));
       if (result.commit && result.commit !== 'dry-run') await pingIndexNow(result.urls);
       res.status(200).json({ message: 'Webhook processed successfully', ...result });
