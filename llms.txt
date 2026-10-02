@@ -51,6 +51,7 @@ Key facts:
 - [How Long Does iPhone Take to Find Duplicates? (2026)](https://luminaclean.app/blog/how-long-iphone-find-duplicates.html): Apple's Duplicates album fills from a background scan that runs only when your iPhone is locked and charging. Typical timings and how to speed it up.
 - [What "Merge Exact Copies" Does in iPhone Photos (2026)](https://luminaclean.app/blog/merge-exact-copies-iphone-photos.html): Tapping Merge in the Duplicates album keeps the best copy, combines the data, and sends the extras to Recently Deleted for 30 days. Nothing is erased.
 - [What Is Video Compression: Explain It Simply](https://luminaclean.app/blog/what-is-video-compression.html): What is video compression and how does it work? Learn lossy vs lossless, HEVC vs H.264, and practical iPhone cleanup tips to free up storage fast.
+- [How to Reduce Video File Size on iPhone](https://luminaclean.app/blog/how-to-reduce-video-file-size-on-iphone.html): Learn how to reduce video file size on iPhone using built-in settings, iMovie, iOS Shortcuts, and LuminaClean to reclaim storage without losing quality.
 
 ## Localized pages (German / French / Traditional Chinese)
 
