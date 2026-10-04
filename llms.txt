@@ -53,6 +53,7 @@ Key facts:
 - [What Is Video Compression: Explain It Simply](https://luminaclean.app/blog/what-is-video-compression.html): What is video compression and how does it work? Learn lossy vs lossless, HEVC vs H.264, and practical iPhone cleanup tips to free up storage fast.
 - [How to Reduce Video File Size on iPhone](https://luminaclean.app/blog/how-to-reduce-video-file-size-on-iphone.html): Learn how to reduce video file size on iPhone using built-in settings, iMovie, iOS Shortcuts, and LuminaClean to reclaim storage without losing quality.
 - [Similar Photo Finder: How It Works and When to Use One](https://luminaclean.app/blog/similar-photo-finder.html): Discover what a similar photo finder does, how it detects near-duplicates on iPhone, and the safe review workflow to clean your camera roll.
+- [How to Find Large Videos on iPhone](https://luminaclean.app/blog/how-to-find-large-videos-on-iphone.html): Learn how to find large videos on iPhone with practical steps, native methods, and LuminaClean tips to free up storage space quickly.
 
 ## Localized pages (German / French / Traditional Chinese)
 
