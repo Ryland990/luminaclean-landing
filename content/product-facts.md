@@ -53,6 +53,16 @@ Last synced with App Store Connect: 2026-08-12 (pricing pivot to weekly/yearly);
   every deletion is a user swipe/confirmation, and even then it lands in
   iOS Recently Deleted first, not gone permanently
 
+## iOS facts we got wrong before (verified against Apple, 2026-10-06)
+
+- Items in Recently Deleted keep using **iPhone** storage for up to 30 days, but
+  Apple says they **don't count towards iCloud storage**
+  (https://support.apple.com/en-us/108922). Over the iCloud limit, deletes skip
+  Recently Deleted and are removed immediately.
+- iOS 26 Photos: the Albums tab is now **Collections**. Empty Recently Deleted:
+  Photos > Collections > Recently Deleted (under Utilities) > View Album > Select >
+  More (…) > Delete All (https://support.apple.com/en-us/104967).
+
 ## Facts with exact values
 
 - App Store ID: `id6757949814`
