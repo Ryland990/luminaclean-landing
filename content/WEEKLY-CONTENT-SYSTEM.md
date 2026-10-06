@@ -70,6 +70,7 @@ Winner = position or clicks up and no drop elsewhere. Three winners in a row →
 
 **Week of Oct 13**
 - New: "Why isn't Optimize iPhone Storage freeing up space?" (Reddit rising, unanswered) · "Where did Camera Roll and Merge Duplicates go in iOS 26?" (rising)
+- Recycle (fact refresh, do first): iOS 26 renamed the Albums tab to **Collections** and Delete All now sits behind Select → More (…). 12 posts still say "Albums" (grep `Albums (&rarr;|>|, then)|tap Albums`); fix wording + bump dateModified.
 - Recycle: iphone-photos-duplicates-album-not-showing ← "Why isn't Apple's Duplicates feature finding obvious duplicates?" (GSC 1,030 impr cluster + Reddit #7) · find-remove-blurry-photos-iphone (position 44, rework the title and opening)
 - Also: Oct 8 Outrank week-1 audit; Oct 14 Lumina button numbers
 
@@ -95,3 +96,4 @@ Later: Live Photos "remove the video part" (only once Live Photo conversion is f
 | 2026-10-06 | merge-exact-copies-iphone-photos | "Does merging photos on iPhone delete them?" | answer heading |
 | 2026-10-06 | why-iphone-storage-goes-up-after-deleting-photos | new post | new |
 | 2026-10-06 | delete-photos-from-iphone-keep-in-icloud | new post | new |
+| 2026-10-06 | recently-deleted, how-long-storage-update, cleaner-app-deleted-from-icloud, clean-up-screenshots, shared-albums, blog index | Correction: Apple says Recently Deleted does NOT count toward iCloud storage (support.apple.com/en-us/108922); we had said it did | fact fix |
