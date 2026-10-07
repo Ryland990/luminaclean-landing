@@ -56,7 +56,12 @@ Rule of thumb: **a page of ours already shows for it → recycle (add the headin
 
 ## Measurement
 
-Log every change in `## Change log` below (date, page, question, type). After 4 weeks, per change:
+Log every change in `## Baseline for the 2026-10-06 changes (GSC, 28 days ending ~2026-10-05)
+
+Pages: why-iphone-storage-full 119 clicks / 20,311 impr / pos 7.1 · photo-library-crashing 24 / 4,161 / 6.7 · best-duplicate-cleaner 4 / 3,153 / 7.4 · recently-deleted 0 / 414 / 7.9 · cleaner-app-deleted-from-icloud 1 / 241 / 7.9 · merge-exact-copies and how-long-storage-update: too few to list.
+Target questions (all phrasings together): 0 clicks / 756 impressions. Biggest: "best app to delete duplicate photos on iphone free" 174 impr p8.2 · "i deleted all my photos but it still says storage full iphone" 163 p9.5 · "how long do recently deleted photos stay on iphone" 70 p8.1 · "why does my photos app keep crashing" 39 p8.6 · "does merging photos on iphone delete them" 25 p7.2 · storage-goes-up phrasings ~150 combined p6–10.
+
+## Change log` below (date, page, question, type). After 4 weeks, per change:
 - GSC: that query's position and CTR vs before; the page's clicks.
 - FolioKit: page views and App Store taps/installs for that page (Growth tab, or ask Claude for `web_cta_summary`).
 - Bing AI Performance / GSC AI report: is the page cited?
