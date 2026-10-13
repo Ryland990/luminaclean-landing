@@ -73,7 +73,7 @@ Winner = position or clicks up and no drop elsewhere. Three winners in a row →
 - New: why-iphone-storage-goes-up-after-deleting-photos · delete-photos-from-iphone-keep-in-icloud
 - Recycle (answer headings): why-iphone-storage-full-after-deleting-photos · recently-deleted-photos-take-up-storage · best-duplicate-photo-cleaner-iphone · iphone-photo-library-too-big-crashing · merge-exact-copies-iphone-photos
 
-**Week of Oct 13 (done 2026-10-13, pending push)**
+**Week of Oct 13 (live 2026-10-13; IndexNow sent, GSC indexing requested for both new URLs)**
 - New: optimize-iphone-storage-not-freeing-space · ios-26-photos-camera-roll-merge-duplicates
 - Recycle (fact refresh): Albums → Collections + Select > More (…) > Delete All in 16 posts (paths confirmed on Apple's iOS 27 guide too)
 - Recycle: iphone-photos-duplicates-album-not-showing ← "Why isn't Apple's Duplicates feature finding obvious duplicates?" (+ removed unsourced "3–5×", "80%+", "byte-for-byte") · does-deleting-duplicates-delete-original: title "… Merge vs Delete (2026)" + 2 answer headings (page 4,929 impr / 14 clicks / 0.28% CTR at p6.8)
