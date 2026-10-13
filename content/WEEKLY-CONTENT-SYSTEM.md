@@ -73,11 +73,12 @@ Winner = position or clicks up and no drop elsewhere. Three winners in a row →
 - New: why-iphone-storage-goes-up-after-deleting-photos · delete-photos-from-iphone-keep-in-icloud
 - Recycle (answer headings): why-iphone-storage-full-after-deleting-photos · recently-deleted-photos-take-up-storage · best-duplicate-photo-cleaner-iphone · iphone-photo-library-too-big-crashing · merge-exact-copies-iphone-photos
 
-**Week of Oct 13**
-- New: "Why isn't Optimize iPhone Storage freeing up space?" (Reddit rising, unanswered) · "Where did Camera Roll and Merge Duplicates go in iOS 26?" (rising)
-- Recycle (fact refresh, do first): iOS 26 renamed the Albums tab to **Collections** and Delete All now sits behind Select → More (…). 12 posts still say "Albums" (grep `Albums (&rarr;|>|, then)|tap Albums`); fix wording + bump dateModified.
-- Recycle: iphone-photos-duplicates-album-not-showing ← "Why isn't Apple's Duplicates feature finding obvious duplicates?" (GSC 1,030 impr cluster + Reddit #7) · find-remove-blurry-photos-iphone (position 44, rework the title and opening)
-- Also: Oct 8 Outrank week-1 audit; Oct 14 Lumina button numbers
+**Week of Oct 13 (done 2026-10-13, pending push)**
+- New: optimize-iphone-storage-not-freeing-space · ios-26-photos-camera-roll-merge-duplicates
+- Recycle (fact refresh): Albums → Collections + Select > More (…) > Delete All in 16 posts (paths confirmed on Apple's iOS 27 guide too)
+- Recycle: iphone-photos-duplicates-album-not-showing ← "Why isn't Apple's Duplicates feature finding obvious duplicates?" (+ removed unsourced "3–5×", "80%+", "byte-for-byte") · does-deleting-duplicates-delete-original: title "… Merge vs Delete (2026)" + 2 answer headings (page 4,929 impr / 14 clicks / 0.28% CTR at p6.8)
+- Moved to Oct 20: find-remove-blurry-photos-iphone rework (its long queries are "how to unblur…" at p44–66, 28 impr: wrong intent, low value)
+- Oct 14: Lumina button numbers still due
 
 **Week of Oct 20**
 - New: "Which of five nearly identical photos should I keep?" (core product question, rising) · "How do I clean up tens of thousands of photos without checking every one?"
@@ -102,3 +103,10 @@ Later: Live Photos "remove the video part" (only once Live Photo conversion is f
 | 2026-10-06 | why-iphone-storage-goes-up-after-deleting-photos | new post | new |
 | 2026-10-06 | delete-photos-from-iphone-keep-in-icloud | new post | new |
 | 2026-10-06 | recently-deleted, how-long-storage-update, cleaner-app-deleted-from-icloud, clean-up-screenshots, shared-albums, blog index | Correction: Apple says Recently Deleted does NOT count toward iCloud storage (support.apple.com/en-us/108922); we had said it did | fact fix |
+| 2026-10-13 | 16 posts (Recently Deleted, Duplicates, Media Types paths) | iOS 26 renamed Albums to Collections; Delete All is under Select > More (…) | fact fix |
+| 2026-10-13 | iphone-photos-duplicates-album-not-showing | "Why isn't Apple's Duplicates feature finding obvious duplicates?" (cluster 124 impr p8.5; page 9,540 impr / 44 clicks / p7.0) | answer heading |
+| 2026-10-13 | does-deleting-duplicates-delete-original | "Does deleting duplicates delete the original photo?" (76 impr p4.7, 0 clicks) + "Is it better to merge or delete duplicate photos?" (17 impr p7); title rewrite. Page 4,929 impr / 14 clicks / p6.8 | answer heading + title |
+| 2026-10-13 | optimize-iphone-storage-not-freeing-space | new post (Reddit #11, rising fast; GSC ~0) | new |
+| 2026-10-13 | ios-26-photos-camera-roll-merge-duplicates | new post (Reddit #20–22, rising; GSC "merge" cluster 25 impr) | new |
+| 2026-10-13 | vercel.json | 301 /blog/why-iphone-storage-full-after-deleting-photos (no .html) → .html; it 404'd live while Google showed it (21 impr, p1.6) | fix |
+| 2026-10-13 | best-photo-cleaner-no-subscription-iphone | "5.3× LuminaClean lifetime" → "yearly Premium" (no lifetime plan is sold) | fact fix |

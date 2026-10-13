@@ -1,6 +1,6 @@
 # Publish schedule — July 2026 batches
 
-Repo: /Users/rp/CascadeProjects/LuminaClean - Landing Page/Landing Page Lumina
+Repo: /Users/rp/CascadeProjects/LuminaClean/landing-page
 Pipeline: follow content/SEO-PIPELINE.md. Drafts below are pre-verified; the publish
 session's job is integration + deploy + post-deploy checks only.
 

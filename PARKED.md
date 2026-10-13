@@ -33,6 +33,8 @@
   position 5.8 — revisit after the localized guides have 3 months of data.
 
 ## Code health
+- Unsourced/unverifiable claims still on older posts: "3–5× more duplicates" and "byte-for-byte/pixel-identical" (Apple doesn't publish its matching rules) in best-duplicate-photo-cleaner, delete-duplicate-photos, how-long-iphone-find-duplicates and others; ~200 banned-word hits ("genuinely", "actually", "comprehensive") across pre-pipeline posts. Sweep in one pass. (2026-10-13)
+- Extensionless /blog/<slug> URLs 404 (only one is redirected now). Consider a general `/blog/:slug([^./]+)` → `/blog/:slug.html` redirect in vercel.json after checking GSC for others. (2026-10-13)
 - Vercel Bot Protection is OFF; ~half of Vercel "visitors" are Linux/AWS bots.
   Turn on, or use the new BotID feature, so Vercel numbers stop lying.
 - og-image only in 1.91:1; 4:3 and 1:1 variants would help article rich results.
