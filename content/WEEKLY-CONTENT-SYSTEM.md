@@ -45,6 +45,8 @@ Rule of thumb: **a page of ours already shows for it → recycle (add the headin
 6. Related guides (3–5 internal links), FAQ of 4–5 long-question variants mirrored in FAQPage JSON-LD.
 7. Template file to copy: `blog/how-long-iphone-find-duplicates.html`. Writers: Opus subagents with a self-contained brief; Claude verifies facts, banned words, JSON-LD and renders the page before showing Razvan.
 
+**Title rule (2026-10-20):** ≤70 characters including any brand suffix (Bing flags >70; Google shows ~60 and adds the site name itself). The question goes first, in plain words, with (2026). Leave off " | LuminaClean" when it pushes a title over 70.
+
 ## Recycling (the other half of the system)
 
 1. **Answer headings (weekly)**: for every long question a page already shows for, add the exact question as an H2 + 2-sentence answer near the top and to its FAQ schema. Bump `dateModified`.
@@ -117,3 +119,4 @@ Later: Live Photos "remove the video part" (only once Live Photo conversion is f
 | 2026-10-20 | which-similar-photo-to-keep-iphone | new post (Reddit #6 + #25, High/rising; GSC ~0) | new |
 | 2026-10-20 | clean-up-thousands-of-iphone-photos | new post (Reddit #5, High/rising; GSC ~0) | new |
 | 2026-10-20 | find-duplicate-photos-guide, how-to-reduce-video-file-size-on-iphone-guide (Outrank) | removed in-prose prices ($5.99 / $17.99); prices only in tables | fact fix |
+| 2026-10-20 | 17 pages (EN/DE/FR, incl. homepage) | Titles over 70 chars cut to ≤70 (Bing "Title too long", 5 pages flagged). Rule: question wording kept; drop " \| LuminaClean" first, reword only if still >70. Skipped the 4 answer-heading pages under test (does-deleting-duplicates, duplicates-album-not-showing, storage-goes-up, optimize-not-freeing) until their verdict | title length |

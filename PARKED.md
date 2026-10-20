@@ -33,6 +33,7 @@
   position 5.8 — revisit after the localized guides have 3 months of data.
 
 ## Code health
+- After their 4-week verdicts (Nov 3 / Nov 10): cut titles >70 chars on does-deleting-duplicates-delete-original (82), iphone-photos-duplicates-album-not-showing (74), why-iphone-storage-goes-up-after-deleting-photos (73), optimize-iphone-storage-not-freeing-space (72). Held back so the title change doesn't muddy the test. (2026-10-20)
 - product-facts.md still says Apple "only catches pixel-identical duplicates" and the duplicates Lumina aside says "only catches exact copies"; both conflict with the "Apple doesn't publish its matching rules" rule. Reword once, then re-copy the aside. (2026-10-20)
 - Outrank posts put prices in prose (fixed 2 on 2026-10-20). If Outrank re-sends an updated article it may overwrite the fix; add a price/lifetime check to api/outrank.js. (2026-10-20)
 - Scams question ("Are iPhone cleaner apps scams?") for do-photo-cleaner-apps-actually-work is still open; page has only 40 impr/28 days. (2026-10-20)
