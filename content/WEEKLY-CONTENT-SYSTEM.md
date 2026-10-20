@@ -80,9 +80,11 @@ Winner = position or clicks up and no drop elsewhere. Three winners in a row →
 - Moved to Oct 20: find-remove-blurry-photos-iphone rework (its long queries are "how to unblur…" at p44–66, 28 impr: wrong intent, low value)
 - Oct 14: Lumina button numbers still due
 
-**Week of Oct 20**
-- New: "Which of five nearly identical photos should I keep?" (core product question, rising) · "How do I clean up tens of thousands of photos without checking every one?"
-- Recycle: iphone-photo-privacy-safety ← "What's the safest photo cleaner that won't upload my pictures?" · do-photo-cleaner-apps-actually-work ← "Are iPhone cleaner apps scams?"
+**Week of Oct 20 (prepared 2026-10-20, pending push)**
+- New: which-similar-photo-to-keep-iphone · clean-up-thousands-of-iphone-photos
+- Recycle: iphone-photo-privacy-safety ← "Are photo cleaner apps safe to use on iPhone?" + "What's the safest photo cleaner that won't upload my pictures?" · iphone-storage-full-free-space ← "Why is my iPhone storage full after the iOS 27 update?" + title rewrite
+- Swapped out: do-photo-cleaner-apps-actually-work (40 impr / 0 clicks in 28 days, no visible queries) for iphone-storage-full-free-space (2,931 impr / 22 clicks / 0.8% CTR at p7.9; "ios 27 storage full" 29 impr, "iphone storage full after ios 27 update" 11). Scams question moves to a later week.
+- No verdicts yet: the oldest changes (Oct 6) are 2 weeks old; first round Nov 3.
 
 **Week of Oct 27**
 - New: "How do I get rid of thousands of screenshots without going one by one?" · "Is it Photos or System Data filling my iPhone?" (honest: the app doesn't fix System Data)
@@ -110,3 +112,8 @@ Later: Live Photos "remove the video part" (only once Live Photo conversion is f
 | 2026-10-13 | ios-26-photos-camera-roll-merge-duplicates | new post (Reddit #20–22, rising; GSC "merge" cluster 25 impr) | new |
 | 2026-10-13 | vercel.json | 301 /blog/why-iphone-storage-full-after-deleting-photos (no .html) → .html; it 404'd live while Google showed it (21 impr, p1.6) | fix |
 | 2026-10-13 | best-photo-cleaner-no-subscription-iphone | "5.3× LuminaClean lifetime" → "yearly Premium" (no lifetime plan is sold) | fact fix |
+| 2026-10-20 | iphone-photo-privacy-safety | "Are photo cleaner apps safe to use on iPhone?" + "What's the safest photo cleaner that won't upload my pictures?"; banned-word sweep, unsourced "privacy scandals" line cut. Page 1,146 impr / 16 clicks / 1.4% / p7.0; "safe" queries ~60 impr combined | answer heading |
+| 2026-10-20 | iphone-storage-full-free-space | "Why is my iPhone storage full after the iOS 27 update?" (Apple Intelligence up to 8 / 14 GB, support.apple.com/en-us/121115); title "iPhone Storage Full on iOS 27? How to Free Up Space (2026)". Page 2,931 impr / 22 clicks / 0.8% / p7.9 | answer heading + title |
+| 2026-10-20 | which-similar-photo-to-keep-iphone | new post (Reddit #6 + #25, High/rising; GSC ~0) | new |
+| 2026-10-20 | clean-up-thousands-of-iphone-photos | new post (Reddit #5, High/rising; GSC ~0) | new |
+| 2026-10-20 | find-duplicate-photos-guide, how-to-reduce-video-file-size-on-iphone-guide (Outrank) | removed in-prose prices ($5.99 / $17.99); prices only in tables | fact fix |

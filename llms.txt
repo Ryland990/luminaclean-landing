@@ -23,7 +23,7 @@ Key facts:
 
 ## Key guides
 
-- [iPhone Storage Full? How to Free Up Space (and Make Room for iOS 27)](https://luminaclean.app/blog/iphone-storage-full-free-space.html): pillar guide to reclaiming storage, including free space for the iOS 27 update and Apple Intelligence
+- [iPhone Storage Full on iOS 27? How to Free Up Space (2026)](https://luminaclean.app/blog/iphone-storage-full-free-space.html): pillar guide to reclaiming storage, including free space for the iOS 27 update and Apple Intelligence
 - [Best iPhone Photo Cleaner Without Subscription](https://luminaclean.app/blog/best-photo-cleaner-no-subscription-iphone.html): free and free-to-start cleaner apps compared honestly with subscription ones
 - [How to Delete Duplicate Photos on iPhone](https://luminaclean.app/blog/delete-duplicate-photos-iphone.html): four methods compared, including Apple's built-in Duplicates album
 - [Why Is iPhone Storage Full After Deleting Photos?](https://luminaclean.app/blog/why-iphone-storage-full-after-deleting-photos.html): Recently Deleted, iCloud sync and caching explained
@@ -57,6 +57,8 @@ Key facts:
 - [How to Free Up Phone Storage on Your iPhone (2026 Guide)](https://luminaclean.app/blog/free-up-phone-storage.html): Learn how to free up phone storage on iPhone with simple steps that actually work. Find duplicates, big videos, and screenshots to reclaim real space today.
 - [Find Duplicate Photos: A Practical iPhone Guide for 2026](https://luminaclean.app/blog/find-duplicate-photos.html): Learn how to find duplicate photos on your iPhone in 2026. Clear out storage with our practical guide to identifying and removing unwanted copies.
 - [Where Did Camera Roll Go in iOS 26 Photos? (2026)](https://luminaclean.app/blog/ios-26-photos-camera-roll-merge-duplicates.html): In iOS 26 Photos, Camera Roll is the Library tab. Albums, Duplicates, Recently Deleted and Hidden moved to Collections. Exact paths, iOS 27 included.
+- [How Do I Clean Up Thousands of iPhone Photos Without Checking Each One? (2026)](https://luminaclean.app/blog/clean-up-thousands-of-iphone-photos.html): Clean up 10,000+ iPhone photos by pile, not photo by photo: merge duplicates, sweep screenshots, cut big videos and bursts, then go year by year. iOS 26 steps.
+- [Which Photo Should I Keep From 5 Nearly Identical Shots? (2026)](https://luminaclean.app/blog/which-similar-photo-to-keep-iphone.html): Five near-identical shots? Zoom in on the eyes, check for blinks and motion blur, keep one per moment. How to find similar photos on iPhone and delete the rest.
 - [Why Isn’t Optimize iPhone Storage Freeing Up Space? (2026)](https://luminaclean.app/blog/optimize-iphone-storage-not-freeing-space.html): Optimize iPhone Storage only shrinks photos after they upload to iCloud and your iPhone runs low on space. How to spot each cause and fix it.
 - [Why Does iPhone Storage Go Up After Deleting Photos? (2026)](https://luminaclean.app/blog/why-iphone-storage-goes-up-after-deleting-photos.html): Deleted photos stay on your iPhone for 30 days, and a big cleanup briefly inflates System Data. How to tell which cause you have and fix it.
 - [How to Delete Photos From iPhone but Keep Them in iCloud (2026)](https://luminaclean.app/blog/delete-photos-from-iphone-keep-in-icloud.html): With iCloud Photos on, a delete on your iPhone deletes everywhere. Three safe ways to free iPhone space and keep your photos in iCloud, with iOS 26 steps.
