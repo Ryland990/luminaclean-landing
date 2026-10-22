@@ -25,6 +25,8 @@ Outrank publishes ~7 articles/week on top of this until the trial ends (2026-11-
 4. **GSC "generative AI features" report** (Performance page banner → Open report) and **Bing Webmaster → AI Performance** (Copilot citations): which pages AI already quotes.
 5. `keyword-backlog.md`, App Store reviews, support emails.
 
+Also every week: GSC > Indexing > Pages. Only act if a real page (blog post, homepage, try page) shows under Not found, Crawled - not indexed, or Blocked. Known harmless: /api/track (blocked on purpose), /cdn-cgi/l/email-protection (old hosting leftover).
+
 ## How to pick (score each candidate 0–2 on each, take the top 4)
 
 - **Demand**: GSC impressions summed across phrasings, or Reddit frequency High/Rising.
