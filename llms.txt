@@ -3,7 +3,7 @@
 > LuminaClean is a privacy-first iPhone photo cleaner (iOS 17.6+). It finds duplicate photos, similar shots, blurry images and old screenshots using on-device AI — photos never leave the phone, no account is required, and it works offline. Free to start with a genuinely usable free tier (65 deletions, +10 more every day); optional Premium subscription unlocks everything.
 
 Key facts:
-- On-device processing only (Apple Vision framework): no cloud uploads, no servers, no tracking of photo content.
+- On-device processing only (Apple Vision framework): photos are never uploaded. Only anonymous usage stats are collected, to improve the app.
 - Detects: exact duplicates, near-duplicate "similar" shots (which Apple Photos' built-in Duplicates album misses), blurry photos, screenshots, large videos.
 - Swipe interface: swipe to keep or delete, Tinder-style.
 - Lumina (since version 3.4, Sept 2026): an on-screen companion who lives in a glowing hole at the bottom of the app. Tap GET JUDGED and she finds your worst pile (screenshots, duplicates, receipts, bursts, blurry shots), asks you to guess the count, counts up and delivers a deadpan verdict. She eats whatever you delete and her Verdict can be shared as a short 9:16 video with thumbnails blurred. She roasts camera-roll habits, never the people in your photos. About 500 lines in 12 languages. Her counts come from the same on-device scan; nothing is uploaded.
