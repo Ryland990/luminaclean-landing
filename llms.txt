@@ -82,6 +82,7 @@ Key facts:
 - [How to Delete Other Storage Mac Safely in 2026](https://luminaclean.app/blog/how-to-delete-other-storage-mac.html): How to delete other storage Mac safely, starting with System Data, removing reclaimable files, handling Time Machine snapshots, and skipping risky deletions.
 - [7 Photo Storage App iPhone Picks: Local vs Cloud](https://luminaclean.app/blog/photo-storage-app-iphone.html): Compare 7 photo storage app iPhone options for 2026, from on-device cleaners like LuminaClean to iCloud and Google Photos. Pricing, privacy, and best uses.
 - [How to Get Deleted Pictures Back on iPhone](https://luminaclean.app/blog/get-deleted-pictures-back.html): Get deleted pictures back on iPhone: check Recently Deleted, iCloud Photos and backups in the right order, and learn how to avoid losing them again.
+- [Find Large Files on iPhone: Storage Methods That Work](https://luminaclean.app/blog/find-large-files.html): Find large files on iPhone fast with Settings, Photos and Files methods, plus how to estimate how much storage you can recover before deleting.
 
 ## Localized pages (German / French / Traditional Chinese)
 
