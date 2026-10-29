@@ -6,7 +6,8 @@ Live Wallpapers are free. Memory Reels are free. Photo Rescue is free.
 
 Key facts (version 3.6):
 - On-device processing only: photos are analyzed on the iPhone and never uploaded. Only anonymous usage stats are collected, to improve the app.
-- Clean: detects exact duplicates, near-duplicate "similar" shots (which Apple Photos' built-in Duplicates album misses), blurry photos, screenshots and large videos. Swipe left to delete, right to keep, with undo and a double-check screen before anything is deleted. Save for Later keeps marked photos when you leave a swipe session. Space goals, Flashback (clean one year at a time), AI categories (People, Pets, Food, Travel, Receipts, Screenshots and more), free video compression and Live Photo to still conversion.
+- Daily 15 Challenge (new in 3.6, Clean tab, free to play): 15 seconds. How much can you sort? Swipe left to mark a photo for deletion, right to keep, with a huge live counter, whoosh sounds and haptics. Playing any round counts toward a daily streak (deleting is never required), with a personal best, a Lumina reaction and a 9:16 share card that shows numbers only, no photos. The pile is photos the scan already flagged (screenshots, extra duplicate/similar copies, blurry shots; never favourites). Nothing is deleted until the normal review screen.
+- Clean: detects exact duplicates, near-duplicate "similar" shots (which Apple Photos' built-in Duplicates album misses), blurry photos, screenshots and large videos. Swipe left to delete, right to keep, with undo and a double-check screen before anything is deleted. Save for Later keeps marked photos when you leave a swipe session. Swipe sounds and stronger haptics, each with its own switch in Settings. Space goals, Flashback (clean one year at a time), AI categories (People, Pets, Food, Travel, Receipts, Screenshots and more), free video compression and Live Photo to still conversion.
 - Memories: On This Day (photos from the same date in past years), Your Story (a month-by-month timeline), daily streaks and an optional reminder. Made for You: after a trip or a busy day, Lumina picks the standout photos, skips near-duplicates, receipts and screenshots, and offers a ready-made reel.
 - Create, all free:
   - Live Wallpaper: turn any video into a Live Photo for a moving iPhone Lock Screen wallpaper. Pick the 2-second moment and the cover frame on a Lock Screen preview, save, then follow three setup steps (the wallpaper itself is set from the Lock Screen, since apps can't set wallpapers).
@@ -20,6 +21,7 @@ Key facts (version 3.6):
 ## Pages
 
 - [Home](https://luminaclean.app/): product overview, features, FAQ
+- [Daily 15 Challenge](https://luminaclean.app/daily-15-challenge.html): 15-second sorting round with a live counter, daily streak, personal best and a numbers-only share card; nothing deleted until review (free to play)
 - [Swipe to delete photos on iPhone](https://luminaclean.app/swipe-to-delete.html): left to delete, right to keep, undo, double-check screen; free tier explained
 - [Turn a video into a Live Wallpaper on iPhone](https://luminaclean.app/live-wallpaper.html): 2-second moment + cover frame, saved as a Live Photo, set as a moving Lock Screen (free)
 - [Make a reel from your camera roll](https://luminaclean.app/memory-reels.html): a day, a month or 6–30 photos into a 9:16 1080x1920 reel, three styles, stickers (free)

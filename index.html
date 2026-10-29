@@ -83,7 +83,7 @@
         "url": "https://luminaclean.app/",
         "operatingSystem": "iOS 17.6 or later",
         "applicationCategory": "UtilitiesApplication",
-        "description": "LuminaClean is an iOS app that helps users clean and organize their photo libraries by detecting duplicates, similar photos, blurry images, and screenshots using AI-powered on-device processing. All analysis happens locally on the device, ensuring complete privacy. Version 3.4 adds Lumina, an on-screen companion who counts your biggest pile of clutter, delivers a deadpan verdict, and eats whatever you delete. Version 3.6 splits the app into three tabs, Clean, Memories and Create, and adds free Live Wallpapers, Memory Reels and Photo Rescue (an on-device AI model that restores dark or blurry photos).",
+        "description": "LuminaClean is an iOS app that helps users clean and organize their photo libraries by detecting duplicates, similar photos, blurry images, and screenshots using AI-powered on-device processing. All analysis happens locally on the device, ensuring complete privacy. Version 3.4 adds Lumina, an on-screen companion who counts your biggest pile of clutter, delivers a deadpan verdict, and eats whatever you delete. Version 3.6 splits the app into three tabs, Clean, Memories and Create, and adds free Live Wallpapers, Memory Reels and Photo Rescue (an on-device AI model that restores dark or blurry photos), plus the Daily 15 Challenge: 15 seconds to sort as many photos as you can.",
         "isAccessibleForFree": true,
         "offers": {
             "@type": "Offer",
@@ -96,7 +96,7 @@
             "@type": "AggregateRating",
             "ratingValue": "4.9",
             "bestRating": "5",
-            "ratingCount": "40"
+            "ratingCount": "41"
         },
         "featureList": [
             "Lumina companion: GET JUDGED verdicts that count and roast your biggest pile of clutter",
@@ -115,6 +115,7 @@
             "iCloud Photos integration",
             "Video compression",
             "Daily free deletions (65 to start, +30/day thereafter)",
+            "Daily 15 Challenge: 15 seconds to sort as many photos as you can, with a live counter, a daily streak, a personal best and a share card (numbers only); nothing is deleted until review",
             "Swipe to delete: left to delete, right to keep, with undo, a double-check screen and Save for Later",
             "Live Wallpaper (free): turn any video into a Live Photo for a moving Lock Screen wallpaper",
             "Memory Reel (free): turn a day, a month or selected photos into a 9:16 1080x1920 reel in three styles, with stickers",
@@ -148,6 +149,7 @@
         "mainEntity": [
             {"@type": "Question", "name": "Who is Lumina?", "acceptedAnswer": {"@type": "Answer", "text": "Lumina is the companion inside LuminaClean, new in version 3.4. She lives at the bottom of the screen, counts your biggest pile of screenshots, duplicates or receipts when you tap GET JUDGED, roasts your camera-roll habits (never the people in your photos), and eats whatever you delete. Her roasts come in 12 languages."}},
             {"@type": "Question", "name": "Does Lumina send my photos anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. Her counts come from the same on-device scan the rest of LuminaClean uses. Nothing is uploaded, and the videos you share blur your thumbnails."}},
+            {"@type": "Question", "name": "What is the Daily 15 Challenge?", "acceptedAnswer": {"@type": "Answer", "text": "A 15-second round in LuminaClean's Clean tab, new in 3.6: sort as many photos as you can, swiping left to mark for deletion and right to keep, while a big counter climbs. Playing any round counts toward a daily streak, and your personal best stays on your iPhone. Nothing is deleted during the round; marked photos wait on the normal review screen, and deleting is never needed for the streak. Free to play."}},
             {"@type": "Question", "name": "How do I swipe to delete photos on iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "Apple's Photos app has no swipe-to-delete. In LuminaClean you swipe left to delete and right to keep, undo any swipe, and check every marked photo on a double-check screen before anything is deleted. Deleted photos go to Recently Deleted for 30 days."}},
             {"@type": "Question", "name": "How do I turn a video into a Live Wallpaper on iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "In LuminaClean's Create tab, pick a video, choose the 2-second moment and the cover frame on a Lock Screen preview, and save it as a Live Photo. Then press and hold the Lock Screen, tap +, choose Photos and pick that Live Photo with the Live Photo button on. Live Wallpapers are free."}},
             {"@type": "Question", "name": "How do I make a reel from my camera roll?", "acceptedAnswer": {"@type": "Answer", "text": "In LuminaClean's Create tab, pick a day, a month or 6 to 30 photos, choose Flash Dump, Pile-On or Polaroid, add stickers if you like, and export a 9:16 1080x1920 reel. Reels export without sound; add music where you post. Memory Reels are free."}},
@@ -3353,6 +3355,18 @@
         .create36-go { margin-top: auto; font-size: 0.8rem; font-weight: 600; color: #c7f464; line-height: 1.35; }
         @media (max-width: 420px) { .create36-card { padding: 0.6rem 0.6rem 0.85rem; } .create36-card p { font-size: 0.8rem; } .create36-card h3 { font-size: 1.1rem; } }
         .faq-more { color: #c7f464; white-space: nowrap; }
+        .create36-reel { margin: 0 0 1.2rem; border-radius: 18px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.08); background: #0a0a0a; }
+        .create36-reel-video { width: 100%; height: auto; display: block; aspect-ratio: 1280 / 438; object-fit: cover; background: #0a0a0a; }
+        @media (max-width: 699px) { .create36-reel-video { aspect-ratio: 4 / 3; } }
+        .create36-card--lead { grid-column: 1 / -1; display: grid; grid-template-columns: 132px 1fr; gap: 1rem; align-items: center; padding: 0.85rem; }
+        .create36-card--lead img { aspect-ratio: 432 / 700; object-position: top; margin-bottom: 0; }
+        .create36-lead-copy { display: flex; flex-direction: column; min-width: 0; }
+        .create36-card--lead h3 { font-size: 1.6rem; }
+        .create36-lead-line { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.74rem; letter-spacing: 0.06em; color: #c7f464; margin: 0 0 0.5rem; line-height: 1.4; }
+        @media (min-width: 700px) { .create36-card--lead { grid-template-columns: 200px 1fr; gap: 1.6rem; padding: 1rem 1.6rem 1rem 1rem; } .create36-card--lead h3 { font-size: 2.3rem; } .create36-card--lead p { font-size: 0.98rem; max-width: 40rem; } .create36-lead-line { font-size: 0.9rem; } }
+        @media (max-width: 420px) { .create36-card--lead { grid-template-columns: 110px 1fr; gap: 0.8rem; } .create36-card--lead h3 { font-size: 1.35rem; } .create36-card--lead p { font-size: 0.8rem; } }
+        .create36-also { color: #a8a8a8; font-size: 0.92rem; line-height: 1.55; margin: 1.2rem 0 0; max-width: 52rem; }
+        .create36-also strong { color: #ffffff; }
 
     </style>
 </head>
@@ -3758,7 +3772,22 @@
                     <h2 class="section-title">Clean the clutter. Relive the moments. <span class="serif-italic">Make them move.</span></h2>
                     <p class="section-description">Live Wallpapers are free. Memory Reels are free. Photo Rescue is free.</p>
                 </header>
+                <figure class="create36-reel reveal">
+                    <video class="create36-reel-video" autoplay muted loop playsinline preload="none" width="1280" height="438" poster="assets/images/3.6/create36-header-poster.jpg" aria-label="LuminaClean 3.6: Lumina next to three iPhones showing the Daily 15 Challenge, a moving Lock Screen wallpaper and a Memory Reel with stickers">
+                        <source src="assets/video/create36-header-en.mp4" type="video/mp4">
+                    </video>
+                </figure>
                 <div class="create36-grid">
+                    <a class="create36-card create36-card--lead reveal" href="/daily-15-challenge.html" style="--uni:#ff2e63">
+                        <img src="assets/images/3.6/daily15-poster.jpg" alt="Daily 15 Challenge end screen: 75 sorted in 15 seconds, a new best, and Lumina saying I blinked. They were gone." width="432" height="936" loading="lazy" decoding="async">
+                        <span class="create36-lead-copy">
+                            <span class="create36-tag">New &middot; Clean &middot; Free to play</span>
+                            <h3>Daily 15 Challenge</h3>
+                            <span class="create36-lead-line">15 seconds. How much can you sort?</span>
+                            <p>Swipe left to mark, right to keep, while a huge counter climbs. Beat your best, keep a daily streak and share a card with your score, never your photos. Nothing is deleted until you review.</p>
+                            <span class="create36-go">Play the Daily 15 Challenge &rarr;</span>
+                        </span>
+                    </a>
                     <a class="create36-card reveal" href="/live-wallpaper.html" style="--uni:#c7f464">
                         <img src="assets/images/3.6/live-wallpaper.jpg" alt="" width="600" height="1303" loading="lazy" decoding="async">
                         <span class="create36-tag">Create &middot; Free</span>
@@ -3788,6 +3817,7 @@
                         <span class="create36-go">Swipe to delete photos &rarr;</span>
                     </a>
                 </div>
+                <p class="create36-also reveal"><strong>Also new:</strong> Save for later keeps your marked photos when you leave a swipe session. Made for you: after a trip or a busy day, Lumina offers a ready-made reel. Swipe sounds and stronger haptics each have their own switch in Settings.</p>
             </div>
         </section>
 
@@ -4071,6 +4101,18 @@
 
                     <div class="faq-item reveal">
                         <button class="faq-question" aria-expanded="false">
+                            What is the Daily 15 Challenge?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-inner">A 15-second round in LuminaClean's Clean tab, new in 3.6: sort as many photos as you can, swiping left to mark for deletion and right to keep, while a big counter climbs. Playing any round counts toward a daily streak, and your personal best stays on your iPhone. Nothing is deleted during the round; marked photos wait on the normal review screen, and deleting is never needed for the streak. Free to play. <a class="faq-more" href="/daily-15-challenge.html">How a round works &rarr;</a></p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
                             How do I swipe to delete photos on iPhone?
                             <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <polyline points="6 9 12 15 18 9"/>
@@ -4290,6 +4332,7 @@
                 <a href="terms.html">Terms of Service</a>
                 <a href="support.html">Support</a>
                 <a href="/blog/">Blog</a>
+                <a href="/daily-15-challenge.html">Daily 15 Challenge</a>
                 <a href="/swipe-to-delete.html">Swipe to delete</a>
                 <a href="/live-wallpaper.html">Live Wallpaper</a>
                 <a href="/memory-reels.html">Memory Reels</a>
@@ -4614,6 +4657,8 @@
         var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         var v = document.querySelector('.hero-phone video');
         if (v && reduce) { v.removeAttribute('autoplay'); try { v.pause(); } catch (e) {} }
+        var r36 = document.querySelector('.create36-reel-video');
+        if (r36 && reduce) { r36.removeAttribute('autoplay'); try { r36.pause(); } catch (e) {} }
         var card = document.getElementById('verdict-card');
         if (!card) return;
         var pose = card.querySelector('.verdict-pose');

@@ -108,7 +108,9 @@
             "批次刪除",
             "iCloud 照片整合",
             "影片壓縮",
-            "每日免費刪除額度（先送 65 次，之後每天 +30）"
+            "每日免費刪除額度（先送 65 次，之後每天 +30）",
+            "每日15秒挑戰：15 秒內盡量整理相片，有個人最佳和每日連續紀錄；確認之前不會刪除任何相片",
+            "創作（免費）：動態背景、回憶短片，以及用裝置端 AI 的相片修復"
         ],
         "screenshot": [
             "https://luminaclean.app/assets/images/dailybites-timeline.jpeg",
@@ -118,7 +120,7 @@
         ],
         "downloadUrl": "https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8",
         "installUrl": "https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8",
-        "softwareVersion": "2.7",
+        "softwareVersion": "3.6",
         "datePublished": "2026-01-20T00:00:00+00:00",
         "author": {
             "@id": "https://luminaclean.app/#organization"
@@ -3321,6 +3323,39 @@
         @media (max-width: 420px) { .share-fan { height: 250px; } .share-fan img { width: 120px; } .share-fan img:nth-child(1) { transform: translateX(-50%) translateX(-82px) rotate(-8deg) scale(0.9); } .share-fan img:nth-child(3) { transform: translateX(-50%) translateX(82px) rotate(8deg) scale(0.9); } }
         .share-tail { font-family: 'Caveat', cursive; font-size: 1.7rem; color: #ff2e63; margin: 0.8rem 0 0; }
 
+        /* ===========================================
+           CREATE (3.6) — compact cards linking the feature pages
+           =========================================== */
+        .create36 { padding: 4.5rem 0 4rem; }
+        .create36 .section-header { margin-bottom: 2.4rem; }
+        .create36 .section-description { color: #c7f464; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.82rem; letter-spacing: 0.06em; }
+        .create36-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+        @media (min-width: 1000px) { .create36-grid { grid-template-columns: repeat(4, 1fr); gap: 1rem; } }
+        .create36-card { display: flex; flex-direction: column; background: #111111; border: 1px solid rgba(255, 255, 255, 0.08); border-top: 2px solid color-mix(in srgb, var(--uni, #c7f464) 60%, transparent); border-radius: 18px; padding: 0.75rem 0.75rem 1rem; text-decoration: none; color: #ffffff; transition: border-color 0.2s ease, transform 0.2s ease; }
+        .create36-card:hover { border-color: var(--uni, #c7f464); transform: translateY(-3px); }
+        .create36-card img { width: 100%; height: auto; aspect-ratio: 600 / 640; object-fit: cover; object-position: top; border-radius: 12px; display: block; margin-bottom: 0.8rem; }
+        .create36-tag { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.58rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--uni, #c7f464); }
+        .create36-card h3 { font-family: 'Anton', 'Arial Narrow', sans-serif; font-weight: 400; text-transform: uppercase; font-size: 1.25rem; letter-spacing: 0.02em; line-height: 1.05; margin: 0.35rem 0 0.4rem; }
+        .create36-card p { color: #a8a8a8; font-size: 0.86rem; line-height: 1.45; margin: 0 0 0.7rem; }
+        .create36-go { margin-top: auto; font-size: 0.8rem; font-weight: 600; color: #c7f464; line-height: 1.35; }
+        @media (max-width: 420px) { .create36-card { padding: 0.6rem 0.6rem 0.85rem; } .create36-card p { font-size: 0.8rem; } .create36-card h3 { font-size: 1.1rem; } }
+        .create36-reel { margin: 0 0 1.2rem; border-radius: 18px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.08); background: #0a0a0a; }
+        .create36-reel-video { width: 100%; height: auto; display: block; aspect-ratio: 1280 / 438; object-fit: cover; background: #0a0a0a; }
+        @media (max-width: 699px) { .create36-reel-video { aspect-ratio: 4 / 3; } }
+        .create36-card--lead { grid-column: 1 / -1; display: grid; grid-template-columns: 132px 1fr; gap: 1rem; align-items: center; padding: 0.85rem; }
+        .create36-card--lead img { aspect-ratio: 432 / 700; object-position: top; margin-bottom: 0; }
+        .create36-lead-copy { display: flex; flex-direction: column; min-width: 0; }
+        .create36-card--lead h3 { font-size: 1.6rem; }
+        .create36-lead-line { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.74rem; letter-spacing: 0.06em; color: #c7f464; margin: 0 0 0.5rem; line-height: 1.4; }
+        @media (min-width: 700px) { .create36-card--lead { grid-template-columns: 200px 1fr; gap: 1.6rem; padding: 1rem 1.6rem 1rem 1rem; } .create36-card--lead h3 { font-size: 2.3rem; } .create36-card--lead p { font-size: 0.98rem; max-width: 40rem; } .create36-lead-line { font-size: 0.9rem; } }
+        @media (max-width: 420px) { .create36-card--lead { grid-template-columns: 110px 1fr; gap: 0.8rem; } .create36-card--lead h3 { font-size: 1.35rem; } .create36-card--lead p { font-size: 0.8rem; } }
+        .create36-also { color: #a8a8a8; font-size: 0.92rem; line-height: 1.55; margin: 1.2rem 0 0; max-width: 52rem; }
+        .create36-also strong { color: #ffffff; }
+        .create36-d15 { display: flex; flex-direction: column; align-items: center; justify-content: center; aspect-ratio: 432 / 700; border-radius: 12px; background: #050505; border: 1px solid rgba(199, 244, 100, 0.2); box-shadow: inset 0 0 40px rgba(199, 244, 100, 0.06); }
+        .create36-d15-num { font-family: 'Anton', 'Arial Narrow', sans-serif; font-size: 4.2rem; line-height: 1; color: #c7f464; text-shadow: 0 0 24px rgba(199, 244, 100, 0.45); }
+        .create36-d15-unit { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.6rem; letter-spacing: 0.22em; color: #8a8a8a; margin-top: 0.4rem; text-transform: uppercase; }
+        @media (min-width: 700px) { .create36-d15-num { font-size: 6rem; } }
+
     </style>
 </head>
 <body>
@@ -3707,6 +3742,58 @@
                         <p class="bento-description">先送 65 次免費刪除。用完了？明天再來，每天再送 30 次。</p>
                     </article>
                 </div>
+            </div>
+        </section>
+
+        <!-- ===== CREATE (3.6) ===== -->
+        <section class="create36" id="create">
+            <div class="container">
+                <header class="section-header reveal">
+                    <p class="section-label">3.6 新功能 &middot; 創作</p>
+                    <h2 class="section-title">清掉雜亂。重溫回憶。<span class="serif-italic">再讓相片動起來。</span></h2>
+                    <p class="section-description">動態背景免費。回憶短片免費。相片修復免費。</p>
+                </header>
+                <div class="create36-grid">
+                    <a class="create36-card create36-card--lead reveal" href="/daily-15-challenge.html" style="--uni:#ff2e63">
+                        <span class="create36-d15" aria-hidden="true"><span class="create36-d15-num">15</span><span class="create36-d15-unit">秒</span></span>
+                        <span class="create36-lead-copy">
+                            <span class="create36-tag">新功能 &middot; 清理 &middot; 免費玩</span>
+                            <h3>每日15秒挑戰</h3>
+                            <span class="create36-lead-line">15 秒，你能整理多少張？</span>
+                            <p>左滑標記刪除，右滑保留，超大計數器即時跳動。刷新個人最佳、維持每日連續紀錄，還能分享只有分數、不含相片的卡片。刪除前會先請你確認。</p>
+                            <span class="create36-go">玩法說明（英文）&rarr;</span>
+                        </span>
+                    </a>
+                    <a class="create36-card reveal" href="/live-wallpaper.html" style="--uni:#c7f464">
+                        <img src="/assets/images/3.6/zh-hant/live-wallpaper.jpg" alt="" width="600" height="1303" loading="lazy" decoding="async">
+                        <span class="create36-tag">創作 &middot; 免費</span>
+                        <h3>動態背景</h3>
+                        <p>把任何影片變成會動的鎖定畫面。選好 2 秒片段和封面。</p>
+                        <span class="create36-go">步驟說明（英文）&rarr;</span>
+                    </a>
+                    <a class="create36-card reveal reveal-delay-1" href="/memory-reels.html" style="--uni:#ff2e63">
+                        <img src="/assets/images/3.6/zh-hant/memory-reel.jpg" alt="" width="600" height="1303" loading="lazy" decoding="async">
+                        <span class="create36-tag">創作 &middot; 免費</span>
+                        <h3>回憶短片</h3>
+                        <p>某一天、某個月或挑選的相片，做成 9:16 短片。三種風格，還能加貼紙。</p>
+                        <span class="create36-go">怎麼做（英文）&rarr;</span>
+                    </a>
+                    <a class="create36-card reveal reveal-delay-2" href="/photo-rescue.html" style="--uni:#7b5cff">
+                        <img src="/assets/images/3.6/zh-hant/photo-rescue.jpg" alt="" width="600" height="1303" loading="lazy" decoding="async">
+                        <span class="create36-tag">創作 &middot; 免費</span>
+                        <h3>相片修復</h3>
+                        <p>裝置端 AI 模型讓太暗或模糊的相片重獲清晰，並另存為新副本。</p>
+                        <span class="create36-go">怎麼做（英文）&rarr;</span>
+                    </a>
+                    <a class="create36-card reveal reveal-delay-3" href="/swipe-to-delete.html" style="--uni:#ff2e63">
+                        <img src="/assets/images/3.6/zh-hant/swipe-to-delete.jpg" alt="" width="600" height="1303" loading="lazy" decoding="async">
+                        <span class="create36-tag">清理 &middot; 每天免費 30 張</span>
+                        <h3>滑動刪除</h3>
+                        <p>左滑刪除，右滑保留。可復原、刪除前再確認，還有「稍後繼續」。</p>
+                        <span class="create36-go">怎麼做（英文）&rarr;</span>
+                    </a>
+                </div>
+                <p class="create36-also reveal"><strong>也是新功能：</strong>「稍後繼續」會在你離開滑動整理時保留已標記的相片。為你而做：旅行或忙碌的一天過後，露米娜會為你準備好一支現成的短片。滑動音效和更強的觸感回饋，在設定中各有獨立開關。</p>
             </div>
         </section>
 
