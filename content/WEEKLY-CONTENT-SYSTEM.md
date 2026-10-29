@@ -90,7 +90,7 @@ Winner = position or clicks up and no drop elsewhere. Three winners in a row →
 - Swapped out: do-photo-cleaner-apps-actually-work (40 impr / 0 clicks in 28 days, no visible queries) for iphone-storage-full-free-space (2,931 impr / 22 clicks / 0.8% CTR at p7.9; "ios 27 storage full" 29 impr, "iphone storage full after ios 27 update" 11). Scams question moves to a later week.
 - No verdicts yet: the oldest changes (Oct 6) are 2 weeks old; first round Nov 3.
 
-**Week of Oct 27 (prepared 2026-10-28, pending push)**
+**Week of Oct 27 (live 2026-10-29; IndexNow sent; GSC indexing for the 2 new URLs: Razvan)**
 - New: iphone-system-data-or-photos-filling-storage (Reddit #4, High/rising; GSC ~0; says plainly the app doesn't reduce System Data) · how-much-storage-for-ios-27-update (GSC "how much space/storage for iOS 27" cluster ~70 impr, p9–11, 0 clicks; Google shows iphone-storage-full-free-space for it, which is under test since Oct 20, so a new post instead of a recycle)
 - Recycle: clean-up-iphone-screenshots ← "How do I get rid of thousands of screenshots…" (moved from New: our page already shows, 449 impr / 2 clicks / p7.3) · how-long-iphone-storage-update-after-deleting-photos ← "How long do photos stay in Recently Deleted on iPhone?" + title rewrite (page 4,421 impr / 13 clicks / 0.3% / p6.4; ~150 impr of "how long do (deleted) photos stay…" queries land on it at p6.7–8.6, 0 clicks)
 - Moved to Nov 3 week: the two parked drafts (no GSC demand). No verdicts this week: oldest changes (Oct 6) are 3 weeks old in the 28-day window.
