@@ -1,6 +1,6 @@
 # LuminaClean product facts (validation file for all content)
 
-Last synced with App Store Connect: 2026-08-12 (pricing pivot to weekly/yearly); Lumina/3.4 facts added 2026-09-30; 3.6 (Clean · Memories · Create, 50/day) added 2026-10-29 — site copy for 3.6 goes live only after the app update is live.
+Last synced with App Store Connect: 2026-08-12 (pricing pivot to weekly/yearly); Lumina/3.4 facts added 2026-09-30; 3.6 (Clean · Memories · Create, 30/day) added 2026-10-29 — site copy for 3.6 goes live only after the app update is live.
 
 ## Features that EXIST (live today)
 
@@ -93,9 +93,9 @@ Last synced with App Store Connect: 2026-08-12 (pricing pivot to weekly/yearly);
     say "optional Premium subscription". Lead with the free tier, never with
     a price. Never write "no weekly subscription" or any lifetime/monthly claim.
 - Free tier: 65 free deletes or 1 GB to start (whichever comes first), then
-  50 free deletes every day. Deleting Large Videos and compressed/converted
-  originals is free and unlimited. Canonical copy: "65 to start, then 50 more
-  every day" (50/day from 3.6; it was 10/day before). Deleting large videos,
+  30 free deletes every day. Deleting Large Videos and compressed/converted
+  originals is free and unlimited. Canonical copy: "65 to start, then 30 more
+  every day" (30/day from 3.6; it was 10/day before). Deleting large videos,
   Live Photos, converted and compressed items from Optimize is free and
   unlimited. Pro/Premium buys one thing: unlimited deleting.
 - Domain: `luminaclean.app`

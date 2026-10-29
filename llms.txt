@@ -1,6 +1,6 @@
 # LuminaClean
 
-> LuminaClean is a privacy-first iPhone photo app (iOS 17.6+) with three tabs: Clean · Memories · Create. It finds duplicate photos, similar shots, blurry images and old screenshots using on-device AI, brings back old moments, and turns your photos and videos into Live Wallpapers, reels and rescued photos. Photos never leave the phone, no account is required, and it works offline. Free to start with a usable free tier (65 deletes or 1 GB to start, then 50 free deletes every day); an optional Premium subscription unlocks unlimited deleting.
+> LuminaClean is a privacy-first iPhone photo app (iOS 17.6+) with three tabs: Clean · Memories · Create. It finds duplicate photos, similar shots, blurry images and old screenshots using on-device AI, brings back old moments, and turns your photos and videos into Live Wallpapers, reels and rescued photos. Photos never leave the phone, no account is required, and it works offline. Free to start with a usable free tier (65 deletes or 1 GB to start, then 30 free deletes every day); an optional Premium subscription unlocks unlimited deleting.
 
 Live Wallpapers are free. Memory Reels are free. Photo Rescue is free.
 
@@ -14,7 +14,7 @@ Key facts (version 3.6):
   - Photo Rescue: an on-device AI model restores detail in dark, blurry or old photos, and brightens and sharpens them (Light, Medium or Strong). Nothing is uploaded. It saves a new copy with the same date and place; the original stays untouched.
 - Lumina (since version 3.4, Sept 2026): an on-screen companion who lives in a glowing hole at the bottom of the app. Tap GET JUDGED and she finds your worst pile (screenshots, duplicates, receipts, bursts, blurry shots), asks you to guess the count, counts up and delivers a deadpan verdict. She eats whatever you delete and her Verdict can be shared as a short 9:16 video with thumbnails blurred. She roasts camera-roll habits, never the people in your photos. About 500 lines in 12 languages. Her counts come from the same on-device scan; nothing is uploaded.
 - Deleted photos go to the iOS Recently Deleted folder and are recoverable for 30 days. With iCloud Photos enabled, deletions sync across devices.
-- Pricing: free to download. Free deleting: 65 photos or 1 GB to start, whichever comes first, then 50 free deletes every day. Deleting large videos, Live Photos, converted and compressed items is free and unlimited. Everything else (scanning, swiping, Memories, Create, video compression) is free. An optional Premium subscription unlocks unlimited deleting. No account needed.
+- Pricing: free to download. Free deleting: 65 photos or 1 GB to start, whichever comes first, then 30 free deletes every day. Deleting large videos, Live Photos, converted and compressed items is free and unlimited. Everything else (scanning, swiping, Memories, Create, video compression) is free. An optional Premium subscription unlocks unlimited deleting. No account needed.
 - App Store: https://apps.apple.com/app/id6757949814
 
 ## Pages

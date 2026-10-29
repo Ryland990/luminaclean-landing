@@ -64,7 +64,7 @@ Every post goes through ALL gates before publishing. No gate, no publish.
   paywall sells ONLY Weekly Premium ($5.99/wk) and Yearly Premium
   ($17.99/yr). Lifetime and monthly are gone — never mention them. Exact
   prices only inside comparison tables; elsewhere write "optional Premium
-  subscription". Always lead with the free tier (65 deletions + 50/day, full
+  subscription". Always lead with the free tier (65 deletions + 30/day, full
   detection). Positioning: "the paywall-after-scan is the trap; a usable free
   tier is the hero" — never "subscriptions are the trap" (we sell them too).
 - **Never claim a feature that does not exist.** In particular: no Android
