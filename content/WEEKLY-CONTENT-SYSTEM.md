@@ -90,10 +90,12 @@ Winner = position or clicks up and no drop elsewhere. Three winners in a row →
 - Swapped out: do-photo-cleaner-apps-actually-work (40 impr / 0 clicks in 28 days, no visible queries) for iphone-storage-full-free-space (2,931 impr / 22 clicks / 0.8% CTR at p7.9; "ios 27 storage full" 29 impr, "iphone storage full after ios 27 update" 11). Scams question moves to a later week.
 - No verdicts yet: the oldest changes (Oct 6) are 2 weeks old; first round Nov 3.
 
-**Week of Oct 27**
-- New: "How do I get rid of thousands of screenshots without going one by one?" · "Is it Photos or System Data filling my iPhone?" (honest: the app doesn't fix System Data)
-- Recycle: the two parked drafts in `content/drafts/`
-- Oct 28 Outrank verdict. Nov 3: judge the Oct 6 changes (first measurement round)
+**Week of Oct 27 (prepared 2026-10-28, pending push)**
+- New: iphone-system-data-or-photos-filling-storage (Reddit #4, High/rising; GSC ~0; says plainly the app doesn't reduce System Data) · how-much-storage-for-ios-27-update (GSC "how much space/storage for iOS 27" cluster ~70 impr, p9–11, 0 clicks; Google shows iphone-storage-full-free-space for it, which is under test since Oct 20, so a new post instead of a recycle)
+- Recycle: clean-up-iphone-screenshots ← "How do I get rid of thousands of screenshots…" (moved from New: our page already shows, 449 impr / 2 clicks / p7.3) · how-long-iphone-storage-update-after-deleting-photos ← "How long do photos stay in Recently Deleted on iPhone?" + title rewrite (page 4,421 impr / 13 clicks / 0.3% / p6.4; ~150 impr of "how long do (deleted) photos stay…" queries land on it at p6.7–8.6, 0 clicks)
+- Moved to Nov 3 week: the two parked drafts (no GSC demand). No verdicts this week: oldest changes (Oct 6) are 3 weeks old in the 28-day window.
+- Watch: recently-deleted-photos-take-up-storage got the same "how long" heading on Oct 6; Google prefers the how-long page for it. Judge both together on Nov 3. Page is 1 click / 3,149 impr / p7.0 ("do recently deleted photos take up storage" ~330 impr, 0 clicks): title rewrite candidate after its verdict.
+- Nov 3: judge the Oct 6 changes (first measurement round)
 
 Later: Live Photos "remove the video part" (only once Live Photo conversion is free in the shipped app version), back-up-before-deleting guide.
 
@@ -122,3 +124,7 @@ Later: Live Photos "remove the video part" (only once Live Photo conversion is f
 | 2026-10-20 | clean-up-thousands-of-iphone-photos | new post (Reddit #5, High/rising; GSC ~0) | new |
 | 2026-10-20 | find-duplicate-photos-guide, how-to-reduce-video-file-size-on-iphone-guide (Outrank) | removed in-prose prices ($5.99 / $17.99); prices only in tables | fact fix |
 | 2026-10-20 | 17 pages (EN/DE/FR, incl. homepage) | Titles over 70 chars cut to ≤70 (Bing "Title too long", 5 pages flagged). Rule: question wording kept; drop " \| LuminaClean" first, reword only if still >70. Skipped the 4 answer-heading pages under test (does-deleting-duplicates, duplicates-album-not-showing, storage-goes-up, optimize-not-freeing) until their verdict | title length |
+| 2026-10-28 | clean-up-iphone-screenshots | "How do I get rid of thousands of screenshots without going one by one?"; "+10 every day" → "10 more every day". Page 449 impr / 2 clicks / p7.3 | answer heading |
+| 2026-10-28 | how-long-iphone-storage-update-after-deleting-photos | "How long do photos stay in Recently Deleted on iPhone?"; title "How Long Do Deleted Photos Stay on iPhone? Storage Timeline (2026)"; 2× "actually" cut. Page 4,421 impr / 13 clicks / 0.3% / p6.4 | answer heading + title |
+| 2026-10-28 | iphone-system-data-or-photos-filling-storage | new post (Reddit #4, High/rising; GSC ~0) | new |
+| 2026-10-28 | how-much-storage-for-ios-27-update | new post (GSC iOS 27 space cluster ~70 impr p9–11; Apple Intelligence up to 8 / 14 GB, support.apple.com/en-us/121115) | new |
