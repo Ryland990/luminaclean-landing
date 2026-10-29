@@ -83,7 +83,7 @@
         "url": "https://luminaclean.app/",
         "operatingSystem": "iOS 17.6 or later",
         "applicationCategory": "UtilitiesApplication",
-        "description": "LuminaClean is an iOS app that helps users clean and organize their photo libraries by detecting duplicates, similar photos, blurry images, and screenshots using AI-powered on-device processing. All analysis happens locally on the device, ensuring complete privacy. Version 3.4 adds Lumina, an on-screen companion who counts your biggest pile of clutter, delivers a deadpan verdict, and eats whatever you delete.",
+        "description": "LuminaClean is an iOS app that helps users clean and organize their photo libraries by detecting duplicates, similar photos, blurry images, and screenshots using AI-powered on-device processing. All analysis happens locally on the device, ensuring complete privacy. Version 3.4 adds Lumina, an on-screen companion who counts your biggest pile of clutter, delivers a deadpan verdict, and eats whatever you delete. Version 3.6 splits the app into three tabs, Clean, Memories and Create, and adds free Live Wallpapers, Memory Reels and Photo Rescue (an on-device AI model that restores dark or blurry photos).",
         "isAccessibleForFree": true,
         "offers": {
             "@type": "Offer",
@@ -114,7 +114,12 @@
             "Bulk delete functionality",
             "iCloud Photos integration",
             "Video compression",
-            "Daily free deletions (65 to start, +50/day thereafter)"
+            "Daily free deletions (65 to start, +50/day thereafter)",
+            "Swipe to delete: left to delete, right to keep, with undo, a double-check screen and Save for Later",
+            "Live Wallpaper (free): turn any video into a Live Photo for a moving Lock Screen wallpaper",
+            "Memory Reel (free): turn a day, a month or selected photos into a 9:16 1080x1920 reel in three styles, with stickers",
+            "Made for You: ready-made reels after a trip or a busy day",
+            "Photo Rescue (free): an on-device AI model restores dark, blurry or old photos and saves a new copy"
         ],
         "screenshot": [
             "https://luminaclean.app/assets/images/dailybites-timeline.jpeg",
@@ -124,7 +129,7 @@
         ],
         "downloadUrl": "https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8",
         "installUrl": "https://apps.apple.com/app/apple-store/id6757949814?pt=128405841&ct=Landing%20Page&mt=8",
-        "softwareVersion": "2.7",
+        "softwareVersion": "3.6",
         "datePublished": "2026-01-20T00:00:00+00:00",
         "author": {
             "@id": "https://luminaclean.app/#organization"
@@ -143,6 +148,10 @@
         "mainEntity": [
             {"@type": "Question", "name": "Who is Lumina?", "acceptedAnswer": {"@type": "Answer", "text": "Lumina is the companion inside LuminaClean, new in version 3.4. She lives at the bottom of the screen, counts your biggest pile of screenshots, duplicates or receipts when you tap GET JUDGED, roasts your camera-roll habits (never the people in your photos), and eats whatever you delete. Her roasts come in 12 languages."}},
             {"@type": "Question", "name": "Does Lumina send my photos anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. Her counts come from the same on-device scan the rest of LuminaClean uses. Nothing is uploaded, and the videos you share blur your thumbnails."}},
+            {"@type": "Question", "name": "How do I swipe to delete photos on iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "Apple's Photos app has no swipe-to-delete. In LuminaClean you swipe left to delete and right to keep, undo any swipe, and check every marked photo on a double-check screen before anything is deleted. Deleted photos go to Recently Deleted for 30 days."}},
+            {"@type": "Question", "name": "How do I turn a video into a Live Wallpaper on iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "In LuminaClean's Create tab, pick a video, choose the 2-second moment and the cover frame on a Lock Screen preview, and save it as a Live Photo. Then press and hold the Lock Screen, tap +, choose Photos and pick that Live Photo with the Live Photo button on. Live Wallpapers are free."}},
+            {"@type": "Question", "name": "How do I make a reel from my camera roll?", "acceptedAnswer": {"@type": "Answer", "text": "In LuminaClean's Create tab, pick a day, a month or 6 to 30 photos, choose Flash Dump, Pile-On or Polaroid, add stickers if you like, and export a 9:16 1080x1920 reel. Reels export without sound; add music where you post. Memory Reels are free."}},
+            {"@type": "Question", "name": "How do I fix a dark or blurry photo on iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "Open the photo in LuminaClean's Photo Rescue and pick Light, Medium or Strong. An on-device AI model restores detail and the photo is brightened. It saves a new copy with the same date and place; the original stays untouched and nothing is uploaded. Photo Rescue is free."}},
             {
                 "@type": "Question",
                 "name": "Does LuminaClean upload my photos to the cloud?",
@@ -3327,6 +3336,24 @@
         @media (max-width: 420px) { .share-fan { height: 250px; } .share-fan img { width: 120px; } .share-fan img:nth-child(1) { transform: translateX(-50%) translateX(-82px) rotate(-8deg) scale(0.9); } .share-fan img:nth-child(3) { transform: translateX(-50%) translateX(82px) rotate(8deg) scale(0.9); } }
         .share-tail { font-family: 'Caveat', cursive; font-size: 1.7rem; color: #ff2e63; margin: 0.8rem 0 0; }
 
+        /* ===========================================
+           CREATE (3.6) — compact cards linking the feature pages
+           =========================================== */
+        .create36 { padding: 4.5rem 0 4rem; }
+        .create36 .section-header { margin-bottom: 2.4rem; }
+        .create36 .section-description { color: #c7f464; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.82rem; letter-spacing: 0.06em; }
+        .create36-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+        @media (min-width: 1000px) { .create36-grid { grid-template-columns: repeat(4, 1fr); gap: 1rem; } }
+        .create36-card { display: flex; flex-direction: column; background: #111111; border: 1px solid rgba(255, 255, 255, 0.08); border-top: 2px solid color-mix(in srgb, var(--uni, #c7f464) 60%, transparent); border-radius: 18px; padding: 0.75rem 0.75rem 1rem; text-decoration: none; color: #ffffff; transition: border-color 0.2s ease, transform 0.2s ease; }
+        .create36-card:hover { border-color: var(--uni, #c7f464); transform: translateY(-3px); }
+        .create36-card img { width: 100%; height: auto; aspect-ratio: 600 / 640; object-fit: cover; object-position: top; border-radius: 12px; display: block; margin-bottom: 0.8rem; }
+        .create36-tag { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.58rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--uni, #c7f464); }
+        .create36-card h3 { font-family: 'Anton', 'Arial Narrow', sans-serif; font-weight: 400; text-transform: uppercase; font-size: 1.25rem; letter-spacing: 0.02em; line-height: 1.05; margin: 0.35rem 0 0.4rem; }
+        .create36-card p { color: #a8a8a8; font-size: 0.86rem; line-height: 1.45; margin: 0 0 0.7rem; }
+        .create36-go { margin-top: auto; font-size: 0.8rem; font-weight: 600; color: #c7f464; line-height: 1.35; }
+        @media (max-width: 420px) { .create36-card { padding: 0.6rem 0.6rem 0.85rem; } .create36-card p { font-size: 0.8rem; } .create36-card h3 { font-size: 1.1rem; } }
+        .faq-more { color: #c7f464; white-space: nowrap; }
+
     </style>
 </head>
 <body>
@@ -3723,6 +3750,47 @@
             </div>
         </section>
 
+        <!-- ===== CREATE (3.6) ===== -->
+        <section class="create36" id="create">
+            <div class="container">
+                <header class="section-header reveal">
+                    <p class="section-label">New in 3.6 &middot; Create</p>
+                    <h2 class="section-title">Clean the clutter. Relive the moments. <span class="serif-italic">Make them move.</span></h2>
+                    <p class="section-description">Live Wallpapers are free. Memory Reels are free. Photo Rescue is free.</p>
+                </header>
+                <div class="create36-grid">
+                    <a class="create36-card reveal" href="/live-wallpaper.html" style="--uni:#c7f464">
+                        <img src="assets/images/3.6/live-wallpaper.jpg" alt="" width="600" height="1303" loading="lazy" decoding="async">
+                        <span class="create36-tag">Create &middot; Free</span>
+                        <h3>Live Wallpaper</h3>
+                        <p>Turn any video into a moving Lock Screen. Pick the 2 seconds and the cover.</p>
+                        <span class="create36-go">Turn a video into a Live Wallpaper &rarr;</span>
+                    </a>
+                    <a class="create36-card reveal reveal-delay-1" href="/memory-reels.html" style="--uni:#ff2e63">
+                        <img src="assets/images/3.6/memory-reel.jpg" alt="" width="600" height="1303" loading="lazy" decoding="async">
+                        <span class="create36-tag">Create &middot; Free</span>
+                        <h3>Memory Reel</h3>
+                        <p>A day, a month or a handful of photos, as a 9:16 reel. Three styles, stickers.</p>
+                        <span class="create36-go">Make a reel from your camera roll &rarr;</span>
+                    </a>
+                    <a class="create36-card reveal reveal-delay-2" href="/photo-rescue.html" style="--uni:#7b5cff">
+                        <img src="assets/images/3.6/photo-rescue.jpg" alt="" width="600" height="1303" loading="lazy" decoding="async">
+                        <span class="create36-tag">Create &middot; Free</span>
+                        <h3>Photo Rescue</h3>
+                        <p>An on-device AI model brings dark or blurry photos back. Saved as a new copy.</p>
+                        <span class="create36-go">Fix a dark or blurry photo &rarr;</span>
+                    </a>
+                    <a class="create36-card reveal reveal-delay-3" href="/swipe-to-delete.html" style="--uni:#ff2e63">
+                        <img src="assets/images/3.6/swipe-to-delete.jpg" alt="" width="600" height="1303" loading="lazy" decoding="async">
+                        <span class="create36-tag">Clean &middot; 50 free a day</span>
+                        <h3>Swipe to delete</h3>
+                        <p>Left to delete, right to keep. Undo, double-check, Save for Later.</p>
+                        <span class="create36-go">Swipe to delete photos &rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!-- ===== INTERACTIVE FEATURE SHOWCASE ===== -->
         <section class="showcase" id="showcase">
             <div class="container">
@@ -4000,6 +4068,54 @@
                             <p class="faq-answer-inner">No. Her counts come from the same on-device scan the rest of LuminaClean uses. Nothing is uploaded, and the videos you share blur your thumbnails.</p>
                         </div>
                     </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            How do I swipe to delete photos on iPhone?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-inner">Apple's Photos app has no swipe-to-delete. In LuminaClean you swipe left to delete and right to keep, undo any swipe, and check every marked photo on a double-check screen before anything is deleted. Deleted photos go to Recently Deleted for 30 days. <a class="faq-more" href="/swipe-to-delete.html">How swipe to delete works &rarr;</a></p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            How do I turn a video into a Live Wallpaper on iPhone?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-inner">In LuminaClean's Create tab, pick a video, choose the 2-second moment and the cover frame on a Lock Screen preview, and save it as a Live Photo. Then press and hold the Lock Screen, tap +, choose Photos and pick that Live Photo with the Live Photo button on. Live Wallpapers are free. <a class="faq-more" href="/live-wallpaper.html">Step by step &rarr;</a></p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            How do I make a reel from my camera roll?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-inner">In LuminaClean's Create tab, pick a day, a month or 6 to 30 photos, choose Flash Dump, Pile-On or Polaroid, add stickers if you like, and export a 9:16 1080x1920 reel. Reels export without sound; add music where you post. Memory Reels are free. <a class="faq-more" href="/memory-reels.html">How Memory Reels work &rarr;</a></p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            How do I fix a dark or blurry photo on iPhone?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-inner">Open the photo in LuminaClean's Photo Rescue and pick Light, Medium or Strong. An on-device AI model restores detail and the photo is brightened. It saves a new copy with the same date and place; the original stays untouched and nothing is uploaded. Photo Rescue is free. <a class="faq-more" href="/photo-rescue.html">How Photo Rescue works &rarr;</a></p>
+                        </div>
+                    </div>
                     <div class="faq-item reveal reveal-delay-1">
                         <button class="faq-question" aria-expanded="false">
                             Does LuminaClean upload my photos to the cloud?
@@ -4174,6 +4290,10 @@
                 <a href="terms.html">Terms of Service</a>
                 <a href="support.html">Support</a>
                 <a href="/blog/">Blog</a>
+                <a href="/swipe-to-delete.html">Swipe to delete</a>
+                <a href="/live-wallpaper.html">Live Wallpaper</a>
+                <a href="/memory-reels.html">Memory Reels</a>
+                <a href="/photo-rescue.html">Photo Rescue</a>
                 <a href="mailto:nextstep.appstudio@gmail.com">Contact</a>
                 <a href="/de/">Deutsch</a>
                 <a href="/fr/">Fran&ccedil;ais</a>
