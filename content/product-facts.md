@@ -13,8 +13,8 @@ Last synced with App Store Connect: 2026-08-12 (pricing pivot to weekly/yearly);
 - Screenshot detection
 - Large-video flagging
 - Free video compression for ALL users (not gated behind a paid tier)
-- AI categories: Travel, People, Architecture, Pets, Food, Transport, Text,
-  Nature, Screenshots, Other
+- AI categories (3.6 code, FEATURES.md): People, Pets, Food, Travel, Receipts,
+  Family, Buildings, Transit, Nature, Screens, Other
 - Flashback — scan by year
 - Daily Bites — on-this-day resurfacing
 - Swipe keep/delete UX
@@ -22,7 +22,6 @@ Last synced with App Store Connect: 2026-08-12 (pricing pivot to weekly/yearly);
 - Deletes go to iOS's own Recently Deleted album (30-day recovery window
   before permanent removal — this is standard iOS behavior, not a
   LuminaClean feature, but it's how "deletion" always works in the app)
-- Duplicate contact merging
 - Live Photo → still image conversion
 - Filter by file size and by media type
 - 100% on-device processing via Apple's Vision framework — no cloud
