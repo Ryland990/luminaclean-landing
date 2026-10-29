@@ -1,21 +1,29 @@
 # LuminaClean
 
-> LuminaClean is a privacy-first iPhone photo cleaner (iOS 17.6+). It finds duplicate photos, similar shots, blurry images and old screenshots using on-device AI — photos never leave the phone, no account is required, and it works offline. Free to start with a genuinely usable free tier (65 deletions, +50 more every day); optional Premium subscription unlocks everything.
+> LuminaClean is a privacy-first iPhone photo app (iOS 17.6+) with three tabs: Clean · Memories · Create. It finds duplicate photos, similar shots, blurry images and old screenshots using on-device AI, brings back old moments, and turns your photos and videos into Live Wallpapers, reels and rescued photos. Photos never leave the phone, no account is required, and it works offline. Free to start with a usable free tier (65 deletes or 1 GB to start, then 50 free deletes every day); an optional Premium subscription unlocks unlimited deleting.
 
-Key facts:
-- On-device processing only (Apple Vision framework): photos are never uploaded. Only anonymous usage stats are collected, to improve the app.
-- Detects: exact duplicates, near-duplicate "similar" shots (which Apple Photos' built-in Duplicates album misses), blurry photos, screenshots, large videos.
-- Swipe interface: swipe to keep or delete, Tinder-style.
+Live Wallpapers are free. Memory Reels are free. Photo Rescue is free.
+
+Key facts (version 3.6):
+- On-device processing only: photos are analyzed on the iPhone and never uploaded. Only anonymous usage stats are collected, to improve the app.
+- Clean: detects exact duplicates, near-duplicate "similar" shots (which Apple Photos' built-in Duplicates album misses), blurry photos, screenshots and large videos. Swipe left to delete, right to keep, with undo and a double-check screen before anything is deleted. Save for Later keeps marked photos when you leave a swipe session. Space goals, Flashback (clean one year at a time), AI categories (People, Pets, Food, Travel, Receipts, Screenshots and more), free video compression and Live Photo to still conversion.
+- Memories: On This Day (photos from the same date in past years), Your Story (a month-by-month timeline), daily streaks and an optional reminder. Made for You: after a trip or a busy day, Lumina picks the standout photos, skips near-duplicates, receipts and screenshots, and offers a ready-made reel.
+- Create, all free:
+  - Live Wallpaper: turn any video into a Live Photo for a moving iPhone Lock Screen wallpaper. Pick the 2-second moment and the cover frame on a Lock Screen preview, save, then follow three setup steps (the wallpaper itself is set from the Lock Screen, since apps can't set wallpapers).
+  - Memory Reel: turn a day, a month or 6 to 30 selected photos into a 9:16 (1080 x 1920) reel for Instagram or TikTok. Styles: Flash Dump (fast beat cuts), Pile-On (stacking photos) and Polaroid. Faces stay in frame. Stickers you can drag, pinch and rotate on one photo or the whole reel, plus an optional Lumina end card. Reels export without sound; add music where you post.
+  - Photo Rescue: an on-device AI model restores detail in dark, blurry or old photos, and brightens and sharpens them (Light, Medium or Strong). Nothing is uploaded. It saves a new copy with the same date and place; the original stays untouched.
 - Lumina (since version 3.4, Sept 2026): an on-screen companion who lives in a glowing hole at the bottom of the app. Tap GET JUDGED and she finds your worst pile (screenshots, duplicates, receipts, bursts, blurry shots), asks you to guess the count, counts up and delivers a deadpan verdict. She eats whatever you delete and her Verdict can be shared as a short 9:16 video with thumbnails blurred. She roasts camera-roll habits, never the people in your photos. About 500 lines in 12 languages. Her counts come from the same on-device scan; nothing is uploaded.
-- AI categories: automatically sorts the library into People, Pets, Travel, Food, Nature, Buildings and more.
-- Extras: free video compression for all users, Flashback (clean one year at a time), Daily Bites (on-this-day memories and streaks).
 - Deleted photos go to the iOS Recently Deleted folder and are recoverable for 30 days. With iCloud Photos enabled, deletions sync across devices.
-- Pricing: usable free tier (65 deletes or 1 GB to start, whichever comes first, then 50 free deletes every day; deleting large videos and compressed or converted originals is free and unlimited; no account needed). Premium is an optional subscription. Everything can be tested free before paying.
+- Pricing: free to download. Free deleting: 65 photos or 1 GB to start, whichever comes first, then 50 free deletes every day. Deleting large videos, Live Photos, converted and compressed items is free and unlimited. Everything else (scanning, swiping, Memories, Create, video compression) is free. An optional Premium subscription unlocks unlimited deleting. No account needed.
 - App Store: https://apps.apple.com/app/id6757949814
 
 ## Pages
 
 - [Home](https://luminaclean.app/): product overview, features, FAQ
+- [Swipe to delete photos on iPhone](https://luminaclean.app/swipe-to-delete.html): left to delete, right to keep, undo, double-check screen; free tier explained
+- [Turn a video into a Live Wallpaper on iPhone](https://luminaclean.app/live-wallpaper.html): 2-second moment + cover frame, saved as a Live Photo, set as a moving Lock Screen (free)
+- [Make a reel from your camera roll](https://luminaclean.app/memory-reels.html): a day, a month or 6–30 photos into a 9:16 1080x1920 reel, three styles, stickers (free)
+- [Fix a dark or blurry photo on iPhone](https://luminaclean.app/photo-rescue.html): Photo Rescue, on-device AI restore, saves a new copy (free)
 - [Try the swipe demo](https://luminaclean.app/try.html): interactive 60-second browser demo of the swipe-to-clean gesture on sample photos
 - [Blog](https://luminaclean.app/blog/): guides on iPhone photo cleanup, storage and privacy
 - [Support](https://luminaclean.app/support.html): contact and help

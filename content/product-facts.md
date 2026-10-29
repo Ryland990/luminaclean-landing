@@ -1,6 +1,6 @@
 # LuminaClean product facts (validation file for all content)
 
-Last synced with App Store Connect: 2026-08-12 (pricing pivot to weekly/yearly); Lumina/3.4 facts added 2026-09-30.
+Last synced with App Store Connect: 2026-08-12 (pricing pivot to weekly/yearly); Lumina/3.4 facts added 2026-09-30; 3.6 (Clean · Memories · Create, 50/day) added 2026-10-29 — site copy for 3.6 goes live only after the app update is live.
 
 ## Features that EXIST (live today)
 
@@ -39,6 +39,25 @@ Last synced with App Store Connect: 2026-08-12 (pricing pivot to weekly/yearly);
   Voice: deadpan second person, roasts HABITS never people/bodies/memories.
   NEVER say she "sees"/"has seen" your camera roll (surveillance read).
 - Also live: Space Goals, Geek Mode, On This Day, Large Videos.
+- 3.6: three tabs, Clean · Memories · Create. Save for Later (leaving a swipe
+  session keeps the marked photos). Made for You (Memories tab): after a trip
+  or a busy day, Lumina picks the standout photos and offers a ready-made reel;
+  can be hidden or turned off in Settings.
+- Create (3.6, ALL FREE — say "Live Wallpapers are free. Memory Reels are free.
+  Photo Rescue is free."):
+  - Live Wallpaper: video → pick the 2-second moment + cover frame on a Lock
+    Screen preview → saved as a Live Photo → user sets it from the Lock Screen
+    (press and hold, +, Photos, Live Photo button on, Add). Apps can't set
+    wallpapers themselves. No AI involved.
+  - Memory Reel: a day, a month or 6–30 picked photos → 9:16 1080×1920 reel.
+    Styles Flash Dump, Pile-On, Polaroid. Stickers (drag, pinch, rotate; one
+    photo or whole reel). Faces kept in frame. Optional Lumina end card.
+    SILENT export — never claim music.
+  - Photo Rescue: Light / Medium / Strong; an "on-device AI model" restores
+    detail, then brightens/sharpens. Saves a NEW copy with the same date and
+    place; original untouched. Never name the model.
+  - Site pages: /live-wallpaper.html, /memory-reels.html, /photo-rescue.html,
+    /swipe-to-delete.html.
 
 ## Features that DO NOT exist (never claim)
 
@@ -76,7 +95,8 @@ Last synced with App Store Connect: 2026-08-12 (pricing pivot to weekly/yearly);
 - Free tier: 65 free deletes or 1 GB to start (whichever comes first), then
   50 free deletes every day. Deleting Large Videos and compressed/converted
   originals is free and unlimited. Canonical copy: "65 to start, then 50 more
-  every day". (Live Photo conversion becomes free in the NEXT version, not
-  3.4 — don't claim it yet.)
+  every day" (50/day from 3.6; it was 10/day before). Deleting large videos,
+  Live Photos, converted and compressed items from Optimize is free and
+  unlimited. Pro/Premium buys one thing: unlimited deleting.
 - Domain: `luminaclean.app`
 - Support contact: `nextstep.appstudio@gmail.com`
