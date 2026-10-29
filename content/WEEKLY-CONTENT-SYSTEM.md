@@ -43,7 +43,7 @@ Rule of thumb: **a page of ours already shows for it → recycle (add the headin
 2. **First thing in the article: the exact question as an H2 (with an id), then a 2-sentence answer containing one specific number or fact.** This is the part AI answers lift.
 3. Short-answer box, then sections per cause/method with how to tell + fix.
 4. Lumina aside before the 3rd H2, topic matched (storage / duplicates / screenshots / blurry / shopping / gentle for loss-and-recovery topics). Tagged `data-appcore-cta="lumina:<topic>"`.
-5. One honest product section (scans on the iPhone, nothing uploaded, swipe to keep/delete, Recently Deleted first, free video compression, 65 free deletes then 10 more every day, optional Premium). Bottom CTA box tagged `article-box`.
+5. One honest product section (scans on the iPhone, nothing uploaded, swipe to keep/delete, Recently Deleted first, free video compression, 65 free deletes then 50 more every day, optional Premium). Bottom CTA box tagged `article-box`.
 6. Related guides (3–5 internal links), FAQ of 4–5 long-question variants mirrored in FAQPage JSON-LD.
 7. Template file to copy: `blog/how-long-iphone-find-duplicates.html`. Writers: Opus subagents with a self-contained brief; Claude verifies facts, banned words, JSON-LD and renders the page before showing Razvan.
 

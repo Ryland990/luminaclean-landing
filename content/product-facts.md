@@ -74,8 +74,8 @@ Last synced with App Store Connect: 2026-08-12 (pricing pivot to weekly/yearly);
     say "optional Premium subscription". Lead with the free tier, never with
     a price. Never write "no weekly subscription" or any lifetime/monthly claim.
 - Free tier: 65 free deletes or 1 GB to start (whichever comes first), then
-  10 free deletes every day. Deleting Large Videos and compressed/converted
-  originals is free and unlimited. Canonical copy: "65 to start, then 10 more
+  50 free deletes every day. Deleting Large Videos and compressed/converted
+  originals is free and unlimited. Canonical copy: "65 to start, then 50 more
   every day". (Live Photo conversion becomes free in the NEXT version, not
   3.4 — don't claim it yet.)
 - Domain: `luminaclean.app`
