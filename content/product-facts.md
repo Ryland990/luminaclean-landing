@@ -16,7 +16,7 @@ Last synced with App Store Connect: 2026-08-12 (pricing pivot to weekly/yearly);
 - AI categories (3.6 code, FEATURES.md): People, Pets, Food, Travel, Receipts,
   Family, Buildings, Transit, Nature, Screens, Other
 - Flashback — scan by year
-- Daily Bites — on-this-day resurfacing
+- Memories tab: On This Day, My Memories (was "Daily Bites" before 3.6)
 - Swipe keep/delete UX
 - In-session undo
 - Deletes go to iOS's own Recently Deleted album (30-day recovery window
