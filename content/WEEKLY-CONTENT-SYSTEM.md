@@ -60,6 +60,8 @@ Rule of thumb: **a page of ours already shows for it → recycle (add the headin
 
 ## Measurement
 
+**Per-post tracker (from 2026-10-30):** `content/POST-TRACKER.md`, built by `python3 content/tracker/build.py --through <last GSC date>` from `content/tracker/weekly.csv` (one row per Mon–Sun week × post: GSC impressions/clicks/position, 7+ word question impressions, FolioKit views/App Store taps) and `content/tracker/posts.csv` (what changed when). Every Tuesday: append last week's rows, add any new/changed post to posts.csv, rebuild, report. Posts are grouped by the week they changed, so each cohort can be followed over 4+ weeks.
+
 Log every change in `## Baseline for the 2026-10-06 changes (GSC, 28 days ending ~2026-10-05)
 
 Pages: why-iphone-storage-full 119 clicks / 20,311 impr / pos 7.1 · photo-library-crashing 24 / 4,161 / 6.7 · best-duplicate-cleaner 4 / 3,153 / 7.4 · recently-deleted 0 / 414 / 7.9 · cleaner-app-deleted-from-icloud 1 / 241 / 7.9 · merge-exact-copies and how-long-storage-update: too few to list.
@@ -128,3 +130,4 @@ Later: Live Photos "remove the video part" (only once Live Photo conversion is f
 | 2026-10-28 | how-long-iphone-storage-update-after-deleting-photos | "How long do photos stay in Recently Deleted on iPhone?"; title "How Long Do Deleted Photos Stay on iPhone? Storage Timeline (2026)"; 2× "actually" cut. Page 4,421 impr / 13 clicks / 0.3% / p6.4 | answer heading + title |
 | 2026-10-28 | iphone-system-data-or-photos-filling-storage | new post (Reddit #4, High/rising; GSC ~0) | new |
 | 2026-10-28 | how-much-storage-for-ios-27-update | new post (GSC iOS 27 space cluster ~70 impr p9–11; Apple Intelligence up to 8 / 14 GB, support.apple.com/en-us/121115) | new |
+| 2026-10-30 | 54 posts (29 Outrank, 16 own EN, 9 DE/FR/zh-Hant) | Answer heading + 2-sentence answer on every post that lacked one; FAQ + FAQPage added where missing; questions from real GSC queries per page (`page-queries-2026-10-30.md`). Every post now follows `~/.claude/blog-standard.md` | answer heading |
