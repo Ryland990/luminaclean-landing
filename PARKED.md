@@ -33,6 +33,13 @@
   position 5.8 — revisit after the localized guides have 3 months of data.
 
 ## Code health
+- Blog clean-up left from the 2026-10-30 answer-first pass:
+  - Old banned words in post bodies: about 31 across Outrank posts, plus best-photo-cleaner 16 and vs-cleanup 9.
+  - The DE/FR/zh no-subscription tables still show a "≈ €40/year" row.
+  - cancel-photo-cleaner lists the same Related link twice.
+  - best-photo-cleaner says Clever Cleaner finds similar photos; is-clever-cleaner says it doesn't.
+  - After 3.6 is live, mention Photo Rescue on find-remove-blurry-photos-iphone.
+- Outrank is paused (2026-10-30). If it resumes, its update_article webhook would overwrite the answer headings on its 29 posts. Add the blog-standard structure to its instructions first, or keep updates off.
 - After their 4-week verdicts (Nov 3 / Nov 10): cut titles >70 chars on does-deleting-duplicates-delete-original (82), iphone-photos-duplicates-album-not-showing (74), why-iphone-storage-goes-up-after-deleting-photos (73), optimize-iphone-storage-not-freeing-space (72). Held back so the title change doesn't muddy the test. (2026-10-20)
 - product-facts.md still says Apple "only catches pixel-identical duplicates" and the duplicates Lumina aside says "only catches exact copies"; both conflict with the "Apple doesn't publish its matching rules" rule. Reword once, then re-copy the aside. (2026-10-20)
 - Outrank posts put prices in prose (fixed 2 on 2026-10-20). If Outrank re-sends an updated article it may overwrite the fix; add a price/lifetime check to api/outrank.js. (2026-10-20)
