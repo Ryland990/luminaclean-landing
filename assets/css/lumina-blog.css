@@ -56,3 +56,31 @@
   .la-cta-dash { display: none; }
   .la-cta-dl { font-size: 0.82rem; opacity: 0.85; }
 }
+/* Swipe demo (2026-10-30): Polaroids swipe left into Lumina's mouth, one
+   swipes right onto a "kept" pile, so the box reads as a photo-cleaning app
+   before her lines play. Built by lumina-blog.js; not on --gentle asides. */
+.lumina-aside.la-has-demo { grid-template-columns: 1fr; gap: 0.6rem; text-align: center; }
+.la-has-demo .la-stage { height: 176px; width: 290px; margin: 0 auto; }
+.la-has-demo .la-kicker, .la-has-demo .la-dots { justify-content: center; }
+.lumina-aside.la-has-demo.la-live .la-lines li.is-on::before { display: none; }
+.la-has-demo .la-lines li { max-width: 34rem; margin: 0 auto; }
+.la-has-demo .la-stage::before { left: 72px; }
+.la-has-demo .la-her { left: 72px; }
+.la-deck { position: absolute; right: 22px; top: 4px; width: 88px; height: 106px; cursor: pointer; }
+.la-card { position: absolute; inset: 0; margin: 0; padding: 5px 5px 17px; background: #f4f1ea; border-radius: 4px; box-shadow: 0 6px 18px rgba(0,0,0,0.55); transform-origin: 50% 90%; will-change: transform, opacity; }
+.la-card img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 2px; }
+.la-card:nth-child(1) { transform: rotate(-4deg) translate(-3px, 2px); }
+.la-card:nth-child(2) { transform: rotate(3deg) translate(2px, 1px); }
+.la-card:nth-child(3) { transform: rotate(-1.5deg); }
+.la-stamp { position: absolute; top: 12px; left: 50%; padding: 1px 5px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.58rem; font-weight: 700; letter-spacing: 0.08em; border: 2px solid currentColor; border-radius: 4px; background: rgba(10,10,10,0.75); opacity: 0; transform: translateX(-50%) rotate(-10deg); white-space: nowrap; }
+.la-stamp--del { color: #ff2e63; }
+.la-stamp--keep { color: #c7f464; transform: translateX(-50%) rotate(10deg); }
+.la-hint { position: absolute; right: 0; top: 116px; width: 132px; text-align: center; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.56rem; letter-spacing: 0.08em; text-transform: uppercase; color: #8a8a8a; white-space: nowrap; }
+.la-hint b { font-weight: 700; }
+.la-hint .d { color: #ff2e63; } .la-hint .k { color: #c7f464; }
+.la-kept { position: absolute; right: 0; bottom: 6px; width: 132px; text-align: center; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.58rem; letter-spacing: 0.06em; text-transform: uppercase; color: #e8e8e8; opacity: 0; transition: opacity 0.3s ease; white-space: nowrap; }
+.la-kept.is-on { opacity: 1; }
+.la-kept .d { color: #ff2e63; } .la-kept .k { color: #c7f464; }
+.la-chomp img { animation: laChomp 0.32s ease 2; }
+@keyframes laChomp { 0%,100% { transform: none; } 50% { transform: scale(1.06, 0.94) translateY(2px); } }
+.lumina-aside:lang(zh) .la-stamp, .lumina-aside:lang(zh) .la-hint, .lumina-aside:lang(zh) .la-kept { letter-spacing: 0.02em; }

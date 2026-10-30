@@ -313,3 +313,7 @@ LOCAL ONLY until Razvan OKs the push.
   clicks per post) vs the 2026-09 baseline.
 - To add her to a NEW post: copy an existing aside of the right topic + the
   css <link> and script tag.
+- 2026-10-30 swipe demo: lumina-blog.js injects a Polaroid deck into every
+  non-gentle aside (3 swiped left into her mouth, 1 kept) plus a first how-to
+  line ("Swipe left, I eat it…", EN/DE/FR/zh). Card art: assets/images/lumina/cards/.
+  Bump ?v= on the css/js links in all posts when either file changes (now v=3).
