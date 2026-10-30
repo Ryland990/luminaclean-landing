@@ -36,6 +36,12 @@ Week columns: Sep 21 · Sep 28 · Oct 5 · Oct 12 · Oct 19 · Oct 26*
 | [new-iphone-transfer-not-enough-storage](https://luminaclean.app/blog/new-iphone-transfer-not-enough-storage.html) | How do I move to a new iPhone without enough storage? | – · – · – · – · – · –* | 0 · 0 · 0 · 0 · 0 · 0* | 0 · 0 · 0 · 0 · 0 · 0* | 0 · 0 | Too early (<2 full weeks) |
 | [how-long-iphone-find-duplicates](https://luminaclean.app/blog/how-long-iphone-find-duplicates.html) | How long does it take iPhone to find duplicate photos? | – · – · – · – · – · –* | 0 · 0 · 0 · 0 · 0 · 0* | 0 · 0 · 0 · 0 · 0 · 0* | 0 · 0 | Too early (<2 full weeks) |
 
+## 2026-10-30 — Outrank posts published (1)
+
+| Post | Question on the page | Long-question impr / wk | All impr / wk | Clicks / wk | FolioKit views · taps (last full wk) | Verdict |
+|---|---|---|---|---|---|---|
+| [duplicate-photo-remover](https://luminaclean.app/blog/duplicate-photo-remover.html) | How do I use a duplicate photo remover on iPhone? | – · – · – · – · – · –* | 0 · 0 · 0 · 0 · 0 · 0* | 0 · 0 · 0 · 0 · 0 · 0* | 0 · 0 | Too early (<2 full weeks) — answer heading added 2026-10-31 |
+
 ## 2026-10-29 — Outrank posts published (1)
 
 | Post | Question on the page | Long-question impr / wk | All impr / wk | Clicks / wk | FolioKit views · taps (last full wk) | Verdict |
